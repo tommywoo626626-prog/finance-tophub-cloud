@@ -1,0 +1,60 @@
+name: 每日财经热搜 TOP 10
+
+on:
+  schedule:
+    # UTC 2:00 = 北京时间 10:00 (上午)
+    # UTC 7:00 = 北京时间 15:00 (下午)
+    - cron: '0 2,7 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+# Grant permissions for GitHub Pages deployment
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  fetch-and-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: pip install jieba
+
+      - name: Fetch and cluster
+        id: fetch
+        run: |
+          mkdir -p output
+          python scripts/fetch_and_cluster.py
+
+      - name: Generate report
+        id: report
+        run: |
+          python scripts/generate_report.py
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: '📊 更新财经热搜报告 ${{ env.REPORT_DATE }} ${{ env.REPORT_PERIOD }}'
+
+      - name: Send email
+        if: env.QQ_MAIL_AUTH_CODE != ''
+        env:
+          QQ_MAIL_AUTH_CODE: ${{ secrets.QQ_MAIL_AUTH_CODE }}
+        run: |
+          python scripts/send_email.py
