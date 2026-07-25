@@ -711,7 +711,14 @@ def build_html(clusters, summary, date, period):
   .angle-item {{
     color: var(--text);
     font-size: 0.85em;
-    margin: 8px 0;
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(48,54,61,0.4);
+  }}
+  .angle-item:last-child {{
+    border-bottom: none;
+  }}
+  .angle-row {{
     display: flex;
     align-items: baseline;
     gap: 8px;
@@ -721,9 +728,25 @@ def build_html(clusters, summary, date, period):
     color: var(--accent2);
     font-weight: bold;
     min-width: 20px;
+    font-size: 1.1em;
   }}
-  .angle-text {{
+  .angle-cat {{
+    display: inline-block;
+    background: rgba(88,166,255,0.15);
+    color: var(--accent2);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: 600;
+    white-space: nowrap;
+    border: 1px solid rgba(88,166,255,0.3);
+  }}
+  .angle-title {{
+    color: var(--text-bright);
+    font-weight: bold;
+    font-size: 0.95em;
     flex: 1;
+    min-width: 200px;
   }}
   .btn-prompt {{
     background: var(--btn-bg);
@@ -835,7 +858,7 @@ def build_html(clusters, summary, date, period):
     h1 {{ font-size: 1.4em; }}
     .topic-title {{ font-size: 1.1em; }}
     .platform-table {{ font-size: 0.8em; }}
-    .angle-item {{ flex-direction: column; align-items: flex-start; }}
+    .angle-row {{ flex-direction: column; align-items: flex-start; }}
   }}
 </style>
 </head>
@@ -884,11 +907,23 @@ def build_html(clusters, summary, date, period):
             prompt_attr = (prompt_text.replace('\\', '\\\\')
                            .replace('"', '&quot;')
                            .replace('\n', '&#10;'))
+            # Extract perspective category prefix (e.g. "散户视角：..." -> label="散户视角", body="...")
+            cat_m = re.match(r'^(.+?(?:视角|观点|对比|角度|分析|解读))[：:]\s*(.+)', angle)
+            if cat_m:
+                cat_label = cat_m.group(1)
+                cat_body = cat_m.group(2)
+            else:
+                cat_label = None
+                cat_body = angle
+            cat_html = f'<span class="angle-cat">{cat_label}</span>\n    ' if cat_label else ''
             angle_items.append(
                 f'<div class="angle-item">\n'
-                f'  <span class="num">{j+1}</span>\n'
-                f'  <span class="angle-text">{clean_slash(angle)}</span>\n'
-                f'  <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="{prompt_attr}">\U0001f4dd 生成提示词</button>\n'
+                f'  <div class="angle-row">\n'
+                f'    <span class="num">{j+1}</span>\n'
+                f'    {cat_html}'
+                f'    <span class="angle-title">{clean_slash(cat_body)}</span>\n'
+                f'    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="{prompt_attr}">\U0001f4dd 生成提示词</button>\n'
+                f'  </div>\n'
                 f'</div>'
             )
 
