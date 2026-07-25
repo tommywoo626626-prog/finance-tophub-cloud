@@ -4,14 +4,17 @@ Fetch tophub.today/c/finance, parse all platform topics,
 cluster similar topics by cross-platform coverage, output JSON.
 Designed for GitHub Actions cloud environment.
 
-Clustering strategy: multi-signal similarity combining
-keyword Jaccard + entity overlap + key-phrase matching.
+Clustering strategy: Dynamic IDF-weighted keyword overlap.
+No hardcoded entity lists — words are weighted by how rare they are
+across all titles, so distinctive terms (company names, specific events)
+automatically get high similarity scores.
 """
 import urllib.request
 import re
 import json
 import os
 import sys
+import math
 from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 
@@ -40,41 +43,7 @@ PLATFORM_NORM = {
     "全网热榜": "全网热榜",
 }
 
-# Strong entities: specific company names, people, products
-# These are unique enough to indicate "same event" when shared
-STRONG_ENTITIES = {
-    "宁德时代", "比亚迪", "携程", "中际旭创", "苹果", "特斯拉", "英伟达",
-    "谷歌", "微软", "台积电", "马斯克", "SpaceX", "星舰", "恒瑞医药", "药明康德",
-    "万科", "碧桂园", "保利", "拼多多", "美团", "京东", "阿里巴巴",
-    "方星海", "证监会", "OpenAI", "高通", "长鑫", "长鑫科技",
-    "默沙东", "宜家", "川投能源", "闻泰科技", "中兴通讯",
-    "汇金", "国新", "诚通", "社保基金",
-}
-
-# Weak entities: common financial terms - useful for keyword extraction
-# but NOT sufficient alone to merge two topics
-WEAK_ENTITIES = {
-    "央行", "美联储", "市场监管总局", "国家队",
-    "碳酸锂", "锂电池", "光伏", "风电", "储能", "新能源",
-    "A股", "沪指", "创业板", "科创板", "港股", "恒指",
-    "美股", "纳指", "标普", "道指", "日经",
-    "原油", "黄金", "白银", "铜", "铁矿石",
-    "逆回购", "隔夜逆回购", "MLF", "LPR", "降准", "降息", "加息",
-    "IPO", "财报", "季报", "年报", "中报",
-    "可转债", "债券", "ETF", "基金",
-    "半导体", "芯片", "光模块", "AI", "人工智能",
-    "房地产", "楼市", "房价",
-    "人民币", "美元", "汇率", "欧元", "日元",
-    "OPEC", "中东", "伊朗", "以色列", "乌克兰", "美伊",
-    "反垄断", "垄断", "处罚", "罚没",
-    "回购", "增持", "减持", "分红", "派息",
-    "TACO指数", "WAIC", "B站",
-}
-
-# All entities combined for jieba dictionary
-ALL_ENTITIES = STRONG_ENTITIES | WEAK_ENTITIES
-
-# Stopwords for phrase extraction
+# Stopwords: common Chinese function words and punctuation
 STOPWORDS = {'的', '了', '是', '在', '和', '与', '或', '等', '也', '都', '不', '为', '对',
              '由', '从', '到', '被', '将', '已', '可', '能', '会', '这', '那', '其', '之',
              '一', '个', '上', '下', '中', '大', '小', '有', '无', '看', '说', '做', '来',
@@ -82,14 +51,25 @@ STOPWORDS = {'的', '了', '是', '在', '和', '与', '或', '等', '也', '都
              '则', '而', '但', '且', '如', '若', '因', '所', '以', '于', '向', '至', '当',
              '再', '又', '才', '只', '就', '还', '更', '最', '很', '太', '非', '常', '十',
              '百', '千', '万', '亿', '元', '点', '%', '丨', '｜', '—', '·', '：', '。', '，',
-             '、', '？', '！', '"', '"', ''', ''', '（', '）', '(', ')', '[', ']', '《', '》'}
+             '、', '？', '！', '"', '"', ''', ''', '（', '）', '(', ')', '[', ']', '《', '》',
+             # Common generic financial words that are too broad for matching
+             '什么', '怎么', '为什么', '如何', '可以', '可能', '已经', '继续', '还是', '不是',
+             '这个', '一个', '没有', '只有', '就是', '还是', '其实', '真的',
+             }
+
+# Very common words to exclude from matching (appear in too many titles to be distinctive)
+# These will also be filtered by the dynamic IDF threshold
+COMMON_FINANCE_WORDS = {
+    'A股', '沪指', '创业板', '科创板', '港股', '恒指', '美股', '纳指', '标普', '道指',
+    '市场', '股市', '板块', '行情', '收盘', '盘前', '盘后', '早报', '收评',
+    '投资', '交易', '资金', '利好', '利空', '下跌', '上涨', '暴涨', '暴跌',
+    '公告', '通知', '新闻', '热点', '话题',
+}
 
 # Try to import jieba
 try:
     import jieba
     import jieba.analyse
-    for entity in ALL_ENTITIES:
-        jieba.add_word(entity)
     JIEBA_AVAILABLE = True
 except ImportError:
     JIEBA_AVAILABLE = False
@@ -175,165 +155,121 @@ def parse_platform_blocks(html):
     return blocks
 
 
-def extract_keywords(title, topK=10):
-    """Extract keywords using jieba TF-IDF."""
-    keywords = []
+def segment_title(title):
+    """Segment title into meaningful words using jieba.
+    Returns a set of 2+ character words, excluding stopwords."""
+    words = set()
     if JIEBA_AVAILABLE:
         try:
-            keywords = jieba.analyse.extract_tags(title, topK=topK, withWeight=False)
+            for w in jieba.cut(title, cut_all=False):
+                w = w.strip()
+                if len(w) >= 2 and w not in STOPWORDS:
+                    words.add(w)
         except Exception:
-            keywords = []
+            pass
 
-    if len(keywords) < 3:
-        keywords = []
-        for entity in ALL_ENTITIES:
-            if entity in title:
-                keywords.append(entity)
-        for c in title:
-            if "\u4e00" <= c <= "\u9fff" and c not in keywords:
-                keywords.append(c)
-        keywords = keywords[:topK]
+    if not words:
+        # Fallback: extract character pairs
+        chars = [c for c in title if "\u4e00" <= c <= "\u9fff"]
+        for i in range(len(chars) - 1):
+            pair = chars[i] + chars[i + 1]
+            if pair not in STOPWORDS:
+                words.add(pair)
 
-    return keywords
-
-
-def extract_strong_entities(title):
-    """Extract strong entities (specific names) from title."""
-    entities = set()
-    for entity in STRONG_ENTITIES:
-        if entity in title:
-            entities.add(entity)
-    return entities
-
-
-def extract_weak_entities(title):
-    """Extract weak entities (common financial terms) from title."""
-    entities = set()
-    for entity in WEAK_ENTITIES:
-        if entity in title:
-            entities.add(entity)
-    return entities
+    return words
 
 
 def extract_numbers_with_units(title):
     """Extract numbers with units (e.g., '51.79亿', '2.4亿', '3800点', '42%').
     Only numbers with units are meaningful for event matching."""
     numbers = set()
-    # Match number + unit patterns
     for m in re.finditer(r'(\d+\.?\d*)\s*(万亿|千亿|百亿|十亿|亿|万|千|百|元|点|%|倍|次|个|家|人|名|条|亿股|万股)', title):
         num = m.group(1)
         unit = m.group(2)
-        # Only keep meaningful numbers (avoid single digits without context)
         if len(num) >= 2 or unit in ('亿', '万', '万亿', '%', '倍'):
             numbers.add(f"{num}{unit}")
     return numbers
 
 
-def extract_key_phrases(title):
-    """Extract 2+ char meaningful phrases using jieba."""
-    phrases = set()
-    if JIEBA_AVAILABLE:
-        try:
-            words = jieba.cut(title, cut_all=False)
-            for w in words:
-                w = w.strip()
-                if len(w) >= 2 and w not in STOPWORDS:
-                    phrases.add(w)
-        except Exception:
-            pass
-
-    if not phrases:
-        chars = [c for c in title if "\u4e00" <= c <= "\u9fff"]
-        for i in range(len(chars) - 1):
-            pair = chars[i] + chars[i+1]
-            if pair not in STOPWORDS:
-                phrases.add(pair)
-
-    return phrases
+def extract_key_substrings(title, min_len=4):
+    """Extract distinctive substrings from title.
+    Only 4+ character contiguous Chinese sequences — these are likely
+    entity names (company names, place names, specific phrases).
+    Shorter sequences generate too much noise."""
+    substrings = set()
+    for m in re.finditer(r'[\u4e00-\u9fff]{4,}', title):
+        s = m.group()
+        if len(s) <= 7:
+            substrings.add(s)
+        else:
+            # For long sequences, extract 4-5 char windows
+            for i in range(len(s) - 3):
+                substrings.add(s[i:i+4])
+            for i in range(len(s) - 4):
+                substrings.add(s[i:i+5])
+    return substrings
 
 
-def compute_similarity(item1, item2):
+def clusterTopics(blocks, similarity_threshold=0.25):
     """
-    Multi-signal similarity score.
-    Returns a score in [0, 1].
+    Cluster topics using dynamic IDF-weighted keyword overlap.
 
-    Signals:
-    1. Strong entity overlap (most important): if titles share a specific name
-    2. Number-with-unit overlap: if titles share specific figures
-    3. Weak entity compound: 2+ shared weak entities = likely same topic
-    4. Keyword Jaccard: general keyword overlap
-    5. Key phrase overlap: phrase-level similarity
+    Algorithm:
+    1. Segment all titles into words using jieba
+    2. Compute IDF (inverse document frequency) for each word
+    3. Filter out very common words (appear in >25% of titles)
+    4. For each pair of titles from different platforms:
+       - Require a "strong signal": 2+ shared distinctive words,
+         OR 1 shared 3+ char word with high IDF (>3.5),
+         OR 1 shared 4+ char substring (entity name)
+       - Compute weighted overlap: sum(IDF of shared words) / min(total IDF weight)
+       - Add bonus for shared numbers-with-units and substrings
+    5. Merge pairs above threshold using union-find
+
+    The strong signal requirement prevents chain merges through generic words
+    like "下周" or "重磅", while still allowing entity-based matches like
+    "宁德时代" or "霍尔木兹" to trigger merges.
     """
-    kw1, kw2 = item1["keywords"], item2["keywords"]
-    ent1, ent2 = item1["strong_entities"], item2["strong_entities"]
-    weak1, weak2 = item1["weak_entities"], item2["weak_entities"]
-    num1, num2 = item1["numbers"], item2["numbers"]
-    phr1, phr2 = item1["phrases"], item2["phrases"]
-
-    # Signal 1: Strong entity overlap
-    # If both titles mention the same company/person, very likely same event
-    ent_inter = ent1 & ent2
-    ent_score = 0.0
-    if ent_inter:
-        ent_score = min(len(ent_inter) * 0.35, 0.7)
-
-    # Signal 2: Number-with-unit overlap
-    num_inter = num1 & num2
-    num_score = 0.0
-    if num_inter:
-        num_score = min(len(num_inter) * 0.3, 0.5)
-
-    # Signal 3: Weak entity compound signal
-    # 2+ shared weak entities (e.g., "央行" + "逆回购", "美伊" + "原油")
-    # indicates same topic even without strong entities
-    weak_inter = weak1 & weak2
-    weak_score = 0.0
-    if len(weak_inter) >= 3:
-        weak_score = 0.35
-    elif len(weak_inter) >= 2:
-        weak_score = 0.25
-
-    # Signal 4: Keyword Jaccard
-    kw_inter = len(kw1 & kw2)
-    kw_union = len(kw1 | kw2)
-    kw_sim = kw_inter / kw_union if kw_union > 0 else 0.0
-
-    # Signal 5: Key phrase overlap
-    phr_inter = len(phr1 & phr2)
-    phr_union = len(phr1 | phr2)
-    phr_sim = phr_inter / phr_union if phr_union > 0 else 0.0
-
-    # Weighted combination
-    score = ent_score + num_score + weak_score + 0.15 * kw_sim + 0.15 * phr_sim
-
-    return min(score, 1.0)
-
-
-def clusterTopics(blocks, similarity_threshold=0.35):
-    """
-    Cluster topics using multi-signal similarity.
-    Threshold 0.35 means: need at least one strong entity match (0.35)
-    or a number match (0.3) + some keyword/phrase overlap.
-
-    This prevents merging unrelated topics that just share common words like "A股".
-    """
+    # Step 1: Collect all items with segmented words
     items = []
     for block in blocks:
         for t in block["topics"]:
+            words = segment_title(t["title"])
+            numbers = extract_numbers_with_units(t["title"])
+            substrings = extract_key_substrings(t["title"])
             items.append({
                 "platform": block["platform_name"],
                 "title": t["title"],
                 "url": t["url"],
                 "rank": t["rank"],
                 "heat": t["heat"],
-                "keywords": set(extract_keywords(t["title"])),
-                "strong_entities": extract_strong_entities(t["title"]),
-                "weak_entities": extract_weak_entities(t["title"]),
-                "numbers": extract_numbers_with_units(t["title"]),
-                "phrases": extract_key_phrases(t["title"]),
+                "words": words,
+                "numbers": numbers,
+                "substrings": substrings,
             })
 
     n = len(items)
+
+    # Step 2: Compute document frequency and IDF for each word
+    df = defaultdict(int)
+    for item in items:
+        for w in item["words"]:
+            df[w] += 1
+
+    # IDF: log(N / df), with smoothing
+    idf = {w: math.log(n / max(df[w], 1)) for w in df}
+
+    # Step 3: Filter out very common words (appear in >25% of titles)
+    common_cutoff = max(n * 0.25, 5)
+    distinctive_words = {w for w, d in df.items() if d <= common_cutoff}
+    distinctive_words -= COMMON_FINANCE_WORDS
+
+    # Precompute IDF-weighted word vectors for each item
+    for item in items:
+        item["weighted_words"] = {w: idf.get(w, 0) for w in item["words"] if w in distinctive_words}
+        item["total_weight"] = sum(item["weighted_words"].values())
+
+    # Step 4: Union-Find
     parent = list(range(n))
 
     def find(x):
@@ -347,17 +283,66 @@ def clusterTopics(blocks, similarity_threshold=0.35):
         if rx != ry:
             parent[rx] = ry
 
+    # Step 5: Compare all pairs from different platforms
     for i in range(n):
+        if items[i]["total_weight"] == 0:
+            continue
         for j in range(i + 1, n):
-            # Skip exact same title
+            if items[i]["platform"] == items[j]["platform"]:
+                continue
+            if items[j]["total_weight"] == 0:
+                continue
+
+            # Exact title match
             if items[i]["title"].strip() == items[j]["title"].strip():
                 union(i, j)
                 continue
 
-            sim = compute_similarity(items[i], items[j])
+            # Shared distinctive words
+            shared_words = set(items[i]["weighted_words"].keys()) & set(items[j]["weighted_words"].keys())
+
+            # Shared 4+ char substrings (entity names)
+            shared_sub = items[i]["substrings"] & items[j]["substrings"]
+            strong_subs = {s for s in shared_sub if len(s) >= 4}
+
+            # Strong signal check: must have enough evidence to merge
+            # Option A: 2+ shared distinctive words
+            # Option B: 1 shared 3+ char word with high IDF (>3.5) — catches "宁德时代", "携程"
+            # Option C: 1 shared 4+ char substring — catches jieba segmentation differences
+            has_strong_word = any(
+                len(w) >= 3 and idf.get(w, 0) > 3.0 for w in shared_words
+            )
+
+            if len(shared_words) < 2 and not has_strong_word and not strong_subs:
+                continue
+
+            # Strong entity override: if two titles share a 3+ char word with
+            # high IDF AND at least one other distinctive word, force merge.
+            # This handles cases where one title has many irrelevant distinctive
+            # words (e.g., "LIVE", "Day") that dilute the overlap coefficient.
+            if has_strong_word and len(shared_words) >= 2:
+                union(i, j)
+                continue
+
+            shared_weight = sum(items[i]["weighted_words"][w] for w in shared_words)
+
+            # Weighted overlap coefficient
+            min_weight = min(items[i]["total_weight"], items[j]["total_weight"])
+            sim = shared_weight / min_weight if min_weight > 0 else 0
+
+            # Substring bonus: shared 4+ char entity names
+            if strong_subs:
+                sim += 0.12 * min(len(strong_subs), 3)
+
+            # Number bonus
+            shared_num = items[i]["numbers"] & items[j]["numbers"]
+            if shared_num:
+                sim += 0.08 * len(shared_num)
+
             if sim >= similarity_threshold:
                 union(i, j)
 
+    # Step 6: Build cluster summaries
     clusters = defaultdict(list)
     for i in range(n):
         clusters[find(i)].append(items[i])
@@ -418,9 +403,15 @@ def main():
     print(f"\nTotal topics: {total_topics}")
 
     print(f"jieba available: {JIEBA_AVAILABLE}")
-    print("Clustering similar topics (multi-signal, threshold=0.35)...")
+    print("Clustering similar topics (IDF-weighted, threshold=0.25)...")
     clusters = clusterTopics(blocks)
     print(f"Formed {len(clusters)} clusters")
+
+    # Count multi-platform clusters
+    multi = [c for c in clusters if c["cover_count"] >= 2]
+    single = [c for c in clusters if c["cover_count"] == 1]
+    print(f"  Multi-platform clusters: {len(multi)}")
+    print(f"  Single-platform clusters: {len(single)}")
 
     top_clusters = clusters[:15]
 
