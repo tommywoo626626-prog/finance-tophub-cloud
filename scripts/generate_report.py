@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generate TOP 10 financial hot topics HTML report from clustered JSON data.
-Uses intelligent template-based content generation for analysis.
+Uses weighted keyword-based category matching for accurate insight generation.
 Designed for GitHub Actions cloud environment.
 """
 import json
@@ -26,10 +26,17 @@ PLATFORM_ALIAS = {
     "全网热榜": "全网热榜",
 }
 
-# Topic category rules — keyword-based matching for insight generation
+# Topic category rules with WEIGHTED keywords
+# weight=3: entity-specific (company/product name) — strongest signal
+# weight=2: domain-specific term — moderate signal
+# weight=1: generic sentiment/descriptor — weak signal, only additive
 CATEGORY_RULES = [
     {
-        "keywords": ["国家队", "央企", "增持", "回购", "救市", "护盘", "汇金", "国新", "诚通", "社保"],
+        "keywords": {
+            "国家队": 3, "汇金": 3, "国新": 3, "诚通": 3,
+            "社保基金": 3, "央企增持": 2, "回购潮": 2,
+            "救市": 2, "护盘": 2, "增持": 1,
+        },
         "category": "政策托底",
         "insight_tpl": "“国家队”或央企再次出手，信号意义不可忽视。市场在问：是短期托底还是长期布局？资金量虽然不一定大，但政策意图的传递比实际买入更重要。",
         "angles": [
@@ -41,7 +48,12 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["LPR", "利率", "降息", "加息", "央行", "MLF", "逆回购", "降准", "货币政策", "美联储", "欧央行", "加息"],
+        "keywords": {
+            "央行": 3, "MLF": 3, "逆回购": 3, "降准": 3, "LPR": 3,
+            "美联储": 3, "欧央行": 3, "隔夜逆回购": 3,
+            "利率": 2, "降息": 2, "加息": 2,
+            "货币政策": 2, "流动性": 2,
+        },
         "category": "货币政策",
         "insight_tpl": "货币政策信号出炉，市场对利率走向的预期再次被校准。在汇率、银行息差和实体经济之间，政策正在寻求微妙的平衡。",
         "angles": [
@@ -53,7 +65,12 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["A股", "沪指", "深指", "创业板", "科创50", "年线", "大跌", "暴涨", "暴跌", "反弹", "牛市", "熊市", "跌破", "止损"],
+        "keywords": {
+            "A股": 3, "沪指": 3, "深指": 3, "创业板": 3, "科创50": 3,
+            "北向资金": 3, "主力资金": 3, "年线": 2, "整数关口": 2,
+            "跌破": 2, "反弹": 2, "牛市": 2, "熊市": 2,
+            "大跌": 1, "暴涨": 1, "暴跌": 1, "止损": 1, "破位": 1,
+        },
         "category": "市场走势",
         "insight_tpl": "A股关键点位引发投资者广泛关注。是技术性调整还是趋势逆转？成交量和资金流向才是判断短期方向的核心变量。",
         "angles": [
@@ -65,7 +82,14 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["美股", "纳指", "标普", "道指", "科技股", "AI", "人工智能", "芯片", "半导体", "英伟达", "苹果", "谷歌", "特斯拉", "微软", "Meta", "台积电"],
+        "keywords": {
+            "英伟达": 3, "特斯拉": 3, "苹果": 3, "谷歌": 3, "微软": 3,
+            "Meta": 3, "台积电": 3, "马斯克": 3, "SpaceX": 3, "星舰": 3,
+            "中际旭创": 3, "光模块": 3, "芯片指数": 3, "纳指": 3, "标普": 3,
+            "道指": 3, "美股": 3, "科技股": 3, "AI": 3,
+            "人工智能": 2, "半导体": 2, "芯片": 2, "科技巨头": 2,
+            "AI宠物": 3, "赛博": 2,
+        },
         "category": "外盘科技",
         "insight_tpl": "全球科技股正在经历估值重定价。AI从“讲故事”到“业绩验证”的转换期，任何一个不及预期的财报或政策都可能引发连锁反应。",
         "angles": [
@@ -77,7 +101,10 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["原油", "油价", "能源", "天然气", "OPEC", "石油", "煤炭"],
+        "keywords": {
+            "原油": 3, "油价": 3, "OPEC": 3, "天然气": 2, "石油": 2,
+            "能源": 1, "煤炭": 1,
+        },
         "category": "能源市场",
         "insight_tpl": "能源市场的供需博弈进入新阶段。地缘政治、OPEC政策、全球经济预期交织在一起，油价波动率在上升。",
         "angles": [
@@ -89,7 +116,10 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["中东", "伊朗", "以色列", "美军", "空袭", "战争", "冲突", "地缘", "霍尔木兹"],
+        "keywords": {
+            "中东": 3, "伊朗": 3, "以色列": 3, "霍尔木兹": 3, "美伊": 3,
+            "空袭": 3, "地缘": 2, "战争": 2, "冲突": 2, "美军": 2,
+        },
         "category": "地缘政治",
         "insight_tpl": "地缘政治风险升温，全球避险情绪正在重新定价。冲突的持续时间和烈度将决定资产价格的波动幅度。",
         "angles": [
@@ -101,7 +131,10 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["IPO", "上市", "打新", "中签", "申购", "新股", "长鑫", "科创板", "注册制"],
+        "keywords": {
+            "IPO": 3, "长鑫": 3, "打新": 2, "中签": 2, "新股": 2,
+            "上市": 1, "科创板": 1, "注册制": 1, "申购": 1,
+        },
         "category": "IPO市场",
         "insight_tpl": "重磅IPO引发市场高度关注。在高估值和市场波动交织的背景下，IPO定价与二级市场表现的分化是核心看点。",
         "angles": [
@@ -113,7 +146,11 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["财报", "业绩", "盈利", "营收", "净利", "增长", "暴雷", "预亏", "预喜", "中报", "年报", "季报"],
+        "keywords": {
+            "财报": 3, "净利润": 3, "营收": 3, "盈利": 3, "日赚": 3,
+            "回购股票": 3, "派息": 3, "季度报": 3, "暴雷": 2, "预亏": 2,
+            "预喜": 2, "中报": 2, "年报": 2, "季报": 2, "业绩": 1, "净利": 1,
+        },
         "category": "财报业绩",
         "insight_tpl": "财报季进入密集披露期，业绩分化越来越明显。市场对“好预期”的阈值在提高——仅仅是“不错”已经不够，必须“超预期”。",
         "angles": [
@@ -125,7 +162,10 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["黄金", "贵金属", "白银", "避险", "金价", "黄金ETF"],
+        "keywords": {
+            "黄金": 3, "白银": 3, "金价": 3, "贵金属": 2, "避险资产": 2,
+            "黄金ETF": 2, "央行购金": 2,
+        },
         "category": "贵金属",
         "insight_tpl": "黄金正在重新成为市场焦点。在全球不确定性上升、央行持续购金的背景下，金价突破后的走势值得关注。",
         "angles": [
@@ -137,7 +177,10 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["可转债", "债券", "债市", "信用债", "转债", "固收", "利率债"],
+        "keywords": {
+            "可转债": 3, "债券": 3, "债市": 3, "信用债": 2, "固收": 2,
+            "利率债": 2, "转债": 1,
+        },
         "category": "固收市场",
         "insight_tpl": "股市波动加大时，可转债和固收类资产成为资金避风港。\"下有保底、上不封顶\"的转债策略在当下环境受到更多关注。",
         "angles": [
@@ -149,7 +192,11 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["新能源", "锂电池", "锂矿", "光伏", "风电", "储能", "电动车", "宁德时代", "比亚迪", "碳酸锂"],
+        "keywords": {
+            "宁德时代": 3, "比亚迪": 3, "磷酸铁锂": 3, "碳酸锂": 3,
+            "光伏": 3, "风电": 3, "储能": 3, "电动车": 3,
+            "新能源": 2, "产能": 1, "满产": 1,
+        },
         "category": "新能源",
         "insight_tpl": "新能源板块陷入“基本面好但股价弱”的背离。产能过剩担忧和出口限制是悬在头上的两把剑，但行业增速并未放缓。",
         "angles": [
@@ -161,7 +208,10 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["外汇", "汇率", "人民币", "美元", "欧元", "日元", "英镑", "离岸"],
+        "keywords": {
+            "人民币": 3, "汇率": 3, "美元指数": 3, "离岸": 3,
+            "外汇": 2, "欧元": 2, "日元": 2, "英鎊": 2, "美元": 1,
+        },
         "category": "外汇市场",
         "insight_tpl": "汇率波动加大，人民币兑美元走势牵动全球市场神经。利差、贸易和资本流动三股力量正在角力。",
         "angles": [
@@ -173,7 +223,10 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["房地产", "楼市", "房价", "房贷", "开发商", "恒达", "万科", "碧桂园", "保利"],
+        "keywords": {
+            "恒大": 3, "万科": 3, "碧桂园": 3, "保利": 3,
+            "房地产": 3, "楼市": 2, "房价": 2, "房贷": 2, "开发商": 1,
+        },
         "category": "房地产",
         "insight_tpl": "房地产市场仍处于探底过程中。政策在\"托\"与\"不举\"之间走钢丝——既要防止暴跌，又不想回到老路。",
         "angles": [
@@ -185,7 +238,10 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["消费", "零售", "社零", "内需", "CPI", "通胀", "物价", "消费降级", "拼多多"],
+        "keywords": {
+            "拼多多": 3, "消费降级": 3, "CPI": 3, "通胀": 3, "社零": 2,
+            "消费": 2, "零售": 2, "内需": 2, "物价": 1,
+        },
         "category": "消费经济",
         "insight_tpl": "消费数据是经济冷暖的最直接温度计。消费降级还是升级？数据之间的分歧反映了不同人群的感受差异。",
         "angles": [
@@ -197,7 +253,10 @@ CATEGORY_RULES = [
         ],
     },
     {
-        "keywords": ["医药", "创新药", "CXO", "药明", "恒瑞", "医保", "集采", "生物医药", "疫苗"],
+        "keywords": {
+            "药明": 3, "恒瑞": 3, "CXO": 3, "创新药": 3, "医保": 2,
+            "集采": 2, "生物医药": 2, "疫苗": 2, "医药": 1,
+        },
         "category": "医药健康",
         "insight_tpl": "医药板块经历深度调整后出现分化。创新药和CXO的反弹能否持续，取决于政策面和海外订单的走向。",
         "angles": [
@@ -206,6 +265,49 @@ CATEGORY_RULES = [
             "全球视角：CXO的海外订单是否会因中美关系变化",
             "反常识观点：集采不全是利空，对以量换价的仿制药企可能是机会",
             "投资视角：创新药和CXO板块的估值修复空间有多大",
+        ],
+    },
+    {
+        "keywords": {
+            "反垂断": 3, "垂断": 3, "市场监管总局": 3, "处罚": 3, "罚款": 3,
+            "罚没": 3, "滥用市场": 3, "携程": 3, "平台经济": 3, "监管": 2,
+            "整改": 2, "约谈": 2,
+        },
+        "category": "企业监管",
+        "insight_tpl": "监管重拳落下，罚款金额和处罚力度比市场预期更猛。这不仅是针对单一企业的信号，更是整个行业合规成本上升的标志性事件。",
+        "angles": [
+            "企业视角：天价罚单对企业盈利和商业模式的实质性冲击有多大",
+            "行业视角：监管风暴会不会扩散到同行业其他企业",
+            "投资者视角：突发监管利空之下，短期情绪vs长期价值的博弈",
+            "反常识观点：监管处罚未必是灾难，有时反而倒逼行业走向健康竞争",
+            "政策视角：反垂断执法力度升级的背后，释放了什么样的政策信号",
+        ],
+    },
+    {
+        "keywords": {
+            "身家缩水": 3, "万亿富翁": 3, "市值蒸发": 2,
+        },
+        "category": "资本市场人物",
+        "insight_tpl": "顶流富豪或明星投资人的一举一动都牵动市场神经。财富数字变化的背后，是产业周期、企业战略与市场情绪的多重叠加。",
+        "angles": [
+            "产业视角：个人财富暴增/暴跌背后的企业和行业发生了什么",
+            "市场心理：名人效应如何放大市场波动，“明星CEO溢价”值多少钱",
+            "反常识观点：身家数字只是账面游戏，和公司实际价值不一定同步",
+            "对比视角：同一赛道、不同玩家的财富分化说明了什么",
+            "长远视角：回顾历史上富豪财富剧烈波动后，他们和公司是否都恢复",
+        ],
+    },
+    # GENERIC FALLBACK — must be last. Dynamically generates insight from title keywords.
+    {
+        "keywords": {},
+        "category": "财经热点",
+        "insight_tpl": "__DYNAMIC__",
+        "angles": [
+            "数据派视角：这个事件背后的核心数据是什么，趋势如何",
+            "产业视角：对相关行业和产业链的传导效应",
+            "投资者视角：市场会如何反应，短期情绪和长期价值的博弈",
+            "反常识观点：为什么大众可能的第一反应是错的",
+            "政策视角：政策层面可能如何应对，有没有工具箱",
         ],
     },
 ]
@@ -245,26 +347,46 @@ def clean_slash(text):
     return text.replace("/", "、")
 
 
+def generate_dynamic_insight(title):
+    """Generate a dynamic insight from title keywords when no category matches."""
+    words = [
+        "监管", "处罚", "政策", "业绩", "财报", "科技", "AI", "能源",
+        "消费", "市场", "投资", "全球", "趋势", "风险", "机会",
+        "暴涨", "暴跌", "突破", "跌破", "反弹", "回落"
+    ]
+    matched = [w for w in words if w in title]
+    if matched:
+        return f"「{title[:20]}」成为市场关注焦点，背后的{'和'.join(matched[:3])}信号值得深入解读。事件的连锁反应和后续走向将决定市场短期情绪。"
+    return f"「{title[:25]}」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。"
+
+
 def match_category(title):
-    """Match a title to the best-fit category based on keyword coverage."""
+    """Match a title to the best-fit category using WEIGHTED keyword scoring.
+    Entity-specific keywords (weight=3) have priority over generic terms (weight=1).
+    """
     best = None
     best_score = 0
     for rule in CATEGORY_RULES:
-        score = sum(1 for kw in rule["keywords"] if kw in title)
+        score = 0
+        kw_dict = rule.get("keywords", {})
+        if not kw_dict:
+            continue  # skip dynamic fallback
+        for kw, weight in kw_dict.items():
+            if kw in title:
+                score += weight
         if score > best_score:
             best_score = score
             best = rule
+    
     if best is None or best_score == 0:
-        best = CATEGORY_RULES[2]  # default to 市场走势
+        # Use dynamic fallback (last rule)
+        best = CATEGORY_RULES[-1]
+    
     return best
 
 
 def generate_summary(clusters):
     """Generate the 6-dimension summary dynamically."""
-    platform_count = len(set(
-        p for c in clusters[:10] for p in c.get("platforms", [])
-    )) if clusters else 0
-
     # Gather all titles and count keyword frequencies
     all_titles = []
     for c in clusters[:10]:
@@ -272,26 +394,29 @@ def generate_summary(clusters):
     all_text = " ".join(all_titles)
 
     # Market sentiment
-    negative_kw = ["大跌", "暴跌", "跌破", "暴雷", "抛售", "恐慌", "危机", "冲突", "空袭", "战争", "亏损", "暴跌"]
+    negative_kw = ["大跌", "暴跌", "跌破", "暴雷", "抛售", "恐慌", "危机", "冲突", "空袭", "战争", "亏损"]
     positive_kw = ["大涨", "暴涨", "反弹", "创新高", "利好", "增持", "回暖", "突破"]
     neg_count = sum(1 for kw in negative_kw if kw in all_text)
     pos_count = sum(1 for kw in positive_kw if kw in all_text)
     
     if neg_count > pos_count * 2:
-        sentiment = "😱 极度恐慌｜负面事件密集，市场避险情绪浓重"
+        sentiment = "\U0001f631 极度恐慌｜负面事件密集，市场避险情绪浓重"
     elif neg_count > pos_count:
-        sentiment = "😰 恐慌｜负面消息主导，市场承压"
+        sentiment = "\U0001f630 恐慌｜负面消息主导，市场承压"
     elif pos_count > neg_count:
-        sentiment = "😊 中性偏暖｜利好消息对冲中"
+        sentiment = "\U0001f60a 中性偏暖｜利好消息对冲中"
     else:
-        sentiment = "😐 中性｜多空交织，市场处于观察窗口"
+        sentiment = "\U0001f610 中性｜多空交织，市场处于观察窗口"
 
     # Core narrative
     narratives = []
     for c in clusters[:10]:
         cat = match_category(c["representative_title"])
-        if cat["category"] not in [n.split("｜")[0] if "｜" in n else n for n in narratives] and len(narratives) < 4:
-            narratives.append(f"{cat['category']}｜{c['representative_title'][:20]}")
+        cat_name = cat["category"]
+        rep_title = c["representative_title"][:20]
+        key = f"{cat_name}｜{rep_title}"
+        if key not in [n.split("｜")[0] + "｜" + n.split("｜")[1] if "｜" in n else n for n in narratives] and len(narratives) < 4:
+            narratives.append(key)
     core_narrative = "；".join(narratives[:3]) if narratives else "全球财经市场动态"
 
     # Top cover topic
@@ -308,10 +433,10 @@ def generate_summary(clusters):
     for c in clusters[:10]:
         for kw in hot_kw_list:
             if kw in c["representative_title"] and len(new_hot) < 3:
-                new_hot.append(f"🔥{clean_slash(c['representative_title'][:25])}")
+                new_hot.append(f"\U0001f525{clean_slash(c['representative_title'][:25])}")
                 break
     if not new_hot:
-        new_hot = [f"🔥{clean_slash(clusters[i]['representative_title'][:25])}" for i in range(min(3, len(clusters)))]
+        new_hot = [f"\U0001f525{clean_slash(clusters[i]['representative_title'][:25])}" for i in range(min(3, len(clusters)))]
     new_hot_str = "｜".join(new_hot) if new_hot else "—"
 
     # Market anomaly
@@ -353,7 +478,7 @@ def generate_prompt(topic_name, angle, insight, sources):
 
 
 def build_html(clusters, summary, date, period):
-    rank_icons = ["🥇", "🥈", "🥉", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"]
+    rank_icons = ["\U0001f947", "\U0001f948", "\U0001f949", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "\U0001f51f"]
 
     html_parts = []
     html_parts.append(f"""<!DOCTYPE html>
@@ -655,11 +780,11 @@ def build_html(clusters, summary, date, period):
 </head>
 <body>
 
-<h1>🔥 今日财经热搜 TOP 10</h1>
+<h1>\U0001f525 今日财经热搜 TOP 10</h1>
 <div class="date">{date} {period} · GitHub Actions 云端自动生成 · 全平台跨覆盖合并排名</div>
 
 <div class="summary-card">
-  <h2>🎯 报告摘要</h2>
+  <h2>\U0001f3af 报告摘要</h2>
   <table class="summary-table">
 """)
 
@@ -683,11 +808,13 @@ def build_html(clusters, summary, date, period):
             seen_platforms.add(pname)
             title = clean_slash(s["title"])
             url = s["url"]
-            platform_rows += f'<tr><td>{pname}</td><td><a href="{url}" target="_blank">{title}</a></td></tr>\n'
+            platform_rows += f'<tr><td>{pname}</td><td><a href="{url}" target="_blank" rel="noopener">{title}</a></td></tr>\n'
 
         # Match category
         cat = match_category(topic_name)
         insight = cat["insight_tpl"]
+        if insight == "__DYNAMIC__":
+            insight = generate_dynamic_insight(topic_name)
         angles = cat["angles"]
 
         angle_items = []
@@ -700,7 +827,7 @@ def build_html(clusters, summary, date, period):
                 f'<div class="angle-item">\n'
                 f'  <span class="num">{j+1}</span>\n'
                 f'  <span class="angle-text">{clean_slash(angle)}</span>\n'
-                f'  <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="{prompt_attr}">📝 生成提示词</button>\n'
+                f'  <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="{prompt_attr}">\U0001f4dd 生成提示词</button>\n'
                 f'</div>'
             )
 
@@ -719,11 +846,11 @@ def build_html(clusters, summary, date, period):
     <tbody>{platform_rows}</tbody>
   </table>
   <div class="insight">
-    <div class="insight-label">💡 看点</div>
+    <div class="insight-label">\U0001f4a1 看点</div>
     <div class="insight-text">{insight}</div>
   </div>
   <div class="angle">
-    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-label">\U0001f50d 解读角度</div>
     {''.join(angle_items)}
   </div>
 </div>
@@ -737,7 +864,7 @@ def build_html(clusters, summary, date, period):
 
     html_parts.append(f"""
 <div class="conclusion">
-  <h2>📝 今日总结</h2>
+  <h2>\U0001f4dd 今日总结</h2>
   <p>{date} {period}，全球财经市场热点覆盖以下主线：</p>
   <ul>
 {narratives_text}  </ul>
@@ -745,7 +872,7 @@ def build_html(clusters, summary, date, period):
 
 <div class="modal-overlay" id="promptModal">
   <div class="modal-content">
-    <h3>📝 生成提示词</h3>
+    <h3>\U0001f4dd 生成提示词</h3>
     <p style="color:#8b949e;font-size:0.85em;margin-bottom:8px;">以下提示词已包含话题、角度、看点与参考新闻源，可直接复制到任意AI生成口播文案</p>
     <pre id="promptText"></pre>
     <div class="copy-hint" id="copyHint">✅ 已自动复制到剪贴板</div>
@@ -775,7 +902,7 @@ document.getElementById('promptModal').addEventListener('click', function(e) {{
 </script>
 
 <div class="generated-note">
-  🤖 本报告由 GitHub Actions 云端定时自动生成 · 数据来源：tophub.today · {date} {period}
+  \U0001f916 本报告由 GitHub Actions 云端定时自动生成 · 数据来源：tophub.today · {date} {period}
 </div>
 
 </body>
