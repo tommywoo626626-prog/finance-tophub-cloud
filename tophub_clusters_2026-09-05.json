@@ -1,0 +1,488 @@
+{
+  "date": "2026-09-05",
+  "period": "下午",
+  "platforms": [
+    "新浪财经",
+    "格隆汇",
+    "第一财经",
+    "集思录",
+    "雪球",
+    "股吧",
+    "21财经",
+    "华尔街见闻"
+  ],
+  "total_topics": 186,
+  "clusters": [
+    {
+      "cluster_id": 118,
+      "representative_title": "非农大爆表！美国8月新增就业16.2万人，预期仅5.5万人，失业率维持在4.1%不变",
+      "cover_count": 7,
+      "platforms": [
+        "21财经",
+        "华尔街见闻",
+        "新浪财经",
+        "格隆汇",
+        "第一财经",
+        "股吧",
+        "雪球"
+      ],
+      "score": 695.0,
+      "total_mentions": 23,
+      "avg_rank": 5.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "美国8月非农就业数据强劲 花旗大幅推迟美联储降息预期",
+          "url": "https://m.21jingji.com/article/20260905/herald/f1ab545966a5d6530eae98b901128f79.html",
+          "rank": 8,
+          "heat": "视频"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "非农大爆表！美国8月新增就业16.2万人，预期仅5.5万人，失业率维持在4.1%不变",
+          "url": "https://wallstreetcn.com/articles/3781105",
+          "rank": 1,
+          "heat": "22.7万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "特朗普突然向沃什发难 威胁美联储不降息就切断和对美顺差国的贸易",
+          "url": "https://finance.sina.com.cn/world/2026-09-05/doc-iniqsvkh3988311.shtml",
+          "rank": 1,
+          "heat": "3,231"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "特朗普：非农打破所有预期，降息吧，否则我将停止与我们有贸易逆差的国家进行交易",
+          "url": "https://www.gelonghui.com/p/6521477",
+          "rank": 2,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "紧急约谈！美国迎来史上最高8月油价，特朗普将会见油企高管",
+          "url": "https://www.yicai.com/news/103341783.html",
+          "rank": 3,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "美联储不加息了！特朗普说给我聪明点……特朗普威胁韩国……群联CEO谈存储短缺：NAND 新增产能最快需 4 年，供应紧张或持续1",
+          "url": "http://caifuhao.eastmoney.com/news/20260905093228656947940",
+          "rank": 9,
+          "heat": "284"
+        },
+        {
+          "platform": "雪球",
+          "title": "美国非农就业数据是怎么出炉的",
+          "url": "http://xueqiu.com/7448161277/408001162",
+          "rank": 11,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "紧急约谈！美国迎来史上最高8月油价，特朗普将会见油企高管",
+        "美国非农就业数据是怎么出炉的",
+        "非农大爆表！美国8月新增就业16.2万人，预期仅5.5万人，失业率维持在4.1%不变",
+        "非农爆表提振加息预期，美股指下挫，存储与光通信逆势走强，黄金跌近1%",
+        "特朗普施压沃什降息：高利率令美国陷入“不公平劣势”，否则停止与逆差国贸易",
+        "“新美联储通讯社”：8月就业数据扫清加息障碍，9月议息静待通胀“定调”",
+        "美国8月非农表面强劲，实际有多少“水分”？",
+        "美国非农意外强劲，9月加息概率升至约60%，市场紧盯下周CPI",
+        "特朗普：将向俄罗斯提交结束俄乌冲突的方案；泽连斯基：美总统特使访问期间，不对俄发动空中打击",
+        "特朗普突然向沃什发难 威胁美联储不降息就切断和对美顺差国的贸易",
+        "9月5日美股收盘：三大指数全线收跌，就业数据公布后美债收益率上行",
+        "特朗普：市场本该像火箭一样上涨 美国的利率应该全球最低",
+        "美联储官员哈马克：现在是时候采取行动降低通胀了",
+        "美国8月非农就业数据强劲 花旗大幅推迟美联储降息预期",
+        "美国8月非农表面强劲，实际有多少“水分”？",
+        "特朗普：将向俄罗斯提交结束俄乌冲突的方案；泽连斯基：美总统特使访问期间，不对俄发动空中打击",
+        "特朗普：非农打破所有预期，降息吧，否则我将停止与我们有贸易逆差的国家进行交易",
+        "大超预期！美国8月非农就业人数增加16.2万人",
+        "早报 (09.05）| 非农“爆”了！特朗普喊话降息；美威胁打击伊朗“镐山”核设施；七部门最新部署，绿色算力迎利好",
+        "16.2万！美国8月非农“爆表”，加息预期升温",
+        "美联储不加息了！特朗普说给我聪明点……特朗普威胁韩国……群联CEO谈存储短缺：NAND 新增产能最快需 4 年，供应紧张或持续1",
+        "非农爆表16.2万！加息概率重回58%，芯片30股全涨|QDII基金最新申购限额",
+        "美国八月非农意外强劲，创业板科创板逼近颈线"
+      ]
+    },
+    {
+      "cluster_id": 114,
+      "representative_title": "长江存储科创板IPO进入问询阶段，成功上市到底值多少钱？",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇",
+        "股吧"
+      ],
+      "score": 293.0,
+      "total_mentions": 4,
+      "avg_rank": 7.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "谁将赢得“史上最大IPO”投行竞赛？Anthropic接近选择大摩和高盛",
+          "url": "https://wallstreetcn.com/articles/3781147",
+          "rank": 6,
+          "heat": ""
+        },
+        {
+          "platform": "格隆汇",
+          "title": "Anthropic拟10月启动IPO推介，11月中期选举前上市",
+          "url": "https://www.gelonghui.com/p/6522544",
+          "rank": 10,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "长江存储科创板IPO进入问询阶段，成功上市到底值多少钱？",
+          "url": "http://caifuhao.eastmoney.com/news/20260905092224311094060",
+          "rank": 5,
+          "heat": "4812"
+        }
+      ],
+      "all_titles": [
+        "谁将赢得“史上最大IPO”投行竞赛？Anthropic接近选择大摩和高盛",
+        "报道：Anthropic将推迟至10月中旬上市，“史上最大IPO”还得再等等",
+        "Anthropic拟10月启动IPO推介，11月中期选举前上市",
+        "长江存储科创板IPO进入问询阶段，成功上市到底值多少钱？"
+      ]
+    },
+    {
+      "cluster_id": 100,
+      "representative_title": "今天，进入AGI时代",
+      "cover_count": 2,
+      "platforms": [
+        "新浪财经",
+        "格隆汇"
+      ],
+      "score": 197.0,
+      "total_mentions": 2,
+      "avg_rank": 3.0,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "AGI，真的来了？",
+          "url": "https://finance.sina.com.cn/jjxw/2026-09-05/doc-iniqtspw3799299.shtml",
+          "rank": 5,
+          "heat": "1,274"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "今天，进入AGI时代",
+          "url": "https://www.gelonghui.com/p/6521429",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "AGI，真的来了？",
+        "今天，进入AGI时代"
+      ]
+    },
+    {
+      "cluster_id": 103,
+      "representative_title": "花旗：做多黄金！",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 192.5,
+      "total_mentions": 2,
+      "avg_rank": 7.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "花旗：霍尔木兹海峡预计Q4重开，上调黄金短期目标价至4800美元",
+          "url": "https://wallstreetcn.com/articles/3781142",
+          "rank": 11,
+          "heat": ""
+        },
+        {
+          "platform": "格隆汇",
+          "title": "花旗：做多黄金！",
+          "url": "https://www.gelonghui.com/p/6521438",
+          "rank": 4,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "花旗：霍尔木兹海峡预计Q4重开，上调黄金短期目标价至4800美元",
+        "花旗：做多黄金！"
+      ]
+    },
+    {
+      "cluster_id": 120,
+      "representative_title": "谁才是真正的周期之王？",
+      "cover_count": 2,
+      "platforms": [
+        "股吧",
+        "雪球"
+      ],
+      "score": 192.0,
+      "total_mentions": 2,
+      "avg_rank": 8.0,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "102只十年300%+权益基金：分清前任功绩，谁才是真正任职满十年的长跑者",
+          "url": "http://caifuhao.eastmoney.com/news/20260904222952063239120",
+          "rank": 11,
+          "heat": "286"
+        },
+        {
+          "platform": "雪球",
+          "title": "谁才是真正的周期之王？",
+          "url": "http://xueqiu.com/6858312012/407947353",
+          "rank": 5,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "谁才是真正的周期之王？",
+        "102只十年300%+权益基金：分清前任功绩，谁才是真正任职满十年的长跑者"
+      ]
+    },
+    {
+      "cluster_id": 174,
+      "representative_title": "宇树科技股价坐上“过山车”，人形机器人泡沫破了？",
+      "cover_count": 2,
+      "platforms": [
+        "第一财经",
+        "股吧"
+      ],
+      "score": 187.5,
+      "total_mentions": 3,
+      "avg_rank": 12.5,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "宇树科技股价坐上“过山车”，人形机器人泡沫破了？",
+          "url": "https://www.yicai.com/news/103343943.html",
+          "rank": 9,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "宇树市值腰斩背后：机器人产业的泡沫与瓶颈",
+          "url": "http://caifuhao.eastmoney.com/news/20260905071902255745760",
+          "rank": 16,
+          "heat": "299"
+        }
+      ],
+      "all_titles": [
+        "宇树科技股价坐上“过山车”，人形机器人泡沫破了？",
+        "宇树市值腰斩背后：机器人产业的泡沫与瓶颈",
+        "直播丨三星、海力士业绩新高股价却腰斩?带你看懂韩国股市崩盘背后的真相"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "目标60万亿元，商品消费扩容升级方案落地",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "目标60万亿元，商品消费扩容升级方案落地",
+          "url": "https://www.yicai.com/news/103342141.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "目标60万亿元，商品消费扩容升级方案落地"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "representative_title": "论消费股新周期启动",
+      "cover_count": 1,
+      "platforms": [
+        "雪球"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "雪球",
+          "title": "论消费股新周期启动",
+          "url": "http://xueqiu.com/1899393123/408162491",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "论消费股新周期启动"
+      ]
+    },
+    {
+      "cluster_id": 50,
+      "representative_title": "IFA2026：中国厂商占比近半",
+      "cover_count": 1,
+      "platforms": [
+        "21财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "IFA2026：中国厂商占比近半",
+          "url": "https://m.21jingji.com/article/20260905/herald/3a6a57f3a43e72b415f536c52c56898e.html",
+          "rank": 1,
+          "heat": "公司"
+        }
+      ],
+      "all_titles": [
+        "IFA2026：中国厂商占比近半"
+      ]
+    },
+    {
+      "cluster_id": 70,
+      "representative_title": "“个性化癌症疫苗”突破！“肿瘤测序”站上风口",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "“个性化癌症疫苗”突破！“肿瘤测序”站上风口",
+          "url": "https://wallstreetcn.com/articles/3781154",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "“个性化癌症疫苗”突破！“肿瘤测序”站上风口"
+      ]
+    },
+    {
+      "cluster_id": 90,
+      "representative_title": "从概念到量产，更换路线的豆包手机会泯然众人吗？",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "从概念到量产，更换路线的豆包手机会泯然众人吗？",
+          "url": "https://cbndata.com/information/295743",
+          "rank": 1,
+          "heat": "字母榜"
+        }
+      ],
+      "all_titles": [
+        "从概念到量产，更换路线的豆包手机会泯然众人吗？"
+      ]
+    },
+    {
+      "cluster_id": 110,
+      "representative_title": "数据暴雷 科技大涨 13万人无眠",
+      "cover_count": 1,
+      "platforms": [
+        "股吧"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "数据暴雷 科技大涨 13万人无眠",
+          "url": "http://caifuhao.eastmoney.com/news/20260905075917393198730",
+          "rank": 1,
+          "heat": "4.4万"
+        }
+      ],
+      "all_titles": [
+        "数据暴雷 科技大涨 13万人无眠"
+      ]
+    },
+    {
+      "cluster_id": 160,
+      "representative_title": "关于房价走势的三个判断",
+      "cover_count": 1,
+      "platforms": [
+        "集思录"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "集思录",
+          "title": "关于房价走势的三个判断",
+          "url": "https://www.jisilu.cn/question/525032",
+          "rank": 1,
+          "heat": "1763"
+        }
+      ],
+      "all_titles": [
+        "关于房价走势的三个判断"
+      ]
+    },
+    {
+      "cluster_id": 166,
+      "representative_title": "直播丨2026世界动力电池大会高端对话",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "直播丨2026世界动力电池大会高端对话",
+          "url": "https://www.yicai.com/live/103338042.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "直播丨2026世界动力电池大会高端对话"
+      ]
+    },
+    {
+      "cluster_id": 176,
+      "representative_title": "2026打工人夏日崩溃瞬间报告",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "2026打工人夏日崩溃瞬间报告",
+          "url": "https://cbndata.com/report/3364/detail",
+          "rank": 1,
+          "heat": "大健康"
+        }
+      ],
+      "all_titles": [
+        "2026打工人夏日崩溃瞬间报告"
+      ]
+    }
+  ]
+}
