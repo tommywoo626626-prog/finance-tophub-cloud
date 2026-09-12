@@ -1,0 +1,498 @@
+{
+  "date": "2026-09-12",
+  "period": "下午",
+  "platforms": [
+    "格隆汇",
+    "21财经",
+    "集思录",
+    "第一财经",
+    "股吧",
+    "新浪财经",
+    "雪球",
+    "华尔街见闻"
+  ],
+  "total_topics": 193,
+  "clusters": [
+    {
+      "cluster_id": 105,
+      "representative_title": "美国8月核心CPI同比2.4%创五年半来最低水平，环比0.3%超预期、为4个月来最大涨幅",
+      "cover_count": 5,
+      "platforms": [
+        "21财经",
+        "华尔街见闻",
+        "新浪财经",
+        "格隆汇",
+        "股吧"
+      ],
+      "score": 497.2,
+      "total_mentions": 15,
+      "avg_rank": 2.8,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "美联储加息预期急剧升温",
+          "url": "https://m.21jingji.com/article/20260912/herald/af8b40147bb985512cc6c86fad95e765.html",
+          "rank": 2,
+          "heat": "全球"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "美国8月核心CPI同比2.4%创五年半来最低水平，环比0.3%超预期、为4个月来最大涨幅",
+          "url": "https://wallstreetcn.com/articles/3781591",
+          "rank": 1,
+          "heat": "23.0万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "美联储，可能不只加息一次",
+          "url": "https://finance.sina.com.cn/roll/2026-09-12/doc-inirpqmf1623786.shtml",
+          "rank": 1,
+          "heat": "5,222"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "早报（09.12）| 局势升级！沙特输油管遭袭关闭；英伟达或100亿美元投资Anthropic IPO；美国CPI加速上涨，道指狂飙逾500点",
+          "url": "https://www.gelonghui.com/p/6621777",
+          "rank": 2,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "美联储要加息？……特朗普：Y的，那就一起疯吧，我每人派发5000美元………不多，就发1.5万亿美债…………",
+          "url": "http://caifuhao.eastmoney.com/news/20260912091915763657300",
+          "rank": 8,
+          "heat": "4.2万"
+        }
+      ],
+      "all_titles": [
+        "美国8月核心CPI同比2.4%创五年半来最低水平，环比0.3%超预期、为4个月来最大涨幅",
+        "“新美联储通讯社”：美联储下周势将加息，一旦开启“很少只加一次”",
+        "高盛也“改口”了：下周美联储会加息！",
+        "沙特重要输油管遭袭关闭，曼德海峡航运骤降，胡塞武装称9天攻占5400平方公里",
+        "美联储一旦开启加息周期，“连加3次”是合理预期？",
+        "美联储，可能不只加息一次",
+        "9月12日美股收盘：三大指数集体上涨，油价回落，美联储下周加息押注升至87%",
+        "高盛调整预期：美联储9月加息，此前预计维持利率不变",
+        "美联储加息预期急剧升温",
+        "美联储一旦开启加息周期，“连加3次”是合理预期？",
+        "早报（09.12）| 局势升级！沙特输油管遭袭关闭；英伟达或100亿美元投资Anthropic IPO；美国CPI加速上涨，道指狂飙逾500点",
+        "16家机构押注9月加息，高盛也改口了！",
+        "美国8月CPI符合预期，能源却拉响警报！9月加息稳了？",
+        "美联储要加息？……特朗普：Y的，那就一起疯吧，我每人派发5000美元………不多，就发1.5万亿美债…………",
+        "加息概率提升！美三大指数却集体上涨，下周A股会跟吗？"
+      ]
+    },
+    {
+      "cluster_id": 110,
+      "representative_title": "靴子落地 美股上涨 晚间重大消息",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "股吧"
+      ],
+      "score": 194.5,
+      "total_mentions": 2,
+      "avg_rank": 5.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "FCC靴子落地，国产光模块可以松一口气了？",
+          "url": "https://wallstreetcn.com/articles/3781590",
+          "rank": 10,
+          "heat": "4.4万"
+        },
+        {
+          "platform": "股吧",
+          "title": "靴子落地 美股上涨 晚间重大消息",
+          "url": "http://caifuhao.eastmoney.com/news/20260912072839848062800",
+          "rank": 1,
+          "heat": "4.6万"
+        }
+      ],
+      "all_titles": [
+        "FCC靴子落地，国产光模块可以松一口气了？",
+        "靴子落地 美股上涨 晚间重大消息"
+      ]
+    },
+    {
+      "cluster_id": 109,
+      "representative_title": "证监会出手！期货监管升级",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "格隆汇"
+      ],
+      "score": 194.5,
+      "total_mentions": 2,
+      "avg_rank": 5.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "证监会出手！期货监管升级",
+          "url": "https://m.21jingji.com/article/20260912/herald/060685656cb5216072bbb019a7729dbf.html",
+          "rank": 1,
+          "heat": "证券"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "证监会出手！百万粉丝财经博主造谣被罚20万",
+          "url": "https://www.gelonghui.com/p/6621740",
+          "rank": 10,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "证监会出手！期货监管升级",
+        "证监会出手！百万粉丝财经博主造谣被罚20万"
+      ]
+    },
+    {
+      "cluster_id": 82,
+      "representative_title": "一支拖鞋军，正在改写中东格局",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 192.5,
+      "total_mentions": 2,
+      "avg_rank": 7.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "一支拖鞋军，正在改写中东格局",
+          "url": "https://wallstreetcn.com/articles/3781622",
+          "rank": 13,
+          "heat": "牛弹琴"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "一支拖鞋军，正在改写中东格局",
+          "url": "https://finance.sina.com.cn/wm/2026-09-12/doc-inirpkck8647965.shtml",
+          "rank": 2,
+          "heat": "2,634"
+        }
+      ],
+      "all_titles": [
+        "一支拖鞋军，正在改写中东格局",
+        "一支拖鞋军，正在改写中东格局"
+      ]
+    },
+    {
+      "cluster_id": 104,
+      "representative_title": "油价暗盘暴跌！特朗普TACO时刻要来了",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 189.0,
+      "total_mentions": 2,
+      "avg_rank": 11.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "油价是特朗普的“大麻烦”，而日元是所有人的",
+          "url": "https://wallstreetcn.com/articles/3781620",
+          "rank": 17,
+          "heat": ""
+        },
+        {
+          "platform": "格隆汇",
+          "title": "油价暗盘暴跌！特朗普TACO时刻要来了",
+          "url": "https://www.gelonghui.com/p/6623117",
+          "rank": 5,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "油价是特朗普的“大麻烦”，而日元是所有人的",
+        "油价暗盘暴跌！特朗普TACO时刻要来了"
+      ]
+    },
+    {
+      "cluster_id": 65,
+      "representative_title": "中国资产确定性夯实A股市场稳定性",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "新浪财经"
+      ],
+      "score": 188.0,
+      "total_mentions": 2,
+      "avg_rank": 12.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "中国资产确定性夯实A股市场稳定性",
+          "url": "https://m.21jingji.com/article/20260912/herald/af349f5abad72d8fa8d4fc4db6298da8.html",
+          "rank": 16,
+          "heat": "投资"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "中国资产确定性夯实A股市场稳定性",
+          "url": "https://finance.sina.com.cn/stock/marketresearch/2026-09-12/doc-inirpkcn5383682.shtml",
+          "rank": 8,
+          "heat": "1,420"
+        }
+      ],
+      "all_titles": [
+        "中国资产确定性夯实A股市场稳定性",
+        "中国资产确定性夯实A股市场稳定性"
+      ]
+    },
+    {
+      "cluster_id": 74,
+      "representative_title": "高盛TMT大会第三天：黄仁勋回击“循环融资”质疑——“投1块拿回100块？那就多来点”",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "雪球"
+      ],
+      "score": 187.5,
+      "total_mentions": 2,
+      "avg_rank": 12.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "高盛TMT大会第三天：黄仁勋回击“循环融资”质疑——“投1块拿回100块？那就多来点”",
+          "url": "https://wallstreetcn.com/articles/3781630",
+          "rank": 5,
+          "heat": ""
+        },
+        {
+          "platform": "雪球",
+          "title": "对Citi全球TMT大会的总结与思考",
+          "url": "http://xueqiu.com/5332385101/408711920",
+          "rank": 20,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "对Citi全球TMT大会的总结与思考",
+        "高盛TMT大会第三天：黄仁勋回击“循环融资”质疑——“投1块拿回100块？那就多来点”"
+      ]
+    },
+    {
+      "cluster_id": 66,
+      "representative_title": "月之暗面Kimi紧急声明：网传关于创始人及员工的信息纯属虚构，系恶意造谣，已报案",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "新浪财经"
+      ],
+      "score": 187.0,
+      "total_mentions": 2,
+      "avg_rank": 13.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "月之暗面：网传关于创始人及员工的信息纯属虚构，系恶意造谣",
+          "url": "https://m.21jingji.com/article/20260912/herald/8528efeca5614a65da82e3906863af14.html",
+          "rank": 17,
+          "heat": "投资"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "月之暗面Kimi紧急声明：网传关于创始人及员工的信息纯属虚构，系恶意造谣，已报案",
+          "url": "https://finance.sina.com.cn/roll/2026-09-12/doc-inirputh5290136.shtml",
+          "rank": 9,
+          "heat": "1,297"
+        }
+      ],
+      "all_titles": [
+        "月之暗面Kimi紧急声明：网传关于创始人及员工的信息纯属虚构，系恶意造谣，已报案",
+        "月之暗面：网传关于创始人及员工的信息纯属虚构，系恶意造谣"
+      ]
+    },
+    {
+      "cluster_id": 181,
+      "representative_title": "价值与投资 | 破茧：化工新材料的质变时刻",
+      "cover_count": 2,
+      "platforms": [
+        "第一财经",
+        "股吧"
+      ],
+      "score": 181.5,
+      "total_mentions": 2,
+      "avg_rank": 18.5,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "价值与投资 | 破茧：化工新材料的质变时刻",
+          "url": "https://www.yicai.com/live/103345255.html",
+          "rank": 9,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "涨价函比道歉函硬：康宁一纸通知，照出中国玻璃新材料的“软腹部”",
+          "url": "http://caifuhao.eastmoney.com/news/20260911220045248384660",
+          "rank": 28,
+          "heat": "1439"
+        }
+      ],
+      "all_titles": [
+        "涨价函比道歉函硬：康宁一纸通知，照出中国玻璃新材料的“软腹部”",
+        "价值与投资 | 破茧：化工新材料的质变时刻"
+      ]
+    },
+    {
+      "cluster_id": 142,
+      "representative_title": "太合音乐赴港IPO收证监会备案反馈意见",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "股吧"
+      ],
+      "score": 173.5,
+      "total_mentions": 2,
+      "avg_rank": 26.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "太合音乐赴港IPO收证监会备案反馈意见",
+          "url": "https://m.21jingji.com/article/20260912/herald/0c3e856b16b3019002f4b55fb331043a.html",
+          "rank": 20,
+          "heat": "证券"
+        },
+        {
+          "platform": "股吧",
+          "title": "上市前一票难求上市后挨“飞刀” 香港证监会对操纵IPO行为动手了",
+          "url": "http://caifuhao.eastmoney.com/news/20260911200210857196100",
+          "rank": 33,
+          "heat": "237"
+        }
+      ],
+      "all_titles": [
+        "太合音乐赴港IPO收证监会备案反馈意见",
+        "上市前一票难求上市后挨“飞刀” 香港证监会对操纵IPO行为动手了"
+      ]
+    },
+    {
+      "cluster_id": 158,
+      "representative_title": "中东投资公司对瑞幸咖啡投资10亿美元，看好中国咖啡市场前景",
+      "cover_count": 2,
+      "platforms": [
+        "第一财经",
+        "股吧"
+      ],
+      "score": 172.5,
+      "total_mentions": 2,
+      "avg_rank": 27.5,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "中东投资公司对瑞幸咖啡投资10亿美元，看好中国咖啡市场前景",
+          "url": "https://www.yicai.com/news/103358778.html",
+          "rank": 6,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "花13.5亿美元，ADI要收购一家边缘AI芯片公司",
+          "url": "http://caifuhao.eastmoney.com/news/20260911195005369034520",
+          "rank": 49,
+          "heat": "171"
+        }
+      ],
+      "all_titles": [
+        "中东投资公司对瑞幸咖啡投资10亿美元，看好中国咖啡市场前景",
+        "花13.5亿美元，ADI要收购一家边缘AI芯片公司"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "顶配2.65万！苹果史上最贵iPhone诞生，iPhone 18 Pro同步全面涨价",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "顶配2.65万！苹果史上最贵iPhone诞生，iPhone 18 Pro同步全面涨价",
+          "url": "https://www.yicai.com/news/103358562.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "顶配2.65万！苹果史上最贵iPhone诞生，iPhone 18 Pro同步全面涨价"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "representative_title": "一个散户的二十一年：我的价值投资复盘与反思",
+      "cover_count": 1,
+      "platforms": [
+        "雪球"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "雪球",
+          "title": "一个散户的二十一年：我的价值投资复盘与反思",
+          "url": "http://xueqiu.com/7271353740/408936110",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "一个散户的二十一年：我的价值投资复盘与反思"
+      ]
+    },
+    {
+      "cluster_id": 70,
+      "representative_title": "高盛最新判断：利率上升≠美股下跌，盈利增长才是牛市关键",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "高盛最新判断：利率上升≠美股下跌，盈利增长才是牛市关键",
+          "url": "https://wallstreetcn.com/articles/3781632",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "高盛最新判断：利率上升≠美股下跌，盈利增长才是牛市关键"
+      ]
+    },
+    {
+      "cluster_id": 90,
+      "representative_title": "《2026年半年度消费新潜力白皮书》来了，5大赛道帮你洞察未来消费趋势",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "《2026年半年度消费新潜力白皮书》来了，5大赛道帮你洞察未来消费趋势",
+          "url": "https://cbndata.com/information/295770",
+          "rank": 1,
+          "heat": "魔镜洞察"
+        }
+      ],
+      "all_titles": [
+        "《2026年半年度消费新潜力白皮书》来了，5大赛道帮你洞察未来消费趋势"
+      ]
+    }
+  ]
+}
