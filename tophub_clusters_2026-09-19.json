@@ -1,0 +1,498 @@
+{
+  "date": "2026-09-19",
+  "period": "下午",
+  "platforms": [
+    "股吧",
+    "21财经",
+    "集思录",
+    "第一财经",
+    "格隆汇",
+    "华尔街见闻",
+    "新浪财经",
+    "雪球"
+  ],
+  "total_topics": 187,
+  "clusters": [
+    {
+      "cluster_id": 168,
+      "representative_title": "美联储追认市场：一场\"被迫加息\"背后的定价权转移",
+      "cover_count": 4,
+      "platforms": [
+        "华尔街见闻",
+        "第一财经",
+        "股吧",
+        "雪球"
+      ],
+      "score": 392.75,
+      "total_mentions": 7,
+      "avg_rank": 7.2,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "美联储加息之际，美元创6月以来最强的一周",
+          "url": "https://wallstreetcn.com/articles/3782130",
+          "rank": 4,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "直播丨美联储加息预期再起 全球流动性风云再起！",
+          "url": "https://www.yicai.com/live/103366277.html",
+          "rank": 2,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "人民币现在真的是强的没边，最近因为美联储加息",
+          "url": "http://caifuhao.eastmoney.com/news/20260919121812407488600",
+          "rank": 21,
+          "heat": "472"
+        },
+        {
+          "platform": "雪球",
+          "title": "美联储追认市场：一场\"被迫加息\"背后的定价权转移",
+          "url": "http://xueqiu.com/7271353740/409774135",
+          "rank": 2,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "硬刚特朗普！美联储时隔三年再加息，“沃什时代”紧缩周期或刚开始",
+        "美联储追认市场：一场\"被迫加息\"背后的定价权转移",
+        "美联储加息之际，美元创6月以来最强的一周",
+        "沃什加息 市场信了吗！？",
+        "人民币现在真的是强的没边，最近因为美联储加息",
+        "美联储加息了，黄金该怎么走",
+        "直播丨美联储加息预期再起 全球流动性风云再起！"
+      ]
+    },
+    {
+      "cluster_id": 175,
+      "representative_title": "直播丨2026世界人工智能大会云逛展：寻找AI产业链方向与答案",
+      "cover_count": 4,
+      "platforms": [
+        "华尔街见闻",
+        "第一财经",
+        "股吧",
+        "雪球"
+      ],
+      "score": 381.25,
+      "total_mentions": 4,
+      "avg_rank": 18.8,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "AI数据中心公司Nscale公开递交美股IPO申请，英伟达持股超5%",
+          "url": "https://wallstreetcn.com/articles/3782115",
+          "rank": 19,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "直播丨2026世界人工智能大会云逛展：寻找AI产业链方向与答案",
+          "url": "https://www.yicai.com/live/103275883.html",
+          "rank": 9,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "美股半导体大涨，AI 产业链逻辑打通！聊聊A股机会",
+          "url": "http://caifuhao.eastmoney.com/news/20260919092654765026110",
+          "rank": 37,
+          "heat": "930"
+        },
+        {
+          "platform": "雪球",
+          "title": "对AI数据中心与电力逻辑的思考",
+          "url": "http://xueqiu.com/5332385101/409723812",
+          "rank": 10,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "对AI数据中心与电力逻辑的思考",
+        "AI数据中心公司Nscale公开递交美股IPO申请，英伟达持股超5%",
+        "美股半导体大涨，AI 产业链逻辑打通！聊聊A股机会",
+        "直播丨2026世界人工智能大会云逛展：寻找AI产业链方向与答案"
+      ]
+    },
+    {
+      "cluster_id": 100,
+      "representative_title": "监管连夜出手！爆炒“神股”紧急退烧",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经",
+        "格隆汇"
+      ],
+      "score": 296.3333333333333,
+      "total_mentions": 6,
+      "avg_rank": 3.7,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "特朗普宣布美国丹麦达成格陵兰协议，美将获该岛“永久安全控制权”",
+          "url": "https://wallstreetcn.com/articles/3782114",
+          "rank": 7,
+          "heat": "4.0万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "无需付费、无限期！美国获得格陵兰岛永久安全控制权，特朗普：“对美国而言是梦想成真 ”",
+          "url": "https://finance.sina.com.cn/wm/2026-09-19/doc-inisifyf2727309.shtml",
+          "rank": 3,
+          "heat": "2,740"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "监管连夜出手！爆炒“神股”紧急退烧",
+          "url": "https://www.gelonghui.com/p/6722031",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "特朗普宣布美国丹麦达成格陵兰协议，美将获该岛“永久安全控制权”",
+        "无需付费、无限期！美国获得格陵兰岛永久安全控制权，特朗普：“对美国而言是梦想成真 ”",
+        "三方即将签署协议，特朗普称获格陵兰岛永久安全控制权",
+        "加州州长签署行政令加强AI监管，评估设置AI“紧急关停开关”，批评特朗普\"昏昏欲睡\"",
+        "监管连夜出手！爆炒“神股”紧急退烧",
+        "早报 (09.19）| 重磅！特朗普发文：美国拿下格陵兰岛“永久控制权”；巴菲特正式卸任；传AMD芯片拟涨价10%"
+      ]
+    },
+    {
+      "cluster_id": 85,
+      "representative_title": "报道称Anthropic IPO延期至11月，华尔街审视日益严苛：从\"稳赚不赔\"到\"不再确定\"",
+      "cover_count": 3,
+      "platforms": [
+        "21财经",
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 293.3333333333333,
+      "total_mentions": 7,
+      "avg_rank": 6.7,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "史上最大IPO，或推迟！",
+          "url": "https://m.21jingji.com/article/20260919/herald/72041c266edec1a0c86d25aa9aafd7b4.html",
+          "rank": 11,
+          "heat": "公司"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "报道称Anthropic IPO延期至11月，华尔街审视日益严苛：从\"稳赚不赔\"到\"不再确定\"",
+          "url": "https://wallstreetcn.com/articles/3782109",
+          "rank": 2,
+          "heat": "6.1万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "“史上最大IPO”时间表又生变 Anthropic年化收入预计将突破1000亿美元",
+          "url": "https://finance.sina.com.cn/money/forex/forexinfo/2026-09-19/doc-inisifyf2733359.shtml",
+          "rank": 7,
+          "heat": "1,670"
+        }
+      ],
+      "all_titles": [
+        "报道称Anthropic IPO延期至11月，华尔街审视日益严苛：从\"稳赚不赔\"到\"不再确定\"",
+        "从“减速”到“加油”！Astra两周抢占13%份额，Anthropic考虑IPO前发布新模型应战",
+        "“史上最大IPO”时间表又生变 Anthropic年化收入预计将突破1000亿美元",
+        "史上最大IPO，或推迟！",
+        "5亿美元，史上最贵单船大宗",
+        "从“减速”到“加油”！Astra两周抢占13%份额，Anthropic考虑IPO前发布新模型应战",
+        "OpenAI预计2030年前累计烧钱逾2780亿美元，同期营收目标达3500亿"
+      ]
+    },
+    {
+      "cluster_id": 171,
+      "representative_title": "直播丨围观2026世界人形机器人运动会 从赛场看见未来生活",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "第一财经",
+        "股吧"
+      ],
+      "score": 290.0,
+      "total_mentions": 3,
+      "avg_rank": 10.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "人形机器人的“三大争议”：何时大规模部署？算力需求暴增？“人形”是必要的吗？",
+          "url": "https://wallstreetcn.com/articles/3782125",
+          "rank": 8,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "直播丨围观2026世界人形机器人运动会 从赛场看见未来生活",
+          "url": "https://www.yicai.com/live/103328457.html",
+          "rank": 5,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "车企跨界人形机器人：热闹背后，看金杯汽车如何布局第二增长曲线",
+          "url": "http://caifuhao.eastmoney.com/news/20260919083403392361410",
+          "rank": 17,
+          "heat": "376"
+        }
+      ],
+      "all_titles": [
+        "人形机器人的“三大争议”：何时大规模部署？算力需求暴增？“人形”是必要的吗？",
+        "车企跨界人形机器人：热闹背后，看金杯汽车如何布局第二增长曲线",
+        "直播丨围观2026世界人形机器人运动会 从赛场看见未来生活"
+      ]
+    },
+    {
+      "cluster_id": 34,
+      "representative_title": "癌症之光，AI制药4.0",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "雪球"
+      ],
+      "score": 195.0,
+      "total_mentions": 2,
+      "avg_rank": 5.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "Anthropic悄悄建起生物实验室！Claude指挥机器人做实验，AI制药再进一步",
+          "url": "https://wallstreetcn.com/articles/3782086",
+          "rank": 5,
+          "heat": "4.6万"
+        },
+        {
+          "platform": "雪球",
+          "title": "癌症之光，AI制药4.0",
+          "url": "http://xueqiu.com/1651958071/409670686",
+          "rank": 5,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "癌症之光，AI制药4.0",
+        "Anthropic悄悄建起生物实验室！Claude指挥机器人做实验，AI制药再进一步"
+      ]
+    },
+    {
+      "cluster_id": 145,
+      "representative_title": "北京对飞猪、同程、途家、美团酒旅立案调查",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "股吧"
+      ],
+      "score": 180.0,
+      "total_mentions": 2,
+      "avg_rank": 20.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "北京对飞猪、同程、途家、美团酒旅立案调查",
+          "url": "https://m.21jingji.com/article/20260919/herald/3880280f602cc575a65bebebb4fb67f4.html",
+          "rank": 4,
+          "heat": "公司"
+        },
+        {
+          "platform": "股吧",
+          "title": "同程、美团、飞猪、途家集体被查！OTA流量霸权时代凉了",
+          "url": "http://caifuhao.eastmoney.com/news/20260919183455352879870",
+          "rank": 36,
+          "heat": "74"
+        }
+      ],
+      "all_titles": [
+        "北京对飞猪、同程、途家、美团酒旅立案调查",
+        "同程、美团、飞猪、途家集体被查！OTA流量霸权时代凉了"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "独家对话赛力斯康波：解读问界专属专营",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "独家对话赛力斯康波：解读问界专属专营",
+          "url": "https://www.yicai.com/news/103369636.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "独家对话赛力斯康波：解读问界专属专营"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "representative_title": "从家电产业发展历史看当下的中国汽车产业发展阶段",
+      "cover_count": 1,
+      "platforms": [
+        "雪球"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "雪球",
+          "title": "从家电产业发展历史看当下的中国汽车产业发展阶段",
+          "url": "http://xueqiu.com/2021998461/409847177",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "从家电产业发展历史看当下的中国汽车产业发展阶段"
+      ]
+    },
+    {
+      "cluster_id": 30,
+      "representative_title": "“三巫日”叠加10年期美债重回5%，标普、纳指艰难收涨，闪迪大涨11%，油价跌黄金涨",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "“三巫日”叠加10年期美债重回5%，标普、纳指艰难收涨，闪迪大涨11%，油价跌黄金涨",
+          "url": "https://wallstreetcn.com/articles/3782058",
+          "rank": 1,
+          "heat": "10.5万"
+        }
+      ],
+      "all_titles": [
+        "“三巫日”叠加10年期美债重回5%，标普、纳指艰难收涨，闪迪大涨11%，油价跌黄金涨"
+      ]
+    },
+    {
+      "cluster_id": 40,
+      "representative_title": "突发！沙特首都利雅得遭空袭，目前“危险已解除”！胡塞武装多次对沙特发动导弹和无人机袭击，但利雅得发布防空警报还是第一次",
+      "cover_count": 1,
+      "platforms": [
+        "新浪财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "突发！沙特首都利雅得遭空袭，目前“危险已解除”！胡塞武装多次对沙特发动导弹和无人机袭击，但利雅得发布防空警报还是第一次",
+          "url": "https://finance.sina.com.cn/jjxw/2026-09-19/doc-inisinhk7819304.shtml",
+          "rank": 1,
+          "heat": "4,591"
+        }
+      ],
+      "all_titles": [
+        "突发！沙特首都利雅得遭空袭，目前“危险已解除”！胡塞武装多次对沙特发动导弹和无人机袭击，但利雅得发布防空警报还是第一次"
+      ]
+    },
+    {
+      "cluster_id": 50,
+      "representative_title": "恒大汽车退出汽车制造，改行卖电池",
+      "cover_count": 1,
+      "platforms": [
+        "21财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "恒大汽车退出汽车制造，改行卖电池",
+          "url": "https://m.21jingji.com/article/20260919/herald/55f447459c50eb72bee990ac9a9ba461.html",
+          "rank": 1,
+          "heat": "公司"
+        }
+      ],
+      "all_titles": [
+        "恒大汽车退出汽车制造，改行卖电池"
+      ]
+    },
+    {
+      "cluster_id": 70,
+      "representative_title": "智谱ZCode偷传代码风波追踪：Agent的数据行为谁来审计？",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "智谱ZCode偷传代码风波追踪：Agent的数据行为谁来审计？",
+          "url": "https://wallstreetcn.com/articles/3782133",
+          "rank": 1,
+          "heat": "林克、郑好"
+        }
+      ],
+      "all_titles": [
+        "智谱ZCode偷传代码风波追踪：Agent的数据行为谁来审计？"
+      ]
+    },
+    {
+      "cluster_id": 90,
+      "representative_title": "重生与降价，钟薛高还有机会吗",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "重生与降价，钟薛高还有机会吗",
+          "url": "https://cbndata.com/information/295792",
+          "rank": 1,
+          "heat": "全天候科技"
+        }
+      ],
+      "all_titles": [
+        "重生与降价，钟薛高还有机会吗"
+      ]
+    },
+    {
+      "cluster_id": 110,
+      "representative_title": "上交所出手 雷声滚滚 晚间重大消息",
+      "cover_count": 1,
+      "platforms": [
+        "股吧"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "上交所出手 雷声滚滚 晚间重大消息",
+          "url": "http://caifuhao.eastmoney.com/news/20260919082045687475440",
+          "rank": 1,
+          "heat": "4.1万"
+        }
+      ],
+      "all_titles": [
+        "上交所出手 雷声滚滚 晚间重大消息"
+      ]
+    }
+  ]
+}
