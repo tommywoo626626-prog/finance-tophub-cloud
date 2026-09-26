@@ -1,0 +1,446 @@
+{
+  "date": "2026-09-26",
+  "period": "下午",
+  "platforms": [
+    "21财经",
+    "格隆汇",
+    "雪球",
+    "新浪财经",
+    "股吧",
+    "第一财经",
+    "华尔街见闻",
+    "集思录"
+  ],
+  "total_topics": 167,
+  "clusters": [
+    {
+      "cluster_id": 87,
+      "representative_title": "特朗普拒绝伊朗“七天停火提议” 预计中期选举后重启轰炸行动",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经",
+        "格隆汇"
+      ],
+      "score": 298.0,
+      "total_mentions": 3,
+      "avg_rank": 2.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "报道：特朗普拒绝伊朗7天停火提议，预计中期选举后恢复轰炸",
+          "url": "https://wallstreetcn.com/articles/3782570",
+          "rank": 2,
+          "heat": "9.3万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "特朗普拒绝伊朗“七天停火提议” 预计中期选举后重启轰炸行动",
+          "url": "https://finance.sina.com.cn/world/2026-09-26/doc-initccvi3989604.shtml",
+          "rank": 1,
+          "heat": "3,905"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "特朗普拒绝伊朗“七天停火提议”，预计中期选举后重启轰炸行动",
+          "url": "https://www.gelonghui.com/p/6810161",
+          "rank": 3,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "报道：特朗普拒绝伊朗7天停火提议，预计中期选举后恢复轰炸",
+        "特朗普拒绝伊朗“七天停火提议” 预计中期选举后重启轰炸行动",
+        "特朗普拒绝伊朗“七天停火提议”，预计中期选举后重启轰炸行动"
+      ]
+    },
+    {
+      "cluster_id": 64,
+      "representative_title": "中美达成八点成果共识",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "华尔街见闻"
+      ],
+      "score": 199.0,
+      "total_mentions": 3,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "中美达成八点成果共识",
+          "url": "https://m.21jingji.com/article/20260926/herald/e03c5db2190e8bf82e2aea73c89f536f.html",
+          "rank": 1,
+          "heat": "学习经济"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "中美达成八点成果共识",
+          "url": "https://wallstreetcn.com/articles/3782582",
+          "rank": 1,
+          "heat": "12.7万"
+        }
+      ],
+      "all_titles": [
+        "中美达成八点成果共识",
+        "中美达成八点成果共识",
+        "中美达成八点成果共识"
+      ]
+    },
+    {
+      "cluster_id": 56,
+      "representative_title": "习近平圆满结束对美国的国事访问（现场视频）",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 198.0,
+      "total_mentions": 4,
+      "avg_rank": 2.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "开辟大国相处正确之道 书写中美关系历史新篇——中共中央政治局委员、外交部长王毅谈习近平主席对美国进行国事访问",
+          "url": "https://wallstreetcn.com/articles/3782586",
+          "rank": 2,
+          "heat": "新华社"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "习近平圆满结束对美国的国事访问（现场视频）",
+          "url": "https://finance.sina.com.cn/world/2026-09-26/doc-initccvc3659614.shtml",
+          "rank": 2,
+          "heat": "3,708"
+        }
+      ],
+      "all_titles": [
+        "习近平和彭丽媛同美国总统特朗普夫妇茶叙",
+        "习近平圆满结束对美国的国事访问（现场视频）",
+        "习近平和彭丽媛同特朗普夫妇茶叙，高清大图来了！",
+        "开辟大国相处正确之道 书写中美关系历史新篇——中共中央政治局委员、外交部长王毅谈习近平主席对美国进行国事访问"
+      ]
+    },
+    {
+      "cluster_id": 162,
+      "representative_title": "为什么选择AI端侧与消费电子",
+      "cover_count": 2,
+      "platforms": [
+        "第一财经",
+        "雪球"
+      ],
+      "score": 195.5,
+      "total_mentions": 2,
+      "avg_rank": 4.5,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "2026年B站年轻人AI智能硬件消费洞察报告",
+          "url": "https://cbndata.com/report/3360/detail",
+          "rank": 6,
+          "heat": "消费AI观察"
+        },
+        {
+          "platform": "雪球",
+          "title": "为什么选择AI端侧与消费电子",
+          "url": "http://xueqiu.com/1553799558/410578825",
+          "rank": 3,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "为什么选择AI端侧与消费电子",
+        "2026年B站年轻人AI智能硬件消费洞察报告"
+      ]
+    },
+    {
+      "cluster_id": 37,
+      "representative_title": "比尔·盖茨呼吁立法监管AI工具",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "华尔街见闻"
+      ],
+      "score": 195.5,
+      "total_mentions": 2,
+      "avg_rank": 4.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "比尔·盖茨呼吁立法监管AI工具",
+          "url": "https://m.21jingji.com/article/20260926/herald/8f5ab408cd166db47479f41a7efd705d.html",
+          "rank": 3,
+          "heat": "视频"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "比尔·盖茨：AI已强大到足以造成“10亿人死亡”",
+          "url": "https://wallstreetcn.com/articles/3782553",
+          "rank": 6,
+          "heat": "4.8万"
+        }
+      ],
+      "all_titles": [
+        "比尔·盖茨：AI已强大到足以造成“10亿人死亡”",
+        "比尔·盖茨呼吁立法监管AI工具"
+      ]
+    },
+    {
+      "cluster_id": 156,
+      "representative_title": "北京商品住房销售制度点评：加快新政有序落地，推动行业高质量发展",
+      "cover_count": 2,
+      "platforms": [
+        "格隆汇",
+        "第一财经"
+      ],
+      "score": 194.0,
+      "total_mentions": 2,
+      "avg_rank": 6.0,
+      "sources": [
+        {
+          "platform": "格隆汇",
+          "title": "北京商品住房销售制度点评：加快新政有序落地，推动行业高质量发展",
+          "url": "https://www.gelonghui.com/p/6810219",
+          "rank": 2,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "一线发布丨国新办就“十五五”时期推进住房城乡建设事业高质量发展有关情况举行新闻发布会",
+          "url": "https://www.yicai.com/live/103366517.html",
+          "rank": 10,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "北京商品住房销售制度点评：加快新政有序落地，推动行业高质量发展",
+        "一线发布丨国新办就“十五五”时期推进住房城乡建设事业高质量发展有关情况举行新闻发布会"
+      ]
+    },
+    {
+      "cluster_id": 60,
+      "representative_title": "AI杀入科学家“主场”！OpenAI智能体将挑战人类蛋白质设计，原定“人机大战”临时改赛制",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 192.5,
+      "total_mentions": 2,
+      "avg_rank": 7.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "AI杀入科学家“主场”！OpenAI智能体将挑战人类蛋白质设计，原定“人机大战”临时改赛制",
+          "url": "https://wallstreetcn.com/articles/3782583",
+          "rank": 6,
+          "heat": ""
+        },
+        {
+          "platform": "新浪财经",
+          "title": "AI失控了？OpenAI确认干预3家美国政府网站",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-09-26/doc-initccvk8821562.shtml",
+          "rank": 9,
+          "heat": "1,831"
+        }
+      ],
+      "all_titles": [
+        "AI失控了？OpenAI确认干预3家美国政府网站",
+        "AI杀入科学家“主场”！OpenAI智能体将挑战人类蛋白质设计，原定“人机大战”临时改赛制"
+      ]
+    },
+    {
+      "cluster_id": 91,
+      "representative_title": "美股最大半导体IPO？Solidigm估值冲击1500亿美元",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 189.5,
+      "total_mentions": 2,
+      "avg_rank": 10.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "冲刺美股史上最大半导体IPO！英特尔曾以90亿美元卖掉的Solidigm，如今估值或达1500亿美元",
+          "url": "https://wallstreetcn.com/articles/3782575",
+          "rank": 14,
+          "heat": ""
+        },
+        {
+          "platform": "格隆汇",
+          "title": "美股最大半导体IPO？Solidigm估值冲击1500亿美元",
+          "url": "https://www.gelonghui.com/p/6810684",
+          "rank": 7,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "冲刺美股史上最大半导体IPO！英特尔曾以90亿美元卖掉的Solidigm，如今估值或达1500亿美元",
+        "美股最大半导体IPO？Solidigm估值冲击1500亿美元"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "刘欢去世",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "刘欢去世",
+          "url": "https://www.yicai.com/news/103378496.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "刘欢去世"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "representative_title": "主流资源股常识数据全披露：一文告诉你，锂矿股的景气周期是否已经结束！",
+      "cover_count": 1,
+      "platforms": [
+        "雪球"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "雪球",
+          "title": "主流资源股常识数据全披露：一文告诉你，锂矿股的景气周期是否已经结束！",
+          "url": "http://xueqiu.com/9363345092/410532886",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "主流资源股常识数据全披露：一文告诉你，锂矿股的景气周期是否已经结束！"
+      ]
+    },
+    {
+      "cluster_id": 55,
+      "representative_title": "海外资金疯买美股！过去12个月净流入9420亿美元，创1985年以来纪录",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "海外资金疯买美股！过去12个月净流入9420亿美元，创1985年以来纪录",
+          "url": "https://wallstreetcn.com/articles/3782588",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "海外资金疯买美股！过去12个月净流入9420亿美元，创1985年以来纪录"
+      ]
+    },
+    {
+      "cluster_id": 75,
+      "representative_title": "第一批招不上生的小学，酒店盯上了",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "第一批招不上生的小学，酒店盯上了",
+          "url": "https://cbndata.com/information/295821",
+          "rank": 1,
+          "heat": "旅界"
+        }
+      ],
+      "all_titles": [
+        "第一批招不上生的小学，酒店盯上了"
+      ]
+    },
+    {
+      "cluster_id": 85,
+      "representative_title": "续签高通专利许可，苹果一夜飙涨5000亿！",
+      "cover_count": 1,
+      "platforms": [
+        "格隆汇"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "格隆汇",
+          "title": "续签高通专利许可，苹果一夜飙涨5000亿！",
+          "url": "https://www.gelonghui.com/p/6810396",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "续签高通专利许可，苹果一夜飙涨5000亿！"
+      ]
+    },
+    {
+      "cluster_id": 95,
+      "representative_title": "周末三瓜 一个比一个劲爆",
+      "cover_count": 1,
+      "platforms": [
+        "股吧"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "周末三瓜 一个比一个劲爆",
+          "url": "http://caifuhao.eastmoney.com/news/20260920090227696775730",
+          "rank": 1,
+          "heat": "3.0万"
+        }
+      ],
+      "all_titles": [
+        "周末三瓜 一个比一个劲爆"
+      ]
+    },
+    {
+      "cluster_id": 145,
+      "representative_title": "63岁就离世了！可惜！人不是老了才会离世的",
+      "cover_count": 1,
+      "platforms": [
+        "集思录"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "集思录",
+          "title": "63岁就离世了！可惜！人不是老了才会离世的",
+          "url": "https://www.jisilu.cn/question/525570",
+          "rank": 1,
+          "heat": "435"
+        }
+      ],
+      "all_titles": [
+        "63岁就离世了！可惜！人不是老了才会离世的"
+      ]
+    }
+  ]
+}
