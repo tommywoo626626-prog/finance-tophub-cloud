@@ -1,0 +1,483 @@
+{
+  "date": "2026-10-10",
+  "period": "下午",
+  "platforms": [
+    "雪球",
+    "新浪财经",
+    "21财经",
+    "第一财经",
+    "格隆汇",
+    "股吧",
+    "集思录",
+    "华尔街见闻"
+  ],
+  "total_topics": 166,
+  "clusters": [
+    {
+      "cluster_id": 118,
+      "representative_title": "ASML零部件价格全线上调10%，三星SK海力士接受涨价，半导体设备成本压力蔓延",
+      "cover_count": 5,
+      "platforms": [
+        "21财经",
+        "华尔街见闻",
+        "格隆汇",
+        "第一财经",
+        "股吧"
+      ],
+      "score": 487.8,
+      "total_mentions": 5,
+      "avg_rank": 12.2,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "曝ASML光刻机配件韩国市场将统一涨价10%，三星、SK海力士已接受",
+          "url": "https://m.21jingji.com/article/20261010/herald/88defff4a0330915a10410fddf154730.html",
+          "rank": 18,
+          "heat": "全球"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "ASML零部件价格全线上调10%，三星SK海力士接受涨价，半导体设备成本压力蔓延",
+          "url": "https://wallstreetcn.com/articles/3783320",
+          "rank": 4,
+          "heat": ""
+        },
+        {
+          "platform": "格隆汇",
+          "title": "大牛股价腰斩后，葛卫东出手了！",
+          "url": "https://www.gelonghui.com/p/6912799",
+          "rank": 5,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "直播丨三星、海力士业绩新高股价却腰斩?带你看懂韩国股市崩盘背后的真相",
+          "url": "https://www.yicai.com/live/103297050.html",
+          "rank": 6,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "半导体设备零部件：1个真空阀门，要等上2年？",
+          "url": "http://caifuhao.eastmoney.com/news/20260920065415345060390",
+          "rank": 28,
+          "heat": "168"
+        }
+      ],
+      "all_titles": [
+        "曝ASML光刻机配件韩国市场将统一涨价10%，三星、SK海力士已接受",
+        "ASML零部件价格全线上调10%，三星SK海力士接受涨价，半导体设备成本压力蔓延",
+        "大牛股价腰斩后，葛卫东出手了！",
+        "半导体设备零部件：1个真空阀门，要等上2年？",
+        "直播丨三星、海力士业绩新高股价却腰斩?带你看懂韩国股市崩盘背后的真相"
+      ]
+    },
+    {
+      "cluster_id": 23,
+      "representative_title": "支持科技企业上市融资、优化并购重组、民企可牵头重大技术攻关……新质生产力金融举措来了",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 197.0,
+      "total_mentions": 2,
+      "avg_rank": 3.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "支持科技企业上市融资、优化并购重组、民企可牵头重大技术攻关……新质生产力金融举措来了",
+          "url": "https://wallstreetcn.com/articles/3783278",
+          "rank": 3,
+          "heat": "9.1万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "中共中央、国务院印发《关于发展新质生产力的意见》",
+          "url": "https://finance.sina.com.cn/china/gncj/2026-10-10/doc-iniustfr2330843.shtml",
+          "rank": 3,
+          "heat": "6,765"
+        }
+      ],
+      "all_titles": [
+        "支持科技企业上市融资、优化并购重组、民企可牵头重大技术攻关……新质生产力金融举措来了",
+        "中共中央、国务院印发《关于发展新质生产力的意见》"
+      ]
+    },
+    {
+      "cluster_id": 71,
+      "representative_title": "热门素人IP在手，TOP TOY在等大结果",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "第一财经"
+      ],
+      "score": 197.0,
+      "total_mentions": 2,
+      "avg_rank": 3.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "素人IP混战的2026年，TOP TOY押注的小玉能否拿到大结果？",
+          "url": "https://wallstreetcn.com/articles/3783318",
+          "rank": 5,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "热门素人IP在手，TOP TOY在等大结果",
+          "url": "https://cbndata.com/information/295861",
+          "rank": 1,
+          "heat": "全天候科技"
+        }
+      ],
+      "all_titles": [
+        "素人IP混战的2026年，TOP TOY押注的小玉能否拿到大结果？",
+        "热门素人IP在手，TOP TOY在等大结果"
+      ]
+    },
+    {
+      "cluster_id": 83,
+      "representative_title": "Anthropic新规：禁止“虐待”AI！",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 194.0,
+      "total_mentions": 2,
+      "avg_rank": 6.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "AI灾难将在一年内发生？Anthropic、OpenAI私下推演最坏情景",
+          "url": "https://wallstreetcn.com/articles/3783284",
+          "rank": 9,
+          "heat": "4.3万"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "Anthropic新规：禁止“虐待”AI！",
+          "url": "https://www.gelonghui.com/p/6916556",
+          "rank": 3,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "AI灾难将在一年内发生？Anthropic、OpenAI私下推演最坏情景",
+        "Anthropic新规：禁止“虐待”AI！"
+      ]
+    },
+    {
+      "cluster_id": 62,
+      "representative_title": "特朗普：与普京通话非常成功，全世界的柴油价格都将大幅、快速下跌！俄方表态；泽连斯基回应",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 193.5,
+      "total_mentions": 4,
+      "avg_rank": 6.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "特朗普：与普京通话非常成功，全世界的柴油价格都将大幅、快速下跌！俄方表态；泽连斯基回应",
+          "url": "https://wallstreetcn.com/articles/3783311",
+          "rank": 6,
+          "heat": "6.5万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "泽连斯基：特朗普与普京达成的柴油协议“既不公正，也不坦诚”",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-10/doc-iniustfu0732962.shtml",
+          "rank": 7,
+          "heat": "5,089"
+        }
+      ],
+      "all_titles": [
+        "特朗普：与普京通话非常成功，全世界的柴油价格都将大幅、快速下跌！俄方表态；泽连斯基回应",
+        "泽连斯基：特朗普与普京达成的柴油协议“既不公正，也不坦诚”",
+        "油价，要降了？普京与特朗普通话：俄将向美及全球供应石油",
+        "特朗普：与普京通话非常成功，全世界的柴油价格都将大幅、快速下跌！俄方表态；泽连斯基回应"
+      ]
+    },
+    {
+      "cluster_id": 90,
+      "representative_title": "苹果iPhone Duo加单30%，iPhone 18 Pro系列总订单量未变",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 193.5,
+      "total_mentions": 2,
+      "avg_rank": 6.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "苹果iPhone Duo加单30%，iPhone 18 Pro系列总订单量未变",
+          "url": "https://wallstreetcn.com/articles/3783321",
+          "rank": 3,
+          "heat": "证券时报"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "美股盘前要点｜马斯克、黄仁勋获颁国家科学奖，苹果被曝砍单iPhone 18 Pro系列",
+          "url": "https://www.gelonghui.com/p/6916154",
+          "rank": 10,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "苹果iPhone Duo加单30%，iPhone 18 Pro系列总订单量未变",
+        "美股盘前要点｜马斯克、黄仁勋获颁国家科学奖，苹果被曝砍单iPhone 18 Pro系列"
+      ]
+    },
+    {
+      "cluster_id": 87,
+      "representative_title": "油轮运费创六十年新高：从美国运一船油到中国，比发射火箭还贵！",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 193.0,
+      "total_mentions": 2,
+      "avg_rank": 7.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "油轮运费创六十年新高：从美国运一船油到中国，比发射火箭还贵！",
+          "url": "https://wallstreetcn.com/articles/3783314",
+          "rank": 7,
+          "heat": ""
+        },
+        {
+          "platform": "格隆汇",
+          "title": "为什么美国的国债利率在新高，股市也在新高？",
+          "url": "https://www.gelonghui.com/p/6914804",
+          "rank": 7,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "油轮运费创六十年新高：从美国运一船油到中国，比发射火箭还贵！",
+        "为什么美国的国债利率在新高，股市也在新高？"
+      ]
+    },
+    {
+      "cluster_id": 46,
+      "representative_title": "中欧贸易投资磋商联合声明：就混动汽车贸易达成谅解，进一步强化出口管制对话，愿为稀土永磁体出口审批提供便利",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "华尔街见闻"
+      ],
+      "score": 191.5,
+      "total_mentions": 2,
+      "avg_rank": 8.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "商务部解读中欧贸易投资磋商机制第二次例会成果",
+          "url": "https://m.21jingji.com/article/20261010/herald/c671551bb07bd7f0376e8ea4e5b1aef9.html",
+          "rank": 16,
+          "heat": "宏观"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "中欧贸易投资磋商联合声明：就混动汽车贸易达成谅解，进一步强化出口管制对话，愿为稀土永磁体出口审批提供便利",
+          "url": "https://wallstreetcn.com/articles/3783281",
+          "rank": 1,
+          "heat": "18.7万"
+        }
+      ],
+      "all_titles": [
+        "中欧贸易投资磋商联合声明：就混动汽车贸易达成谅解，进一步强化出口管制对话，愿为稀土永磁体出口审批提供便利",
+        "商务部解读中欧贸易投资磋商机制第二次例会成果"
+      ]
+    },
+    {
+      "cluster_id": 103,
+      "representative_title": "尊界刹车事件，比亚迪、广汽本田等车企高管密集发声",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "股吧"
+      ],
+      "score": 190.5,
+      "total_mentions": 2,
+      "avg_rank": 9.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "尊界刹车事件，比亚迪、广汽本田等车企高管密集发声",
+          "url": "https://m.21jingji.com/article/20261010/herald/da953f509e7a6cb2d7a3defab0aede9e.html",
+          "rank": 6,
+          "heat": "公司"
+        },
+        {
+          "platform": "股吧",
+          "title": "比亚迪与宁德时代之三",
+          "url": "http://caifuhao.eastmoney.com/news/20260920084744726363050",
+          "rank": 13,
+          "heat": "1690"
+        }
+      ],
+      "all_titles": [
+        "尊界刹车事件，比亚迪、广汽本田等车企高管密集发声",
+        "比亚迪与宁德时代之三"
+      ]
+    },
+    {
+      "cluster_id": 152,
+      "representative_title": "一线发布丨国新办就“十五五”时期推进就业和社会保障高质量发展有关情况举行新闻发布会",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "第一财经"
+      ],
+      "score": 190.0,
+      "total_mentions": 4,
+      "avg_rank": 10.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "国新办举行中外记者见面会 请检察系统代表围绕“强化检察监督 履行好国家法律监督机关职责”与中外记者见面交流",
+          "url": "http://m.21jingji.com/live/show/5695.html",
+          "rank": 17,
+          "heat": "直播"
+        },
+        {
+          "platform": "第一财经",
+          "title": "一线发布丨国新办就“十五五”时期推进就业和社会保障高质量发展有关情况举行新闻发布会",
+          "url": "https://www.yicai.com/live/103385907.html",
+          "rank": 3,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "国新办举行中外记者见面会 请检察系统代表围绕“强化检察监督 履行好国家法律监督机关职责”与中外记者见面交流",
+        "一线发布丨国新办就“十五五”时期推进就业和社会保障高质量发展有关情况举行新闻发布会",
+        "一线发布丨国新办就“十五五”时期推进科技强国建设有关情况举行新闻发布会",
+        "一线发布丨国新办就落实“十五五”规划，推动中央企业高质量发展情况举行新闻发布会"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "独家专访安踏丁世忠：收购彪马背后的多品牌经营逻辑",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "独家专访安踏丁世忠：收购彪马背后的多品牌经营逻辑",
+          "url": "https://www.yicai.com/news/103385340.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "独家专访安踏丁世忠：收购彪马背后的多品牌经营逻辑"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "representative_title": "长线VS短线（中证红利、红利低波100策略及长期收益一览）",
+      "cover_count": 1,
+      "platforms": [
+        "雪球"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "雪球",
+          "title": "长线VS短线（中证红利、红利低波100策略及长期收益一览）",
+          "url": "http://xueqiu.com/7734995747/411379012",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "长线VS短线（中证红利、红利低波100策略及长期收益一览）"
+      ]
+    },
+    {
+      "cluster_id": 21,
+      "representative_title": "石油，大消息！",
+      "cover_count": 1,
+      "platforms": [
+        "新浪财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "石油，大消息！",
+          "url": "https://finance.sina.com.cn/roll/2026-10-10/doc-iniustfr6304981.shtml",
+          "rank": 1,
+          "heat": "8,990"
+        }
+      ],
+      "all_titles": [
+        "石油，大消息！"
+      ]
+    },
+    {
+      "cluster_id": 31,
+      "representative_title": "新规落地，财经大V加速分化",
+      "cover_count": 1,
+      "platforms": [
+        "21财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "新规落地，财经大V加速分化",
+          "url": "https://m.21jingji.com/article/20261010/herald/822f256be726a2262cb66118d4614090.html",
+          "rank": 1,
+          "heat": "证券"
+        }
+      ],
+      "all_titles": [
+        "新规落地，财经大V加速分化"
+      ]
+    },
+    {
+      "cluster_id": 51,
+      "representative_title": "花旗：法国财政风险或令欧央行12月后暂停加息，欧元料跌破1.10",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "花旗：法国财政风险或令欧央行12月后暂停加息，欧元料跌破1.10",
+          "url": "https://wallstreetcn.com/articles/3783323",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "花旗：法国财政风险或令欧央行12月后暂停加息，欧元料跌破1.10"
+      ]
+    }
+  ]
+}
