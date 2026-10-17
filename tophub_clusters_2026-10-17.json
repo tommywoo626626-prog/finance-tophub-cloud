@@ -1,0 +1,476 @@
+{
+  "date": "2026-10-17",
+  "period": "下午",
+  "platforms": [
+    "格隆汇",
+    "股吧",
+    "新浪财经",
+    "集思录",
+    "21财经",
+    "华尔街见闻",
+    "雪球",
+    "第一财经"
+  ],
+  "total_topics": 166,
+  "clusters": [
+    {
+      "cluster_id": 65,
+      "representative_title": "美以，突传大消息！国际油价，大涨！恐慌指数，直线拉升！",
+      "cover_count": 3,
+      "platforms": [
+        "21财经",
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 294.6666666666667,
+      "total_mentions": 4,
+      "avg_rank": 5.3,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "国际油价暗盘直线大涨，布油冲破110美元",
+          "url": "https://m.21jingji.com/article/20261017/herald/e40657325f4bf3c87853a38083c8a0f2.html",
+          "rank": 12,
+          "heat": "投资"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "华尔街腹背受敌：AI抛售潮蔓延至债市，110美元油价再添一把火",
+          "url": "https://wallstreetcn.com/articles/3783826",
+          "rank": 3,
+          "heat": "7.6万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "美以，突传大消息！国际油价，大涨！恐慌指数，直线拉升！",
+          "url": "https://finance.sina.com.cn/roll/2026-10-17/doc-inivnrax8280727.shtml",
+          "rank": 1,
+          "heat": "8,943"
+        }
+      ],
+      "all_titles": [
+        "华尔街腹背受敌：AI抛售潮蔓延至债市，110美元油价再添一把火",
+        "美以，突传大消息！国际油价，大涨！恐慌指数，直线拉升！",
+        "国际油价暗盘直线大涨，布油冲破110美元",
+        "华尔街腹背受敌：AI抛售潮蔓延至债市，110美元油价再添一把火"
+      ]
+    },
+    {
+      "cluster_id": 88,
+      "representative_title": "苹果称首款折叠屏iPhone需求异常强劲 部分订单预计明年交付",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经",
+        "格隆汇"
+      ],
+      "score": 289.0,
+      "total_mentions": 3,
+      "avg_rank": 11.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "苹果称iPhone Duo需求\"非同寻常\"，预购开放数分钟即告罄，发货延至明年1月",
+          "url": "https://wallstreetcn.com/articles/3783823",
+          "rank": 17,
+          "heat": ""
+        },
+        {
+          "platform": "新浪财经",
+          "title": "苹果称首款折叠屏iPhone需求异常强劲 部分订单预计明年交付",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-17/doc-inivnvkp7293062.shtml",
+          "rank": 8,
+          "heat": "1,475"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "早报 (10.17）| 上任才5天！特朗普炒了白宫新闻秘书；美股存储芯片集体崩了！苹果iPhone Duo开售即售罄",
+          "url": "https://www.gelonghui.com/p/7032609",
+          "rank": 8,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "苹果称首款折叠屏iPhone需求异常强劲 部分订单预计明年交付",
+        "苹果称iPhone Duo需求\"非同寻常\"，预购开放数分钟即告罄，发货延至明年1月",
+        "早报 (10.17）| 上任才5天！特朗普炒了白宫新闻秘书；美股存储芯片集体崩了！苹果iPhone Duo开售即售罄"
+      ]
+    },
+    {
+      "cluster_id": 36,
+      "representative_title": "DeepSeek崩了",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "第一财经"
+      ],
+      "score": 195.5,
+      "total_mentions": 2,
+      "avg_rank": 4.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "DeepSeek官宣：“许愿式编程”成为现实",
+          "url": "https://m.21jingji.com/article/20261017/herald/e3282503a3885d19efd098f96976fe9e.html",
+          "rank": 6,
+          "heat": "投资"
+        },
+        {
+          "platform": "第一财经",
+          "title": "DeepSeek崩了",
+          "url": "https://www.yicai.com/news/103394174.html",
+          "rank": 3,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "DeepSeek崩了",
+        "DeepSeek官宣：“许愿式编程”成为现实"
+      ]
+    },
+    {
+      "cluster_id": 147,
+      "representative_title": "直播｜特斯拉Roadster发布会：“会飞的跑车”终于要亮相了",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "第一财经"
+      ],
+      "score": 195.5,
+      "total_mentions": 3,
+      "avg_rank": 4.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "特斯拉高管详解新Roadster：放弃四驱、专用4680电池，目标车重不到1.7吨",
+          "url": "https://wallstreetcn.com/articles/3783829",
+          "rank": 7,
+          "heat": "5.6万"
+        },
+        {
+          "platform": "第一财经",
+          "title": "直播｜特斯拉Roadster发布会：“会飞的跑车”终于要亮相了",
+          "url": "https://www.yicai.com/live/103395134.html",
+          "rank": 2,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "特斯拉高管详解新Roadster：放弃四驱、专用4680电池，目标车重不到1.7吨",
+        "特斯拉高管详解新Roadster：放弃四驱、专用4680电池，目标车重不到1.7吨",
+        "直播｜特斯拉Roadster发布会：“会飞的跑车”终于要亮相了"
+      ]
+    },
+    {
+      "cluster_id": 25,
+      "representative_title": "沃什曼谷发言“偏鸽”，市场押注美联储10月按兵不动，加息概率跌破15%",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 195.0,
+      "total_mentions": 2,
+      "avg_rank": 5.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "沃什曼谷发言“偏鸽”，市场押注美联储10月按兵不动，加息概率跌破15%",
+          "url": "https://wallstreetcn.com/articles/3783799",
+          "rank": 5,
+          "heat": "6.0万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "沃什拒绝预判利率决策，美联储10月加息预期骤降至15%",
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-17/doc-inivnzss1397991.shtml",
+          "rank": 5,
+          "heat": "2,037"
+        }
+      ],
+      "all_titles": [
+        "沃什曼谷发言“偏鸽”，市场押注美联储10月按兵不动，加息概率跌破15%",
+        "沃什拒绝预判利率决策，美联储10月加息预期骤降至15%"
+      ]
+    },
+    {
+      "cluster_id": 44,
+      "representative_title": "日赚约4.8亿元！长鑫科技预告三季报",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "华尔街见闻"
+      ],
+      "score": 195.0,
+      "total_mentions": 4,
+      "avg_rank": 5.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "日赚约4.8亿元！长鑫科技预告三季报",
+          "url": "https://m.21jingji.com/article/20261017/herald/88a4ff1d954bcba13be305d7de580d22.html",
+          "rank": 1,
+          "heat": "公司"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "日赚4.8亿元！长鑫科技前三季度净利润超1300亿元，同比扭亏为盈，拟最高20亿回购股票",
+          "url": "https://wallstreetcn.com/articles/3783806",
+          "rank": 9,
+          "heat": "4.9万"
+        }
+      ],
+      "all_titles": [
+        "日赚4.8亿元！长鑫科技前三季度净利润超1300亿元，同比扭亏为盈，拟最高20亿回购股票",
+        "日赚约4.8亿元！长鑫科技预告三季报",
+        "长鑫科技领衔 多家科创板龙头公司开启新一轮回购",
+        "三季度净利环比增幅哪家强？PCB行业表现抢眼"
+      ]
+    },
+    {
+      "cluster_id": 89,
+      "representative_title": "特朗普豁免《格雷厄姆法案》中多项对俄制裁、限制措施及关税",
+      "cover_count": 2,
+      "platforms": [
+        "新浪财经",
+        "格隆汇"
+      ],
+      "score": 192.5,
+      "total_mentions": 2,
+      "avg_rank": 7.5,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "特朗普豁免《格雷厄姆法案》中多项对俄制裁、限制措施及关税",
+          "url": "https://finance.sina.com.cn/world/2026-10-17/doc-inivnvkm6552060.shtml",
+          "rank": 6,
+          "heat": "1,653"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "特朗普暂缓实施新一轮对俄制裁",
+          "url": "https://www.gelonghui.com/p/7032650",
+          "rank": 9,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "特朗普豁免《格雷厄姆法案》中多项对俄制裁、限制措施及关税",
+        "特朗普暂缓实施新一轮对俄制裁"
+      ]
+    },
+    {
+      "cluster_id": 46,
+      "representative_title": "重庆市委原副书记、市政府原市长黄奇帆接受审查调查",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "第一财经"
+      ],
+      "score": 190.0,
+      "total_mentions": 2,
+      "avg_rank": 10.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "冀中能源集团董事会原董事陈亚杰接受审查调查",
+          "url": "https://m.21jingji.com/article/20261017/herald/854a77dc93f89cde34be9fcb5f180bf9.html",
+          "rank": 16,
+          "heat": "宏观"
+        },
+        {
+          "platform": "第一财经",
+          "title": "重庆市委原副书记、市政府原市长黄奇帆接受审查调查",
+          "url": "https://www.yicai.com/news/103391834.html",
+          "rank": 4,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "重庆市委原副书记、市政府原市长黄奇帆接受审查调查",
+        "冀中能源集团董事会原董事陈亚杰接受审查调查"
+      ]
+    },
+    {
+      "cluster_id": 105,
+      "representative_title": "华尔街见闻早餐FM-Radio | 2026年10月17日",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "股吧"
+      ],
+      "score": 188.5,
+      "total_mentions": 3,
+      "avg_rank": 11.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "华尔街见闻早餐FM-Radio | 2026年10月17日",
+          "url": "https://wallstreetcn.com/articles/3783821",
+          "rank": 8,
+          "heat": "5.6万"
+        },
+        {
+          "platform": "股吧",
+          "title": "10/17 盘前计划就是的规则",
+          "url": "http://caifuhao.eastmoney.com/news/20261017132126482328260",
+          "rank": 15,
+          "heat": "444"
+        }
+      ],
+      "all_titles": [
+        "华尔街见闻早餐FM-Radio | 2026年10月17日",
+        "华尔街见闻早餐FM-Radio | 2026年10月17日",
+        "10/17 盘前计划就是的规则"
+      ]
+    },
+    {
+      "cluster_id": 162,
+      "representative_title": "50元一斤的“人类猫条”，年轻人不愿啃了",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "第一财经"
+      ],
+      "score": 187.0,
+      "total_mentions": 3,
+      "avg_rank": 13.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "年轻人成买金大户！",
+          "url": "https://m.21jingji.com/article/20261017/herald/612c81e2628e9f6cad355d6bf8c2ceae.html",
+          "rank": 19,
+          "heat": "投资"
+        },
+        {
+          "platform": "第一财经",
+          "title": "50元一斤的“人类猫条”，年轻人不愿啃了",
+          "url": "https://cbndata.com/information/295885",
+          "rank": 7,
+          "heat": "惊蛰青年"
+        }
+      ],
+      "all_titles": [
+        "年轻人成买金大户！",
+        "50元一斤的“人类猫条”，年轻人不愿啃了",
+        "2026年B站年轻人AI智能硬件消费洞察报告"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "王刚同志任河北省委常委、石家庄市委书记",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "王刚同志任河北省委常委、石家庄市委书记",
+          "url": "https://www.yicai.com/news/103390312.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "王刚同志任河北省委常委、石家庄市委书记"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "representative_title": "长线VS短线（中证红利、红利低波100策略及长期收益一览）",
+      "cover_count": 1,
+      "platforms": [
+        "雪球"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "雪球",
+          "title": "长线VS短线（中证红利、红利低波100策略及长期收益一览）",
+          "url": "http://xueqiu.com/7734995747/411379012",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "长线VS短线（中证红利、红利低波100策略及长期收益一览）"
+      ]
+    },
+    {
+      "cluster_id": 11,
+      "representative_title": "AI交易忧虑压垮美股，纳指跌超2%、CoreWeave暴跌12%，VIX一度升破22，布油涨破110",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "AI交易忧虑压垮美股，纳指跌超2%、CoreWeave暴跌12%，VIX一度升破22，布油涨破110",
+          "url": "https://wallstreetcn.com/articles/3783778",
+          "rank": 1,
+          "heat": "15.7万"
+        }
+      ],
+      "all_titles": [
+        "AI交易忧虑压垮美股，纳指跌超2%、CoreWeave暴跌12%，VIX一度升破22，布油涨破110"
+      ]
+    },
+    {
+      "cluster_id": 51,
+      "representative_title": "IMF警告日本可能需要更快加息，全球债市再添压力？",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "IMF警告日本可能需要更快加息，全球债市再添压力？",
+          "url": "https://wallstreetcn.com/articles/3783840",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "IMF警告日本可能需要更快加息，全球债市再添压力？"
+      ]
+    },
+    {
+      "cluster_id": 71,
+      "representative_title": "欠薪、闭店、跑路，足力健为何四面楚歌？",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "欠薪、闭店、跑路，足力健为何四面楚歌？",
+          "url": "https://cbndata.com/information/295891",
+          "rank": 1,
+          "heat": "互联网那些事"
+        }
+      ],
+      "all_titles": [
+        "欠薪、闭店、跑路，足力健为何四面楚歌？"
+      ]
+    }
+  ]
+}
