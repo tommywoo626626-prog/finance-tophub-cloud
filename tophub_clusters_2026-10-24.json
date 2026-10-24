@@ -1,0 +1,444 @@
+{
+  "date": "2026-10-24",
+  "period": "下午",
+  "platforms": [
+    "集思录",
+    "股吧",
+    "新浪财经",
+    "格隆汇",
+    "21财经",
+    "华尔街见闻",
+    "雪球",
+    "第一财经"
+  ],
+  "total_topics": 187,
+  "clusters": [
+    {
+      "cluster_id": 164,
+      "representative_title": "从宇树科技上市表现看注册制上市带给了市场带来的什么？",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经",
+        "集思录"
+      ],
+      "score": 292.6666666666667,
+      "total_mentions": 3,
+      "avg_rank": 7.3,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "谁推动了宇树科技首个涨停板？",
+          "url": "https://wallstreetcn.com/articles/3784342",
+          "rank": 7,
+          "heat": "4.3万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "宇树科技涨停！市值重新站上2500亿元，本周累涨超46%",
+          "url": "https://finance.sina.com.cn/tob/2026-10-23/doc-iniweuqw2736013.shtml",
+          "rank": 10,
+          "heat": "4,346"
+        },
+        {
+          "platform": "集思录",
+          "title": "从宇树科技上市表现看注册制上市带给了市场带来的什么？",
+          "url": "https://www.jisilu.cn/question/526190",
+          "rank": 5,
+          "heat": "424"
+        }
+      ],
+      "all_titles": [
+        "谁推动了宇树科技首个涨停板？",
+        "宇树科技涨停！市值重新站上2500亿元，本周累涨超46%",
+        "从宇树科技上市表现看注册制上市带给了市场带来的什么？"
+      ]
+    },
+    {
+      "cluster_id": 122,
+      "representative_title": "宁德时代能否在储能领域“再造一个宁王”",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "股吧",
+        "雪球"
+      ],
+      "score": 289.0,
+      "total_mentions": 4,
+      "avg_rank": 11.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "宁德时代5800万股股权进入解禁期：UBS浮亏25亿 小摩浮亏近18亿",
+          "url": "https://wallstreetcn.com/articles/3784385",
+          "rank": 13,
+          "heat": "雷递"
+        },
+        {
+          "platform": "股吧",
+          "title": "宁德时代能否在储能领域“再造一个宁王”",
+          "url": "http://caifuhao.eastmoney.com/news/20260920094223655451090",
+          "rank": 4,
+          "heat": "521"
+        },
+        {
+          "platform": "雪球",
+          "title": "宁德时代三季报后的个人随想",
+          "url": "http://www.xueqiu.com/3224619608/413278530",
+          "rank": 16,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "宁德时代三季报后的个人随想",
+        "宁德时代5800万股股权进入解禁期：UBS浮亏25亿 小摩浮亏近18亿",
+        "宁德时代能否在储能领域“再造一个宁王”",
+        "比亚迪与宁德时代之三"
+      ]
+    },
+    {
+      "cluster_id": 108,
+      "representative_title": "4000美元关口失守，黄金下一站看哪里？",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 190.5,
+      "total_mentions": 2,
+      "avg_rank": 9.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "黄金跌破4000美元、日元升至阻力位，市场开始挑剔“避险资产”",
+          "url": "https://wallstreetcn.com/articles/3784374",
+          "rank": 10,
+          "heat": "3.7万"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "4000美元关口失守，黄金下一站看哪里？",
+          "url": "https://www.gelonghui.com/p/7133343",
+          "rank": 9,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "黄金跌破4000美元、日元升至阻力位，市场开始挑剔“避险资产”",
+        "4000美元关口失守，黄金下一站看哪里？"
+      ]
+    },
+    {
+      "cluster_id": 65,
+      "representative_title": "平安银行2026年三季报点评",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "雪球"
+      ],
+      "score": 190.0,
+      "total_mentions": 2,
+      "avg_rank": 10.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "东阿阿胶2026年三季报：营利稳健，多元矩阵驱动老字号进阶",
+          "url": "https://m.21jingji.com/article/20261023/herald/e43b3a51f53aee02afb07d25147f6999.html",
+          "rank": 16,
+          "heat": ""
+        },
+        {
+          "platform": "雪球",
+          "title": "平安银行2026年三季报点评",
+          "url": "http://www.xueqiu.com/1821992043/413691146",
+          "rank": 4,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "平安银行2026年三季报点评",
+        "东阿阿胶2026年三季报：营利稳健，多元矩阵驱动老字号进阶"
+      ]
+    },
+    {
+      "cluster_id": 71,
+      "representative_title": "2027 见闻历，留给每天都想知道“今天发生了什么”的人！放桌角，给明年的桌面添点新见闻",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "雪球"
+      ],
+      "score": 189.0,
+      "total_mentions": 2,
+      "avg_rank": 11.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "2027 见闻历，留给每天都想知道“今天发生了什么”的人！放桌角，给明年的桌面添点新见闻",
+          "url": "https://wallstreetcn.com/articles/3782813",
+          "rank": 2,
+          "heat": "华尔街见闻"
+        },
+        {
+          "platform": "雪球",
+          "title": "2027年股市预判和策略",
+          "url": "http://www.xueqiu.com/3455034794/413262869",
+          "rank": 20,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "2027年股市预判和策略",
+        "2027 见闻历，留给每天都想知道“今天发生了什么”的人！放桌角，给明年的桌面添点新见闻"
+      ]
+    },
+    {
+      "cluster_id": 184,
+      "representative_title": "Fit Life 自在健康 · 2026健康生活消费趋势报告",
+      "cover_count": 2,
+      "platforms": [
+        "第一财经",
+        "股吧"
+      ],
+      "score": 185.0,
+      "total_mentions": 2,
+      "avg_rank": 15.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "Fit Life 自在健康 · 2026健康生活消费趋势报告",
+          "url": "https://cbndata.com/report/3361/detail",
+          "rank": 8,
+          "heat": "消费趋势"
+        },
+        {
+          "platform": "股吧",
+          "title": "中年男性“悦己消费”崛起：私人健康单品爆火，一次花数万不手软",
+          "url": "http://caifuhao.eastmoney.com/news/20260919204737379741400",
+          "rank": 22,
+          "heat": "153"
+        }
+      ],
+      "all_titles": [
+        "中年男性“悦己消费”崛起：私人健康单品爆火，一次花数万不手软",
+        "Fit Life 自在健康 · 2026健康生活消费趋势报告"
+      ]
+    },
+    {
+      "cluster_id": 153,
+      "representative_title": "重磅会议来袭！美联储，加息大消息！",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "股吧"
+      ],
+      "score": 171.5,
+      "total_mentions": 2,
+      "avg_rank": 28.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "重磅会议来袭！美联储，加息大消息！",
+          "url": "https://m.21jingji.com/article/20261024/herald/475a067b1a53256d60f7e7993a1430fb.html",
+          "rank": 13,
+          "heat": "金融"
+        },
+        {
+          "platform": "股吧",
+          "title": "【全球观市】美联储加息落地，美股科技后市怎么看？",
+          "url": "http://caifuhao.eastmoney.com/news/20260920102949244411300",
+          "rank": 44,
+          "heat": "104"
+        }
+      ],
+      "all_titles": [
+        "重磅会议来袭！美联储，加息大消息！",
+        "【全球观市】美联储加息落地，美股科技后市怎么看？"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "一场大秀和四张中国面孔，曾被唱衰维密在中国市场又翻红了？",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "一场大秀和四张中国面孔，曾被唱衰维密在中国市场又翻红了？",
+          "url": "https://www.yicai.com/news/103402997.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "一场大秀和四张中国面孔，曾被唱衰维密在中国市场又翻红了？"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "representative_title": "到年底，海狗海油兖矿又都是1PB！",
+      "cover_count": 1,
+      "platforms": [
+        "雪球"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "雪球",
+          "title": "到年底，海狗海油兖矿又都是1PB！",
+          "url": "http://www.xueqiu.com/7881199090/413698754",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "到年底，海狗海油兖矿又都是1PB！"
+      ]
+    },
+    {
+      "cluster_id": 30,
+      "representative_title": "油价飙升引发通胀忧虑，美股美债双双承压，苹果市值一度超英伟达，黄金周跌4%",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "油价飙升引发通胀忧虑，美股美债双双承压，苹果市值一度超英伟达，黄金周跌4%",
+          "url": "https://wallstreetcn.com/articles/3784279",
+          "rank": 1,
+          "heat": "12.4万"
+        }
+      ],
+      "all_titles": [
+        "油价飙升引发通胀忧虑，美股美债双双承压，苹果市值一度超英伟达，黄金周跌4%"
+      ]
+    },
+    {
+      "cluster_id": 40,
+      "representative_title": "全国蛋价跌回“4元时代”",
+      "cover_count": 1,
+      "platforms": [
+        "新浪财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "全国蛋价跌回“4元时代”",
+          "url": "https://finance.sina.com.cn/wm/2026-10-23/doc-iniweywu2651700.shtml",
+          "rank": 1,
+          "heat": "9,575"
+        }
+      ],
+      "all_titles": [
+        "全国蛋价跌回“4元时代”"
+      ]
+    },
+    {
+      "cluster_id": 50,
+      "representative_title": "银禧科技股东关系迷雾",
+      "cover_count": 1,
+      "platforms": [
+        "21财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "银禧科技股东关系迷雾",
+          "url": "https://m.21jingji.com/article/20261024/herald/a1b2ef8047c9c63e8775782eb0604342.html",
+          "rank": 1,
+          "heat": "公司"
+        }
+      ],
+      "all_titles": [
+        "银禧科技股东关系迷雾"
+      ]
+    },
+    {
+      "cluster_id": 70,
+      "representative_title": "AI军备竞赛烧向上游！报道称英特尔、英伟达、AMD预付逾千亿台币锁定高阶IC载板产能",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "AI军备竞赛烧向上游！报道称英特尔、英伟达、AMD预付逾千亿台币锁定高阶IC载板产能",
+          "url": "https://wallstreetcn.com/articles/3784397",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "AI军备竞赛烧向上游！报道称英特尔、英伟达、AMD预付逾千亿台币锁定高阶IC载板产能"
+      ]
+    },
+    {
+      "cluster_id": 90,
+      "representative_title": "通勤马甲，年轻人的\"新工服\"",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "通勤马甲，年轻人的\"新工服\"",
+          "url": "https://cbndata.com/information/295919",
+          "rank": 1,
+          "heat": "精练GymSquare"
+        }
+      ],
+      "all_titles": [
+        "通勤马甲，年轻人的\"新工服\""
+      ]
+    },
+    {
+      "cluster_id": 100,
+      "representative_title": "债市破裂，CDS飙升，美股AI的第一张骨牌要倒了？",
+      "cover_count": 1,
+      "platforms": [
+        "格隆汇"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "格隆汇",
+          "title": "债市破裂，CDS飙升，美股AI的第一张骨牌要倒了？",
+          "url": "https://www.gelonghui.com/p/7132028",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "债市破裂，CDS飙升，美股AI的第一张骨牌要倒了？"
+      ]
+    }
+  ]
+}
