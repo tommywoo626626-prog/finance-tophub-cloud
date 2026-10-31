@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日财经热搜TOP10 | 2026-10-31</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card-bg: #161b22;
+    --card-border: #30363d;
+    --accent: #f0883e;
+    --accent2: #58a6ff;
+    --accent3: #f778ba;
+    --text: #c9d1d9;
+    --text-bright: #f0f6fc;
+    --text-muted: #8b949e;
+    --green: #3fb950;
+    --red: #f85149;
+    --tag-bg: #1f2937;
+    --summary-bg: #1c1208;
+    --summary-border: #f0883e;
+    --btn-bg: #238636;
+    --btn-hover: #2ea043;
+    --btn-text: #f0f6fc;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    line-height: 1.7;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 {
+    color: var(--text-bright);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 20px 0;
+  }
+  .date {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9em;
+    margin-bottom: 24px;
+  }
+  .summary-card {
+    background: var(--summary-bg);
+    border: 2px solid var(--summary-border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .summary-card h2 {
+    color: var(--accent);
+    font-size: 1.3em;
+    margin-bottom: 16px;
+  }
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .summary-table th {
+    color: var(--accent);
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 0.85em;
+    width: 110px;
+    border-bottom: 1px solid var(--card-border);
+    vertical-align: top;
+  }
+  .summary-table td {
+    padding: 8px 12px;
+    color: var(--text);
+    font-size: 0.9em;
+    border-bottom: 1px solid var(--card-border);
+  }
+  .topic-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+  }
+  .topic-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+  }
+  .topic-rank {
+    display: inline-block;
+    font-size: 1.8em;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .topic-title {
+    font-size: 1.4em;
+    color: var(--text-bright);
+    display: inline;
+    vertical-align: middle;
+  }
+  .topic-meta {
+    color: var(--accent);
+    font-size: 0.9em;
+    margin: 8px 0 16px 0;
+    padding-left: 40px;
+  }
+  .platform-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+  }
+  .platform-table th {
+    color: var(--accent);
+    text-align: left;
+    padding: 6px 10px;
+    font-size: 0.8em;
+    border-bottom: 1px solid var(--card-border);
+    width: 100px;
+  }
+  .platform-table td {
+    padding: 6px 10px;
+    color: var(--text);
+    font-size: 0.85em;
+    border-bottom: 1px solid rgba(48,54,61,0.5);
+  }
+  .platform-table td a {
+    color: var(--accent2);
+    text-decoration: none;
+    font-size: 0.85em;
+  }
+  .platform-table td a:hover {
+    text-decoration: underline;
+  }
+  .insight {
+    background: rgba(240,136,62,0.1);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    margin: 12px 0;
+    border-radius: 6px;
+  }
+  .insight-label {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  .insight-text {
+    color: var(--text);
+    font-size: 0.9em;
+    margin-top: 4px;
+  }
+  .angle {
+    background: rgba(88,166,255,0.08);
+    border-left: 3px solid var(--accent2);
+    padding: 12px 16px;
+    margin: 12px 0;
+    border-radius: 6px;
+  }
+  .angle-label {
+    color: var(--accent2);
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  .angle-item {
+    color: var(--text);
+    font-size: 0.85em;
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(48,54,61,0.4);
+  }
+  .angle-item:last-child {
+    border-bottom: none;
+  }
+  .angle-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .angle-item .num {
+    color: var(--accent2);
+    font-weight: bold;
+    min-width: 20px;
+    font-size: 1.1em;
+  }
+  .angle-cat {
+    display: inline-block;
+    background: rgba(88,166,255,0.15);
+    color: var(--accent2);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: 600;
+    white-space: nowrap;
+    border: 1px solid rgba(88,166,255,0.3);
+  }
+  .angle-title {
+    color: var(--text-bright);
+    font-weight: bold;
+    font-size: 0.95em;
+    flex: 1;
+    min-width: 200px;
+  }
+  .btn-prompt {
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    padding: 4px 10px;
+    font-size: 0.75em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .btn-prompt:hover {
+    background: var(--btn-hover);
+  }
+  .conclusion {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 0;
+  }
+  .conclusion h2 {
+    color: var(--accent);
+    font-size: 1.2em;
+    margin-bottom: 12px;
+  }
+  .conclusion p {
+    color: var(--text);
+    font-size: 0.95em;
+    margin-bottom: 10px;
+  }
+  .conclusion ul {
+    color: var(--text);
+    font-size: 0.95em;
+    padding-left: 20px;
+  }
+  .conclusion li {
+    margin-bottom: 6px;
+  }
+  .tag {
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    margin-right: 4px;
+  }
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-overlay.active {
+    display: flex;
+  }
+  .modal-content {
+    background: var(--card-bg);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .modal-content h3 {
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  .modal-content pre {
+    background: var(--bg);
+    padding: 12px;
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 0.85em;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    line-height: 1.6;
+  }
+  .modal-close {
+    background: var(--accent);
+    color: var(--text-bright);
+    border: none;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+  .copy-hint {
+    color: var(--green);
+    font-size: 0.85em;
+    margin-top: 8px;
+  }
+  .generated-note {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.8em;
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 1px solid var(--card-border);
+  }
+  @media (max-width: 600px) {
+    body { padding: 12px; }
+    h1 { font-size: 1.4em; }
+    .topic-title { font-size: 1.1em; }
+    .platform-table { font-size: 0.8em; }
+    .angle-row { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<h1>🔥 今日财经热搜 TOP 10</h1>
+<div class="date">2026-10-31 下午 · GitHub Actions 云端自动生成 · 全平台跨覆盖合并排名</div>
+
+<div class="summary-card">
+  <h2>🎯 报告摘要</h2>
+  <table class="summary-table">
+    <tr><th>市场情绪</th><td>😱 极度恐慌｜负面事件密集，市场避险情绪浓重</td></tr>
+    <tr><th>核心叙事</th><td>财报业绩｜中海油2026年三季度财报数据粗略分析比；地缘政治｜突发，美军开火，多国联军，发动空袭，霍尔；财经热点｜31省份去年平均工资出炉</td></tr>
+    <tr><th>最高覆盖话题</th><td>「中海油2026年三季度财报数据粗略分析比较」覆盖 3 个平台</td></tr>
+    <tr><th>新增热点</th><td>🔥突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大</td></tr>
+    <tr><th>市场异象</th><td>涨跌互现，市场分化明显；需关注量价关系和板块轮动是否健康</td></tr>
+    <tr><th>明日焦点</th><td>后续财报发布、相关板块联动效应、资金面变化</td></tr>
+  </table>
+</div>
+
+<div class="topic-card">
+  <div class="topic-rank">🥇</div>
+  <span class="topic-title">中海油2026年三季度财报数据粗略分析比较</span>
+  <div class="topic-meta">
+    <span class="tag">覆盖 3 个平台</span>
+    新浪财经、第一财经、雪球
+  </div>
+  <table class="platform-table">
+    <thead><tr><th>平台</th><th>代表性标题</th></tr></thead>
+    <tbody><tr><td>新浪财经</td><td><a href="https://finance.sina.com.cn/stock/y/2026-10-28/doc-iniwtpiz3960158.shtml" target="_blank" rel="noopener">财经早报丨央视要求皇马和姆巴佩书面道歉，泡泡玛特三季度收益下降段永平持股浮亏逾10%丨2026年10月28日</a></td></tr>
+<tr><td>第一财经</td><td><a href="https://www.yicai.com/news/103413657.html" target="_blank" rel="noopener">晚间公告｜10月28日这些公告有看头</a></td></tr>
+<tr><td>雪球</td><td><a href="http://xueqiu.com/6308001210/414863938" target="_blank" rel="noopener">中海油2026年三季度财报数据粗略分析比较</a></td></tr>
+</tbody>
+  </table>
+  <div class="insight">
+    <div class="insight-label">💡 看点</div>
+    <div class="insight-text">财报季进入密集披露期，业绩分化越来越明显。市场对“好预期”的阈值在提高——仅仅是“不错”已经不够，必须“超预期”。</div>
+  </div>
+  <div class="angle">
+    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-item">
+  <div class="angle-row">
+    <span class="num">1</span>
+    <span class="angle-cat">行业视角</span>
+        <span class="angle-title">哪些行业超预期、哪些在暴雷？行业景气度的信号</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：中海油2026年三季度财报数据粗略分析比较&#10;核心角度：行业视角：哪些行业超预期、哪些在暴雷？行业景气度的信号&#10;看点：财报季进入密集披露期，业绩分化越来越明显。市场对“好预期”的阈值在提高——仅仅是“不错”已经不够，必须“超预期”。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 新浪财经｜财经早报丨央视要求皇马和姆巴佩书面道歉，泡泡玛特三季度收益下降段永平持股浮亏逾10%丨2026年10月28日：https://finance.sina.com.cn/stock/y/2026-10-28/doc-iniwtpiz3960158.shtml&#10;- 第一财经｜晚间公告｜10月28日这些公告有看头：https://www.yicai.com/news/103413657.html&#10;- 雪球｜中海油2026年三季度财报数据粗略分析比较：http://xueqiu.com/6308001210/414863938&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">2</span>
+    <span class="angle-cat">个股视角</span>
+        <span class="angle-title">财报中隐藏的关键指标——毛利率、现金流、应收账款</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：中海油2026年三季度财报数据粗略分析比较&#10;核心角度：个股视角：财报中隐藏的关键指标——毛利率、现金流、应收账款&#10;看点：财报季进入密集披露期，业绩分化越来越明显。市场对“好预期”的阈值在提高——仅仅是“不错”已经不够，必须“超预期”。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 新浪财经｜财经早报丨央视要求皇马和姆巴佩书面道歉，泡泡玛特三季度收益下降段永平持股浮亏逾10%丨2026年10月28日：https://finance.sina.com.cn/stock/y/2026-10-28/doc-iniwtpiz3960158.shtml&#10;- 第一财经｜晚间公告｜10月28日这些公告有看头：https://www.yicai.com/news/103413657.html&#10;- 雪球｜中海油2026年三季度财报数据粗略分析比较：http://xueqiu.com/6308001210/414863938&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">3</span>
+    <span class="angle-cat">预期视角</span>
+        <span class="angle-title">为什么业绩好股价也可能跌？预期管理的艺术</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：中海油2026年三季度财报数据粗略分析比较&#10;核心角度：预期视角：为什么业绩好股价也可能跌？预期管理的艺术&#10;看点：财报季进入密集披露期，业绩分化越来越明显。市场对“好预期”的阈值在提高——仅仅是“不错”已经不够，必须“超预期”。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 新浪财经｜财经早报丨央视要求皇马和姆巴佩书面道歉，泡泡玛特三季度收益下降段永平持股浮亏逾10%丨2026年10月28日：https://finance.sina.com.cn/stock/y/2026-10-28/doc-iniwtpiz3960158.shtml&#10;- 第一财经｜晚间公告｜10月28日这些公告有看头：https://www.yicai.com/news/103413657.html&#10;- 雪球｜中海油2026年三季度财报数据粗略分析比较：http://xueqiu.com/6308001210/414863938&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">4</span>
+    <span class="angle-cat">反常识观点</span>
+        <span class="angle-title">财报季最危险的不是暴雷，而是“符合预期但估值过高”</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：中海油2026年三季度财报数据粗略分析比较&#10;核心角度：反常识观点：财报季最危险的不是暴雷，而是“符合预期但估值过高”&#10;看点：财报季进入密集披露期，业绩分化越来越明显。市场对“好预期”的阈值在提高——仅仅是“不错”已经不够，必须“超预期”。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 新浪财经｜财经早报丨央视要求皇马和姆巴佩书面道歉，泡泡玛特三季度收益下降段永平持股浮亏逾10%丨2026年10月28日：https://finance.sina.com.cn/stock/y/2026-10-28/doc-iniwtpiz3960158.shtml&#10;- 第一财经｜晚间公告｜10月28日这些公告有看头：https://www.yicai.com/news/103413657.html&#10;- 雪球｜中海油2026年三季度财报数据粗略分析比较：http://xueqiu.com/6308001210/414863938&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">5</span>
+    <span class="angle-cat">策略视角</span>
+        <span class="angle-title">财报季结束后，机构会如何调仓</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：中海油2026年三季度财报数据粗略分析比较&#10;核心角度：策略视角：财报季结束后，机构会如何调仓&#10;看点：财报季进入密集披露期，业绩分化越来越明显。市场对“好预期”的阈值在提高——仅仅是“不错”已经不够，必须“超预期”。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 新浪财经｜财经早报丨央视要求皇马和姆巴佩书面道歉，泡泡玛特三季度收益下降段永平持股浮亏逾10%丨2026年10月28日：https://finance.sina.com.cn/stock/y/2026-10-28/doc-iniwtpiz3960158.shtml&#10;- 第一财经｜晚间公告｜10月28日这些公告有看头：https://www.yicai.com/news/103413657.html&#10;- 雪球｜中海油2026年三季度财报数据粗略分析比较：http://xueqiu.com/6308001210/414863938&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="topic-card">
+  <div class="topic-rank">🥈</div>
+  <span class="topic-title">突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗</span>
+  <div class="topic-meta">
+    <span class="tag">覆盖 3 个平台</span>
+    华尔街见闻、新浪财经、格隆汇
+  </div>
+  <table class="platform-table">
+    <thead><tr><th>平台</th><th>代表性标题</th></tr></thead>
+    <tbody><tr><td>华尔街见闻</td><td><a href="https://wallstreetcn.com/premium/articles/3784907?layout=wscn-layout" target="_blank" rel="noopener">付鹏：美股AI巨头的“高压锅”还能撑多久？看科技巨头的三重风险信号【付鹏说图表】</a></td></tr>
+<tr><td>新浪财经</td><td><a href="https://finance.sina.com.cn/roll/2026-10-28/doc-iniwtpkh3442002.shtml" target="_blank" rel="noopener">突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗</a></td></tr>
+<tr><td>格隆汇</td><td><a href="https://www.gelonghui.com/p/7230458" target="_blank" rel="noopener">早报 (10.31）| 全线大跌！纳指重挫700点，苹果再度反超英伟达；两大科技巨头达成重磅合作；霍尔木兹海峡又出事了！</a></td></tr>
+</tbody>
+  </table>
+  <div class="insight">
+    <div class="insight-label">💡 看点</div>
+    <div class="insight-text">地缘政治风险升温，全球避险情绪正在重新定价。冲突的持续时间和烈度将决定资产价格的波动幅度。</div>
+  </div>
+  <div class="angle">
+    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-item">
+  <div class="angle-row">
+    <span class="num">1</span>
+    <span class="angle-cat">原油视角</span>
+        <span class="angle-title">中东冲突升级，霍尔木兹海峡风险如何定价</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗&#10;核心角度：原油视角：中东冲突升级，霍尔木兹海峡风险如何定价&#10;看点：地缘政治风险升温，全球避险情绪正在重新定价。冲突的持续时间和烈度将决定资产价格的波动幅度。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜付鹏：美股AI巨头的“高压锅”还能撑多久？看科技巨头的三重风险信号【付鹏说图表】：https://wallstreetcn.com/premium/articles/3784907?layout=wscn-layout&#10;- 新浪财经｜突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗：https://finance.sina.com.cn/roll/2026-10-28/doc-iniwtpkh3442002.shtml&#10;- 格隆汇｜早报 (10.31）| 全线大跌！纳指重挫700点，苹果再度反超英伟达；两大科技巨头达成重磅合作；霍尔木兹海峡又出事了！：https://www.gelonghui.com/p/7230458&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">2</span>
+    <span class="angle-cat">黄金视角</span>
+        <span class="angle-title">避险需求推升金价，持续性取决于冲突演变</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗&#10;核心角度：黄金视角：避险需求推升金价，持续性取决于冲突演变&#10;看点：地缘政治风险升温，全球避险情绪正在重新定价。冲突的持续时间和烈度将决定资产价格的波动幅度。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜付鹏：美股AI巨头的“高压锅”还能撑多久？看科技巨头的三重风险信号【付鹏说图表】：https://wallstreetcn.com/premium/articles/3784907?layout=wscn-layout&#10;- 新浪财经｜突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗：https://finance.sina.com.cn/roll/2026-10-28/doc-iniwtpkh3442002.shtml&#10;- 格隆汇｜早报 (10.31）| 全线大跌！纳指重挫700点，苹果再度反超英伟达；两大科技巨头达成重磅合作；霍尔木兹海峡又出事了！：https://www.gelonghui.com/p/7230458&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">3</span>
+        <span class="angle-title">A股映射：地缘事件对A股军工、能源、航运板块的影响</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗&#10;核心角度：A股映射：地缘事件对A股军工、能源、航运板块的影响&#10;看点：地缘政治风险升温，全球避险情绪正在重新定价。冲突的持续时间和烈度将决定资产价格的波动幅度。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜付鹏：美股AI巨头的“高压锅”还能撑多久？看科技巨头的三重风险信号【付鹏说图表】：https://wallstreetcn.com/premium/articles/3784907?layout=wscn-layout&#10;- 新浪财经｜突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗：https://finance.sina.com.cn/roll/2026-10-28/doc-iniwtpkh3442002.shtml&#10;- 格隆汇｜早报 (10.31）| 全线大跌！纳指重挫700点，苹果再度反超英伟达；两大科技巨头达成重磅合作；霍尔木兹海峡又出事了！：https://www.gelonghui.com/p/7230458&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">4</span>
+    <span class="angle-cat">反常识观点</span>
+        <span class="angle-title">历史上地缘事件对市场的冲击往往是短期的</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗&#10;核心角度：反常识观点：历史上地缘事件对市场的冲击往往是短期的&#10;看点：地缘政治风险升温，全球避险情绪正在重新定价。冲突的持续时间和烈度将决定资产价格的波动幅度。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜付鹏：美股AI巨头的“高压锅”还能撑多久？看科技巨头的三重风险信号【付鹏说图表】：https://wallstreetcn.com/premium/articles/3784907?layout=wscn-layout&#10;- 新浪财经｜突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗：https://finance.sina.com.cn/roll/2026-10-28/doc-iniwtpkh3442002.shtml&#10;- 格隆汇｜早报 (10.31）| 全线大跌！纳指重挫700点，苹果再度反超英伟达；两大科技巨头达成重磅合作；霍尔木兹海峡又出事了！：https://www.gelonghui.com/p/7230458&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">5</span>
+        <span class="angle-title">全球航运：红海、霍尔木兹海峡风险对航运成本和保险的影响</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗&#10;核心角度：全球航运：红海、霍尔木兹海峡风险对航运成本和保险的影响&#10;看点：地缘政治风险升温，全球避险情绪正在重新定价。冲突的持续时间和烈度将决定资产价格的波动幅度。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜付鹏：美股AI巨头的“高压锅”还能撑多久？看科技巨头的三重风险信号【付鹏说图表】：https://wallstreetcn.com/premium/articles/3784907?layout=wscn-layout&#10;- 新浪财经｜突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗：https://finance.sina.com.cn/roll/2026-10-28/doc-iniwtpkh3442002.shtml&#10;- 格隆汇｜早报 (10.31）| 全线大跌！纳指重挫700点，苹果再度反超英伟达；两大科技巨头达成重磅合作；霍尔木兹海峡又出事了！：https://www.gelonghui.com/p/7230458&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="topic-card">
+  <div class="topic-rank">🥉</div>
+  <span class="topic-title">31省份去年平均工资出炉</span>
+  <div class="topic-meta">
+    <span class="tag">覆盖 2 个平台</span>
+    新浪财经、第一财经
+  </div>
+  <table class="platform-table">
+    <thead><tr><th>平台</th><th>代表性标题</th></tr></thead>
+    <tbody><tr><td>新浪财经</td><td><a href="https://finance.sina.com.cn/jjxw/2026-10-28/doc-iniwtauk6837160.shtml" target="_blank" rel="noopener">31个省份经济三季报出炉 经济大省持续发挥“压舱石”作用</a></td></tr>
+<tr><td>第一财经</td><td><a href="https://www.yicai.com/news/103408213.html" target="_blank" rel="noopener">31省份去年平均工资出炉</a></td></tr>
+</tbody>
+  </table>
+  <div class="insight">
+    <div class="insight-label">💡 看点</div>
+    <div class="insight-text">「31省份去年平均工资出炉」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。</div>
+  </div>
+  <div class="angle">
+    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-item">
+  <div class="angle-row">
+    <span class="num">1</span>
+    <span class="angle-cat">数据派视角</span>
+        <span class="angle-title">这个事件背后的核心数据是什么，趋势如何</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：31省份去年平均工资出炉&#10;核心角度：数据派视角：这个事件背后的核心数据是什么，趋势如何&#10;看点：「31省份去年平均工资出炉」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 新浪财经｜31个省份经济三季报出炉 经济大省持续发挥“压舱石”作用：https://finance.sina.com.cn/jjxw/2026-10-28/doc-iniwtauk6837160.shtml&#10;- 第一财经｜31省份去年平均工资出炉：https://www.yicai.com/news/103408213.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">2</span>
+    <span class="angle-cat">产业视角</span>
+        <span class="angle-title">对相关行业和产业链的传导效应</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：31省份去年平均工资出炉&#10;核心角度：产业视角：对相关行业和产业链的传导效应&#10;看点：「31省份去年平均工资出炉」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 新浪财经｜31个省份经济三季报出炉 经济大省持续发挥“压舱石”作用：https://finance.sina.com.cn/jjxw/2026-10-28/doc-iniwtauk6837160.shtml&#10;- 第一财经｜31省份去年平均工资出炉：https://www.yicai.com/news/103408213.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">3</span>
+    <span class="angle-cat">投资者视角</span>
+        <span class="angle-title">市场会如何反应，短期情绪和长期价值的博弈</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：31省份去年平均工资出炉&#10;核心角度：投资者视角：市场会如何反应，短期情绪和长期价值的博弈&#10;看点：「31省份去年平均工资出炉」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 新浪财经｜31个省份经济三季报出炉 经济大省持续发挥“压舱石”作用：https://finance.sina.com.cn/jjxw/2026-10-28/doc-iniwtauk6837160.shtml&#10;- 第一财经｜31省份去年平均工资出炉：https://www.yicai.com/news/103408213.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">4</span>
+    <span class="angle-cat">反常识观点</span>
+        <span class="angle-title">为什么大众可能的第一反应是错的</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：31省份去年平均工资出炉&#10;核心角度：反常识观点：为什么大众可能的第一反应是错的&#10;看点：「31省份去年平均工资出炉」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 新浪财经｜31个省份经济三季报出炉 经济大省持续发挥“压舱石”作用：https://finance.sina.com.cn/jjxw/2026-10-28/doc-iniwtauk6837160.shtml&#10;- 第一财经｜31省份去年平均工资出炉：https://www.yicai.com/news/103408213.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">5</span>
+    <span class="angle-cat">政策视角</span>
+        <span class="angle-title">政策层面可能如何应对，有没有工具箱</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：31省份去年平均工资出炉&#10;核心角度：政策视角：政策层面可能如何应对，有没有工具箱&#10;看点：「31省份去年平均工资出炉」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 新浪财经｜31个省份经济三季报出炉 经济大省持续发挥“压舱石”作用：https://finance.sina.com.cn/jjxw/2026-10-28/doc-iniwtauk6837160.shtml&#10;- 第一财经｜31省份去年平均工资出炉：https://www.yicai.com/news/103408213.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="topic-card">
+  <div class="topic-rank">4️⃣</div>
+  <span class="topic-title">巴菲特折戟AI？100亿美元刚投就亏20%</span>
+  <div class="topic-meta">
+    <span class="tag">覆盖 2 个平台</span>
+    华尔街见闻、格隆汇
+  </div>
+  <table class="platform-table">
+    <thead><tr><th>平台</th><th>代表性标题</th></tr></thead>
+    <tbody><tr><td>华尔街见闻</td><td><a href="https://wallstreetcn.com/member/articles/3784547" target="_blank" rel="noopener">META用950亿美元融资点燃新周期：AI融资的恐慌与焦虑</a></td></tr>
+<tr><td>格隆汇</td><td><a href="https://www.gelonghui.com/p/7230416" target="_blank" rel="noopener">巴菲特折戟AI？100亿美元刚投就亏20%</a></td></tr>
+</tbody>
+  </table>
+  <div class="insight">
+    <div class="insight-label">💡 看点</div>
+    <div class="insight-text">汇率波动加大，人民币兑美元走势牵动全球市场神经。利差、贸易和资本流动三股力量正在角力。</div>
+  </div>
+  <div class="angle">
+    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-item">
+  <div class="angle-row">
+    <span class="num">1</span>
+    <span class="angle-cat">进出口视角</span>
+        <span class="angle-title">汇率变动对出口企业和进口成本的直接影响</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：巴菲特折戟AI？100亿美元刚投就亏20%&#10;核心角度：进出口视角：汇率变动对出口企业和进口成本的直接影响&#10;看点：汇率波动加大，人民币兑美元走势牵动全球市场神经。利差、贸易和资本流动三股力量正在角力。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜META用950亿美元融资点燃新周期：AI融资的恐慌与焦虑：https://wallstreetcn.com/member/articles/3784547&#10;- 格隆汇｜巴菲特折戟AI？100亿美元刚投就亏20%：https://www.gelonghui.com/p/7230416&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">2</span>
+        <span class="angle-title">资本流动：汇率预期如何影响外资流入A股和债市</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：巴菲特折戟AI？100亿美元刚投就亏20%&#10;核心角度：资本流动：汇率预期如何影响外资流入A股和债市&#10;看点：汇率波动加大，人民币兑美元走势牵动全球市场神经。利差、贸易和资本流动三股力量正在角力。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜META用950亿美元融资点燃新周期：AI融资的恐慌与焦虑：https://wallstreetcn.com/member/articles/3784547&#10;- 格隆汇｜巴菲特折戟AI？100亿美元刚投就亏20%：https://www.gelonghui.com/p/7230416&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">3</span>
+    <span class="angle-cat">政策视角</span>
+        <span class="angle-title">央行稳汇率工具箱里还有哪些牌</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：巴菲特折戟AI？100亿美元刚投就亏20%&#10;核心角度：政策视角：央行稳汇率工具箱里还有哪些牌&#10;看点：汇率波动加大，人民币兑美元走势牵动全球市场神经。利差、贸易和资本流动三股力量正在角力。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜META用950亿美元融资点燃新周期：AI融资的恐慌与焦虑：https://wallstreetcn.com/member/articles/3784547&#10;- 格隆汇｜巴菲特折戟AI？100亿美元刚投就亏20%：https://www.gelonghui.com/p/7230416&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">4</span>
+    <span class="angle-cat">反常识观点</span>
+        <span class="angle-title">人民币贬值不一定是利空，对出口导向型企业是利好</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：巴菲特折戟AI？100亿美元刚投就亏20%&#10;核心角度：反常识观点：人民币贬值不一定是利空，对出口导向型企业是利好&#10;看点：汇率波动加大，人民币兑美元走势牵动全球市场神经。利差、贸易和资本流动三股力量正在角力。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜META用950亿美元融资点燃新周期：AI融资的恐慌与焦虑：https://wallstreetcn.com/member/articles/3784547&#10;- 格隆汇｜巴菲特折戟AI？100亿美元刚投就亏20%：https://www.gelonghui.com/p/7230416&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">5</span>
+    <span class="angle-cat">全球视角</span>
+        <span class="angle-title">美元指数走向和美联储政策对人民币的影响</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：巴菲特折戟AI？100亿美元刚投就亏20%&#10;核心角度：全球视角：美元指数走向和美联储政策对人民币的影响&#10;看点：汇率波动加大，人民币兑美元走势牵动全球市场神经。利差、贸易和资本流动三股力量正在角力。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜META用950亿美元融资点燃新周期：AI融资的恐慌与焦虑：https://wallstreetcn.com/member/articles/3784547&#10;- 格隆汇｜巴菲特折戟AI？100亿美元刚投就亏20%：https://www.gelonghui.com/p/7230416&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="topic-card">
+  <div class="topic-rank">5️⃣</div>
+  <span class="topic-title">当前市场调整进度</span>
+  <div class="topic-meta">
+    <span class="tag">覆盖 2 个平台</span>
+    股吧、雪球
+  </div>
+  <table class="platform-table">
+    <thead><tr><th>平台</th><th>代表性标题</th></tr></thead>
+    <tbody><tr><td>股吧</td><td><a href="http://caifuhao.eastmoney.com/news/20260919165636193295880" target="_blank" rel="noopener">【周度复盘】恐惧退潮，贪婪未至：从卖盘衰竭与买盘衰竭读懂当前市场</a></td></tr>
+<tr><td>雪球</td><td><a href="http://xueqiu.com/8994828763/414879962" target="_blank" rel="noopener">当前市场调整进度</a></td></tr>
+</tbody>
+  </table>
+  <div class="insight">
+    <div class="insight-label">💡 看点</div>
+    <div class="insight-text">「当前市场调整进度」成为市场关注焦点，背后的市场信号值得深入解读。事件的连锁反应和后续走向将决定市场短期情绪。</div>
+  </div>
+  <div class="angle">
+    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-item">
+  <div class="angle-row">
+    <span class="num">1</span>
+    <span class="angle-cat">数据派视角</span>
+        <span class="angle-title">这个事件背后的核心数据是什么，趋势如何</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：当前市场调整进度&#10;核心角度：数据派视角：这个事件背后的核心数据是什么，趋势如何&#10;看点：「当前市场调整进度」成为市场关注焦点，背后的市场信号值得深入解读。事件的连锁反应和后续走向将决定市场短期情绪。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 股吧｜【周度复盘】恐惧退潮，贪婪未至：从卖盘衰竭与买盘衰竭读懂当前市场：http://caifuhao.eastmoney.com/news/20260919165636193295880&#10;- 雪球｜当前市场调整进度：http://xueqiu.com/8994828763/414879962&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">2</span>
+    <span class="angle-cat">产业视角</span>
+        <span class="angle-title">对相关行业和产业链的传导效应</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：当前市场调整进度&#10;核心角度：产业视角：对相关行业和产业链的传导效应&#10;看点：「当前市场调整进度」成为市场关注焦点，背后的市场信号值得深入解读。事件的连锁反应和后续走向将决定市场短期情绪。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 股吧｜【周度复盘】恐惧退潮，贪婪未至：从卖盘衰竭与买盘衰竭读懂当前市场：http://caifuhao.eastmoney.com/news/20260919165636193295880&#10;- 雪球｜当前市场调整进度：http://xueqiu.com/8994828763/414879962&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">3</span>
+    <span class="angle-cat">投资者视角</span>
+        <span class="angle-title">市场会如何反应，短期情绪和长期价值的博弈</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：当前市场调整进度&#10;核心角度：投资者视角：市场会如何反应，短期情绪和长期价值的博弈&#10;看点：「当前市场调整进度」成为市场关注焦点，背后的市场信号值得深入解读。事件的连锁反应和后续走向将决定市场短期情绪。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 股吧｜【周度复盘】恐惧退潮，贪婪未至：从卖盘衰竭与买盘衰竭读懂当前市场：http://caifuhao.eastmoney.com/news/20260919165636193295880&#10;- 雪球｜当前市场调整进度：http://xueqiu.com/8994828763/414879962&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">4</span>
+    <span class="angle-cat">反常识观点</span>
+        <span class="angle-title">为什么大众可能的第一反应是错的</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：当前市场调整进度&#10;核心角度：反常识观点：为什么大众可能的第一反应是错的&#10;看点：「当前市场调整进度」成为市场关注焦点，背后的市场信号值得深入解读。事件的连锁反应和后续走向将决定市场短期情绪。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 股吧｜【周度复盘】恐惧退潮，贪婪未至：从卖盘衰竭与买盘衰竭读懂当前市场：http://caifuhao.eastmoney.com/news/20260919165636193295880&#10;- 雪球｜当前市场调整进度：http://xueqiu.com/8994828763/414879962&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">5</span>
+    <span class="angle-cat">政策视角</span>
+        <span class="angle-title">政策层面可能如何应对，有没有工具箱</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：当前市场调整进度&#10;核心角度：政策视角：政策层面可能如何应对，有没有工具箱&#10;看点：「当前市场调整进度」成为市场关注焦点，背后的市场信号值得深入解读。事件的连锁反应和后续走向将决定市场短期情绪。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 股吧｜【周度复盘】恐惧退潮，贪婪未至：从卖盘衰竭与买盘衰竭读懂当前市场：http://caifuhao.eastmoney.com/news/20260919165636193295880&#10;- 雪球｜当前市场调整进度：http://xueqiu.com/8994828763/414879962&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="topic-card">
+  <div class="topic-rank">6️⃣</div>
+  <span class="topic-title">从可转债逻辑看恒瑞医药和药明康德的商业模式</span>
+  <div class="topic-meta">
+    <span class="tag">覆盖 2 个平台</span>
+    股吧、集思录
+  </div>
+  <table class="platform-table">
+    <thead><tr><th>平台</th><th>代表性标题</th></tr></thead>
+    <tbody><tr><td>股吧</td><td><a href="http://caifuhao.eastmoney.com/news/20260920084722181666060" target="_blank" rel="noopener">当前可转债的出路在哪</a></td></tr>
+<tr><td>集思录</td><td><a href="https://www.jisilu.cn/question/526405" target="_blank" rel="noopener">从可转债逻辑看恒瑞医药和药明康德的商业模式</a></td></tr>
+</tbody>
+  </table>
+  <div class="insight">
+    <div class="insight-label">💡 看点</div>
+    <div class="insight-text">医药板块经历深度调整后出现分化。创新药和CXO的反弹能否持续，取决于政策面和海外订单的走向。</div>
+  </div>
+  <div class="angle">
+    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-item">
+  <div class="angle-row">
+    <span class="num">1</span>
+    <span class="angle-cat">产业视角</span>
+        <span class="angle-title">创新药研发管线和获批进展，谁在真正创新</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：从可转债逻辑看恒瑞医药和药明康德的商业模式&#10;核心角度：产业视角：创新药研发管线和获批进展，谁在真正创新&#10;看点：医药板块经历深度调整后出现分化。创新药和CXO的反弹能否持续，取决于政策面和海外订单的走向。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 股吧｜当前可转债的出路在哪：http://caifuhao.eastmoney.com/news/20260920084722181666060&#10;- 集思录｜从可转债逻辑看恒瑞医药和药明康德的商业模式：https://www.jisilu.cn/question/526405&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">2</span>
+    <span class="angle-cat">政策视角</span>
+        <span class="angle-title">医保谈判和集采政策对药企利润的影响</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：从可转债逻辑看恒瑞医药和药明康德的商业模式&#10;核心角度：政策视角：医保谈判和集采政策对药企利润的影响&#10;看点：医药板块经历深度调整后出现分化。创新药和CXO的反弹能否持续，取决于政策面和海外订单的走向。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 股吧｜当前可转债的出路在哪：http://caifuhao.eastmoney.com/news/20260920084722181666060&#10;- 集思录｜从可转债逻辑看恒瑞医药和药明康德的商业模式：https://www.jisilu.cn/question/526405&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">3</span>
+    <span class="angle-cat">全球视角</span>
+        <span class="angle-title">CXO的海外订单是否会因中美关系变化</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：从可转债逻辑看恒瑞医药和药明康德的商业模式&#10;核心角度：全球视角：CXO的海外订单是否会因中美关系变化&#10;看点：医药板块经历深度调整后出现分化。创新药和CXO的反弹能否持续，取决于政策面和海外订单的走向。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 股吧｜当前可转债的出路在哪：http://caifuhao.eastmoney.com/news/20260920084722181666060&#10;- 集思录｜从可转债逻辑看恒瑞医药和药明康德的商业模式：https://www.jisilu.cn/question/526405&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">4</span>
+    <span class="angle-cat">反常识观点</span>
+        <span class="angle-title">集采不全是利空，对以量换价的仿制药企可能是机会</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：从可转债逻辑看恒瑞医药和药明康德的商业模式&#10;核心角度：反常识观点：集采不全是利空，对以量换价的仿制药企可能是机会&#10;看点：医药板块经历深度调整后出现分化。创新药和CXO的反弹能否持续，取决于政策面和海外订单的走向。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 股吧｜当前可转债的出路在哪：http://caifuhao.eastmoney.com/news/20260920084722181666060&#10;- 集思录｜从可转债逻辑看恒瑞医药和药明康德的商业模式：https://www.jisilu.cn/question/526405&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">5</span>
+    <span class="angle-cat">投资视角</span>
+        <span class="angle-title">创新药和CXO板块的估值修复空间有多大</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：从可转债逻辑看恒瑞医药和药明康德的商业模式&#10;核心角度：投资视角：创新药和CXO板块的估值修复空间有多大&#10;看点：医药板块经历深度调整后出现分化。创新药和CXO的反弹能否持续，取决于政策面和海外订单的走向。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 股吧｜当前可转债的出路在哪：http://caifuhao.eastmoney.com/news/20260920084722181666060&#10;- 集思录｜从可转债逻辑看恒瑞医药和药明康德的商业模式：https://www.jisilu.cn/question/526405&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="topic-card">
+  <div class="topic-rank">7️⃣</div>
+  <span class="topic-title">东鹏饮料：即日起终止与基利安·姆巴佩全部合作</span>
+  <div class="topic-meta">
+    <span class="tag">覆盖 1 个平台</span>
+    第一财经
+  </div>
+  <table class="platform-table">
+    <thead><tr><th>平台</th><th>代表性标题</th></tr></thead>
+    <tbody><tr><td>第一财经</td><td><a href="https://www.yicai.com/news/103410672.html" target="_blank" rel="noopener">东鹏饮料：即日起终止与基利安·姆巴佩全部合作</a></td></tr>
+</tbody>
+  </table>
+  <div class="insight">
+    <div class="insight-label">💡 看点</div>
+    <div class="insight-text">「东鹏饮料：即日起终止与基利安·姆巴佩全部合作」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。</div>
+  </div>
+  <div class="angle">
+    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-item">
+  <div class="angle-row">
+    <span class="num">1</span>
+    <span class="angle-cat">数据派视角</span>
+        <span class="angle-title">这个事件背后的核心数据是什么，趋势如何</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：东鹏饮料：即日起终止与基利安·姆巴佩全部合作&#10;核心角度：数据派视角：这个事件背后的核心数据是什么，趋势如何&#10;看点：「东鹏饮料：即日起终止与基利安·姆巴佩全部合作」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 第一财经｜东鹏饮料：即日起终止与基利安·姆巴佩全部合作：https://www.yicai.com/news/103410672.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">2</span>
+    <span class="angle-cat">产业视角</span>
+        <span class="angle-title">对相关行业和产业链的传导效应</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：东鹏饮料：即日起终止与基利安·姆巴佩全部合作&#10;核心角度：产业视角：对相关行业和产业链的传导效应&#10;看点：「东鹏饮料：即日起终止与基利安·姆巴佩全部合作」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 第一财经｜东鹏饮料：即日起终止与基利安·姆巴佩全部合作：https://www.yicai.com/news/103410672.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">3</span>
+    <span class="angle-cat">投资者视角</span>
+        <span class="angle-title">市场会如何反应，短期情绪和长期价值的博弈</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：东鹏饮料：即日起终止与基利安·姆巴佩全部合作&#10;核心角度：投资者视角：市场会如何反应，短期情绪和长期价值的博弈&#10;看点：「东鹏饮料：即日起终止与基利安·姆巴佩全部合作」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 第一财经｜东鹏饮料：即日起终止与基利安·姆巴佩全部合作：https://www.yicai.com/news/103410672.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">4</span>
+    <span class="angle-cat">反常识观点</span>
+        <span class="angle-title">为什么大众可能的第一反应是错的</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：东鹏饮料：即日起终止与基利安·姆巴佩全部合作&#10;核心角度：反常识观点：为什么大众可能的第一反应是错的&#10;看点：「东鹏饮料：即日起终止与基利安·姆巴佩全部合作」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 第一财经｜东鹏饮料：即日起终止与基利安·姆巴佩全部合作：https://www.yicai.com/news/103410672.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">5</span>
+    <span class="angle-cat">政策视角</span>
+        <span class="angle-title">政策层面可能如何应对，有没有工具箱</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：东鹏饮料：即日起终止与基利安·姆巴佩全部合作&#10;核心角度：政策视角：政策层面可能如何应对，有没有工具箱&#10;看点：「东鹏饮料：即日起终止与基利安·姆巴佩全部合作」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 第一财经｜东鹏饮料：即日起终止与基利安·姆巴佩全部合作：https://www.yicai.com/news/103410672.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="topic-card">
+  <div class="topic-rank">8️⃣</div>
+  <span class="topic-title">18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。</span>
+  <div class="topic-meta">
+    <span class="tag">覆盖 1 个平台</span>
+    雪球
+  </div>
+  <table class="platform-table">
+    <thead><tr><th>平台</th><th>代表性标题</th></tr></thead>
+    <tbody><tr><td>雪球</td><td><a href="http://xueqiu.com/2884313460/414874671" target="_blank" rel="noopener">18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。</a></td></tr>
+</tbody>
+  </table>
+  <div class="insight">
+    <div class="insight-label">💡 看点</div>
+    <div class="insight-text">银行板块的息差、资产质量和信贷投放是核心看点。在支持实体经济和维持自身盈利之间，银行正在走平衡木。</div>
+  </div>
+  <div class="angle">
+    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-item">
+  <div class="angle-row">
+    <span class="num">1</span>
+    <span class="angle-cat">息差视角</span>
+        <span class="angle-title">LPR下调对银行净息差的传导效应有多大</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。&#10;核心角度：息差视角：LPR下调对银行净息差的传导效应有多大&#10;看点：银行板块的息差、资产质量和信贷投放是核心看点。在支持实体经济和维持自身盈利之间，银行正在走平衡木。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 雪球｜18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。：http://xueqiu.com/2884313460/414874671&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">2</span>
+        <span class="angle-title">资产质量：不良率、拨备覆盖率和关注类贷款的变化趋势</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。&#10;核心角度：资产质量：不良率、拨备覆盖率和关注类贷款的变化趋势&#10;看点：银行板块的息差、资产质量和信贷投放是核心看点。在支持实体经济和维持自身盈利之间，银行正在走平衡木。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 雪球｜18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。：http://xueqiu.com/2884313460/414874671&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">3</span>
+    <span class="angle-cat">业务视角</span>
+        <span class="angle-title">AIC和子公司布局对银行估值的重估逻辑</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。&#10;核心角度：业务视角：AIC和子公司布局对银行估值的重估逻辑&#10;看点：银行板块的息差、资产质量和信贷投放是核心看点。在支持实体经济和维持自身盈利之间，银行正在走平衡木。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 雪球｜18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。：http://xueqiu.com/2884313460/414874671&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">4</span>
+    <span class="angle-cat">反常识观点</span>
+        <span class="angle-title">银行股低估值不一定是机会，要看ROE能否企稳</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。&#10;核心角度：反常识观点：银行股低估值不一定是机会，要看ROE能否企稳&#10;看点：银行板块的息差、资产质量和信贷投放是核心看点。在支持实体经济和维持自身盈利之间，银行正在走平衡木。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 雪球｜18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。：http://xueqiu.com/2884313460/414874671&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">5</span>
+    <span class="angle-cat">分红视角</span>
+        <span class="angle-title">高股息策略下，银行股的配置价值如何</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。&#10;核心角度：分红视角：高股息策略下，银行股的配置价值如何&#10;看点：银行板块的息差、资产质量和信贷投放是核心看点。在支持实体经济和维持自身盈利之间，银行正在走平衡木。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 雪球｜18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。：http://xueqiu.com/2884313460/414874671&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="topic-card">
+  <div class="topic-rank">9️⃣</div>
+  <span class="topic-title">英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月</span>
+  <div class="topic-meta">
+    <span class="tag">覆盖 1 个平台</span>
+    华尔街见闻
+  </div>
+  <table class="platform-table">
+    <thead><tr><th>平台</th><th>代表性标题</th></tr></thead>
+    <tbody><tr><td>华尔街见闻</td><td><a href="https://wallstreetcn.com/articles/3784816" target="_blank" rel="noopener">英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月</a></td></tr>
+</tbody>
+  </table>
+  <div class="insight">
+    <div class="insight-label">💡 看点</div>
+    <div class="insight-text">全球科技股正在经历估值重定价。AI从“讲故事”到“业绩验证”的转换期，任何一个不及预期的财报或政策都可能引发连锁反应。</div>
+  </div>
+  <div class="angle">
+    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-item">
+  <div class="angle-row">
+    <span class="num">1</span>
+        <span class="angle-title">美股投资者：科技巨头财报季，AI叙事能否继续支撑估值</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月&#10;核心角度：美股投资者：科技巨头财报季，AI叙事能否继续支撑估值&#10;看点：全球科技股正在经历估值重定价。AI从“讲故事”到“业绩验证”的转换期，任何一个不及预期的财报或政策都可能引发连锁反应。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月：https://wallstreetcn.com/articles/3784816&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">2</span>
+        <span class="angle-title">A股映射：美股科技股的涨跌如何影响A股AI和半导体板块</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月&#10;核心角度：A股映射：美股科技股的涨跌如何影响A股AI和半导体板块&#10;看点：全球科技股正在经历估值重定价。AI从“讲故事”到“业绩验证”的转换期，任何一个不及预期的财报或政策都可能引发连锁反应。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月：https://wallstreetcn.com/articles/3784816&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">3</span>
+    <span class="angle-cat">产业链视角</span>
+        <span class="angle-title">从芯片到应用，AI产业链哪个环节最受益</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月&#10;核心角度：产业链视角：从芯片到应用，AI产业链哪个环节最受益&#10;看点：全球科技股正在经历估值重定价。AI从“讲故事”到“业绩验证”的转换期，任何一个不及预期的财报或政策都可能引发连锁反应。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月：https://wallstreetcn.com/articles/3784816&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">4</span>
+    <span class="angle-cat">反常识观点</span>
+        <span class="angle-title">科技巨头即便超预期也可能是“利好出尽”</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月&#10;核心角度：反常识观点：科技巨头即便超预期也可能是“利好出尽”&#10;看点：全球科技股正在经历估值重定价。AI从“讲故事”到“业绩验证”的转换期，任何一个不及预期的财报或政策都可能引发连锁反应。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月：https://wallstreetcn.com/articles/3784816&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">5</span>
+        <span class="angle-title">全球资金流向：美股科技调整是否导致资金向新兴市场回流</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月&#10;核心角度：全球资金流向：美股科技调整是否导致资金向新兴市场回流&#10;看点：全球科技股正在经历估值重定价。AI从“讲故事”到“业绩验证”的转换期，任何一个不及预期的财报或政策都可能引发连锁反应。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 华尔街见闻｜英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月：https://wallstreetcn.com/articles/3784816&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="topic-card">
+  <div class="topic-rank">🔟</div>
+  <span class="topic-title">恒力们的“智造”跃迁</span>
+  <div class="topic-meta">
+    <span class="tag">覆盖 1 个平台</span>
+    21财经
+  </div>
+  <table class="platform-table">
+    <thead><tr><th>平台</th><th>代表性标题</th></tr></thead>
+    <tbody><tr><td>21财经</td><td><a href="https://m.21jingji.com/article/20261031/herald/5c96be74320e4c92e2529d8e1aa75137.html" target="_blank" rel="noopener">恒力们的“智造”跃迁</a></td></tr>
+</tbody>
+  </table>
+  <div class="insight">
+    <div class="insight-label">💡 看点</div>
+    <div class="insight-text">「恒力们的“智造”跃迁」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。</div>
+  </div>
+  <div class="angle">
+    <div class="angle-label">🔍 解读角度</div>
+    <div class="angle-item">
+  <div class="angle-row">
+    <span class="num">1</span>
+    <span class="angle-cat">数据派视角</span>
+        <span class="angle-title">这个事件背后的核心数据是什么，趋势如何</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：恒力们的“智造”跃迁&#10;核心角度：数据派视角：这个事件背后的核心数据是什么，趋势如何&#10;看点：「恒力们的“智造”跃迁」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 21财经｜恒力们的“智造”跃迁：https://m.21jingji.com/article/20261031/herald/5c96be74320e4c92e2529d8e1aa75137.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">2</span>
+    <span class="angle-cat">产业视角</span>
+        <span class="angle-title">对相关行业和产业链的传导效应</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：恒力们的“智造”跃迁&#10;核心角度：产业视角：对相关行业和产业链的传导效应&#10;看点：「恒力们的“智造”跃迁」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 21财经｜恒力们的“智造”跃迁：https://m.21jingji.com/article/20261031/herald/5c96be74320e4c92e2529d8e1aa75137.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">3</span>
+    <span class="angle-cat">投资者视角</span>
+        <span class="angle-title">市场会如何反应，短期情绪和长期价值的博弈</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：恒力们的“智造”跃迁&#10;核心角度：投资者视角：市场会如何反应，短期情绪和长期价值的博弈&#10;看点：「恒力们的“智造”跃迁」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 21财经｜恒力们的“智造”跃迁：https://m.21jingji.com/article/20261031/herald/5c96be74320e4c92e2529d8e1aa75137.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">4</span>
+    <span class="angle-cat">反常识观点</span>
+        <span class="angle-title">为什么大众可能的第一反应是错的</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：恒力们的“智造”跃迁&#10;核心角度：反常识观点：为什么大众可能的第一反应是错的&#10;看点：「恒力们的“智造”跃迁」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 21财经｜恒力们的“智造”跃迁：https://m.21jingji.com/article/20261031/herald/5c96be74320e4c92e2529d8e1aa75137.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div><div class="angle-item">
+  <div class="angle-row">
+    <span class="num">5</span>
+    <span class="angle-cat">政策视角</span>
+        <span class="angle-title">政策层面可能如何应对，有没有工具箱</span>
+    <button class="btn-prompt" onclick="showPromptModal(this)" data-prompt="你是一位财经短视频博主，请用&quot;暖叔&quot;风格，围绕以下话题和角度创作一段口播文案。&#10;&#10;话题：恒力们的“智造”跃迁&#10;核心角度：政策视角：政策层面可能如何应对，有没有工具箱&#10;看点：「恒力们的“智造”跃迁」引发市场广泛关注。事件背后的深层逻辑和后续发展值得持续跟踪，其对相关板块和整体市场情绪的影响是核心看点。&#10;&#10;请严格遵循以下结构：&#10;1. 开头钩子：用反常识或强情绪切入，一句话抓住观众注意力。&#10;2. 中段反常识拆解：解释为什么大众当前的认知可能是错的，抛出对立面。&#10;3. 推进2-3层事实：逐层展开具体数据、事件或市场反应，不空泛。&#10;4. 结尾观察变量：指出接下来需要重点观察的信号，不下方向判断。&#10;&#10;暖叔风格固定规则（必须全部满足）：&#10;1. 字数控制在200-280字之间。&#10;2. 口语化、碎片化表达，像聊天而不是念稿。&#10;3. 事件与评论紧密咬合，不要脱离话题。&#10;4. 使用暖叔口语词，如&quot;说白了&quot;&quot;你看&quot;&quot;咱就说&quot;&quot;得明白&quot;等。&#10;5. 短句为主，避免复杂长句。&#10;6. 包含具体信息点、数据或真实细节。&#10;7. 人称使用&quot;我&quot;&quot;你&quot;&quot;我们&quot;，增强代入感。&#10;8. 禁止出现任何投资建议词汇，如&quot;买入&quot;&quot;卖出&quot;&quot;抄底&quot;&quot;满仓&quot;等。&#10;9. 禁止出现违规词汇、夸张恐吓用语。&#10;10. 禁止公众号腔、新闻播报腔。&#10;&#10;参考新闻源：&#10;- 21财经｜恒力们的“智造”跃迁：https://m.21jingji.com/article/20261031/herald/5c96be74320e4c92e2529d8e1aa75137.html&#10;&#10;注意：不要包含时间要求（如&quot;15秒&quot;&quot;60秒&quot;&quot;120秒&quot;），不要给出任何投资买卖建议。只输出可直接用作口播文案的文本。">📝 生成提示词</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="conclusion">
+  <h2>📝 今日总结</h2>
+  <p>2026-10-31 下午，全球财经市场热点覆盖以下主线：</p>
+  <ul>
+<li><strong>财报业绩</strong>——中海油2026年三季度财报数据粗略分析比较</li>
+<li><strong>地缘政治</strong>——突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗</li>
+<li><strong>财经热点</strong>——31省份去年平均工资出炉</li>
+<li><strong>外汇市场</strong>——巴菲特折戟AI？100亿美元刚投就亏20%</li>
+<li><strong>财经热点</strong>——当前市场调整进度</li>
+<li><strong>医药健康</strong>——从可转债逻辑看恒瑞医药和药明康德的商业模式</li>
+<li><strong>财经热点</strong>——东鹏饮料：即日起终止与基利安·姆巴佩全部合作</li>
+<li><strong>银行金融</strong>——18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。</li>
+<li><strong>外盘科技</strong>——英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月</li>
+<li><strong>财经热点</strong>——恒力们的“智造”跃迁</li>
+  </ul>
+</div>
+
+<div class="modal-overlay" id="promptModal">
+  <div class="modal-content">
+    <h3>📝 生成提示词</h3>
+    <p style="color:#8b949e;font-size:0.85em;margin-bottom:8px;">以下提示词已包含话题、角度、看点与参考新闻源，可直接复制到任意AI生成口播文案</p>
+    <pre id="promptText"></pre>
+    <div class="copy-hint" id="copyHint">✅ 已自动复制到剪贴板</div>
+    <button class="modal-close" onclick="closePromptModal()">关闭</button>
+  </div>
+</div>
+
+<script>
+function showPromptModal(btn) {
+  const text = btn.getAttribute('data-prompt').replace(/&#10;/g, '\n');
+  document.getElementById('promptText').textContent = text;
+  document.getElementById('copyHint').style.display = 'none';
+  document.getElementById('promptModal').classList.add('active');
+  navigator.clipboard.writeText(text).then(() => {
+    document.getElementById('copyHint').style.display = 'block';
+  }).catch(() => {
+    document.getElementById('copyHint').textContent = '⚠️ 复制失败，请手动复制';
+    document.getElementById('copyHint').style.display = 'block';
+  });
+}
+function closePromptModal() {
+  document.getElementById('promptModal').classList.remove('active');
+}
+document.getElementById('promptModal').addEventListener('click', function(e) {
+  if (e.target === this) closePromptModal();
+});
+</script>
+
+<div class="generated-note">
+  🤖 本报告由 GitHub Actions 云端定时自动生成 · 数据来源：tophub.today · 2026-10-31 下午
+</div>
+
+</body>
+</html>

@@ -1,0 +1,435 @@
+{
+  "date": "2026-10-31",
+  "period": "下午",
+  "platforms": [
+    "第一财经",
+    "新浪财经",
+    "华尔街见闻",
+    "格隆汇",
+    "股吧",
+    "集思录",
+    "雪球",
+    "21财经"
+  ],
+  "total_topics": 191,
+  "clusters": [
+    {
+      "cluster_id": 46,
+      "representative_title": "中海油2026年三季度财报数据粗略分析比较",
+      "cover_count": 3,
+      "platforms": [
+        "新浪财经",
+        "第一财经",
+        "雪球"
+      ],
+      "score": 294.6666666666667,
+      "total_mentions": 4,
+      "avg_rank": 5.3,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "财经早报丨央视要求皇马和姆巴佩书面道歉，泡泡玛特三季度收益下降段永平持股浮亏逾10%丨2026年10月28日",
+          "url": "https://finance.sina.com.cn/stock/y/2026-10-28/doc-iniwtpiz3960158.shtml",
+          "rank": 4,
+          "heat": "7,282"
+        },
+        {
+          "platform": "第一财经",
+          "title": "晚间公告｜10月28日这些公告有看头",
+          "url": "https://www.yicai.com/news/103413657.html",
+          "rank": 10,
+          "heat": ""
+        },
+        {
+          "platform": "雪球",
+          "title": "中海油2026年三季度财报数据粗略分析比较",
+          "url": "http://xueqiu.com/6308001210/414863938",
+          "rank": 2,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "晚间公告｜10月28日这些公告有看头",
+        "中海油2026年三季度财报数据粗略分析比较",
+        "财经早报丨央视要求皇马和姆巴佩书面道歉，泡泡玛特三季度收益下降段永平持股浮亏逾10%丨2026年10月28日",
+        "操盘必读：影响股市利好或利空消息_2026年10月28日_财经新闻"
+      ]
+    },
+    {
+      "cluster_id": 108,
+      "representative_title": "突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经",
+        "格隆汇"
+      ],
+      "score": 294.0,
+      "total_mentions": 3,
+      "avg_rank": 6.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "付鹏：美股AI巨头的“高压锅”还能撑多久？看科技巨头的三重风险信号【付鹏说图表】",
+          "url": "https://wallstreetcn.com/premium/articles/3784907?layout=wscn-layout",
+          "rank": 8,
+          "heat": "付鹏"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗",
+          "url": "https://finance.sina.com.cn/roll/2026-10-28/doc-iniwtpkh3442002.shtml",
+          "rank": 1,
+          "heat": "18,144"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "早报 (10.31）| 全线大跌！纳指重挫700点，苹果再度反超英伟达；两大科技巨头达成重磅合作；霍尔木兹海峡又出事了！",
+          "url": "https://www.gelonghui.com/p/7230458",
+          "rank": 9,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "突发，美军开火，多国联军，发动空袭，霍尔木兹海峡大消息，油轮起火，特朗普称美国已经击败伊朗",
+        "付鹏：美股AI巨头的“高压锅”还能撑多久？看科技巨头的三重风险信号【付鹏说图表】",
+        "早报 (10.31）| 全线大跌！纳指重挫700点，苹果再度反超英伟达；两大科技巨头达成重磅合作；霍尔木兹海峡又出事了！"
+      ]
+    },
+    {
+      "cluster_id": 49,
+      "representative_title": "31省份去年平均工资出炉",
+      "cover_count": 2,
+      "platforms": [
+        "新浪财经",
+        "第一财经"
+      ],
+      "score": 193.5,
+      "total_mentions": 2,
+      "avg_rank": 6.5,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "31个省份经济三季报出炉 经济大省持续发挥“压舱石”作用",
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-28/doc-iniwtauk6837160.shtml",
+          "rank": 10,
+          "heat": "4,644"
+        },
+        {
+          "platform": "第一财经",
+          "title": "31省份去年平均工资出炉",
+          "url": "https://www.yicai.com/news/103408213.html",
+          "rank": 3,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "31省份去年平均工资出炉",
+        "31个省份经济三季报出炉 经济大省持续发挥“压舱石”作用"
+      ]
+    },
+    {
+      "cluster_id": 109,
+      "representative_title": "巴菲特折戟AI？100亿美元刚投就亏20%",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 185.0,
+      "total_mentions": 2,
+      "avg_rank": 15.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "META用950亿美元融资点燃新周期：AI融资的恐慌与焦虑",
+          "url": "https://wallstreetcn.com/member/articles/3784547",
+          "rank": 20,
+          "heat": ""
+        },
+        {
+          "platform": "格隆汇",
+          "title": "巴菲特折戟AI？100亿美元刚投就亏20%",
+          "url": "https://www.gelonghui.com/p/7230416",
+          "rank": 10,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "META用950亿美元融资点燃新周期：AI融资的恐慌与焦虑",
+        "巴菲特折戟AI？100亿美元刚投就亏20%"
+      ]
+    },
+    {
+      "cluster_id": 138,
+      "representative_title": "当前市场调整进度",
+      "cover_count": 2,
+      "platforms": [
+        "股吧",
+        "雪球"
+      ],
+      "score": 183.5,
+      "total_mentions": 2,
+      "avg_rank": 16.5,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "【周度复盘】恐惧退潮，贪婪未至：从卖盘衰竭与买盘衰竭读懂当前市场",
+          "url": "http://caifuhao.eastmoney.com/news/20260919165636193295880",
+          "rank": 29,
+          "heat": "128"
+        },
+        {
+          "platform": "雪球",
+          "title": "当前市场调整进度",
+          "url": "http://xueqiu.com/8994828763/414879962",
+          "rank": 4,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "当前市场调整进度",
+        "【周度复盘】恐惧退潮，贪婪未至：从卖盘衰竭与买盘衰竭读懂当前市场"
+      ]
+    },
+    {
+      "cluster_id": 167,
+      "representative_title": "从可转债逻辑看恒瑞医药和药明康德的商业模式",
+      "cover_count": 2,
+      "platforms": [
+        "股吧",
+        "集思录"
+      ],
+      "score": 180.5,
+      "total_mentions": 2,
+      "avg_rank": 19.5,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "当前可转债的出路在哪",
+          "url": "http://caifuhao.eastmoney.com/news/20260920084722181666060",
+          "rank": 31,
+          "heat": "270"
+        },
+        {
+          "platform": "集思录",
+          "title": "从可转债逻辑看恒瑞医药和药明康德的商业模式",
+          "url": "https://www.jisilu.cn/question/526405",
+          "rank": 8,
+          "heat": "1136"
+        }
+      ],
+      "all_titles": [
+        "当前可转债的出路在哪",
+        "从可转债逻辑看恒瑞医药和药明康德的商业模式"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "东鹏饮料：即日起终止与基利安·姆巴佩全部合作",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "东鹏饮料：即日起终止与基利安·姆巴佩全部合作",
+          "url": "https://www.yicai.com/news/103410672.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "东鹏饮料：即日起终止与基利安·姆巴佩全部合作"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "representative_title": "18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。",
+      "cover_count": 1,
+      "platforms": [
+        "雪球"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "雪球",
+          "title": "18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。",
+          "url": "http://xueqiu.com/2884313460/414874671",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "18 家银行三季报拆解：息差、资产质量，以及一个专门给银行算的鸭银率。"
+      ]
+    },
+    {
+      "cluster_id": 30,
+      "representative_title": "英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月",
+          "url": "https://wallstreetcn.com/articles/3784816",
+          "rank": 1,
+          "heat": "37.8万"
+        }
+      ],
+      "all_titles": [
+        "英特尔跌幅创四十年之最，纳指跌近3%，苹果市值超越英伟达，黄金一年新低，原油连涨四个月"
+      ]
+    },
+    {
+      "cluster_id": 50,
+      "representative_title": "恒力们的“智造”跃迁",
+      "cover_count": 1,
+      "platforms": [
+        "21财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "恒力们的“智造”跃迁",
+          "url": "https://m.21jingji.com/article/20261031/herald/5c96be74320e4c92e2529d8e1aa75137.html",
+          "rank": 1,
+          "heat": "公司"
+        }
+      ],
+      "all_titles": [
+        "恒力们的“智造”跃迁"
+      ]
+    },
+    {
+      "cluster_id": 70,
+      "representative_title": "财报炸裂，但闪迪隔夜为何暴跌？",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "财报炸裂，但闪迪隔夜为何暴跌？",
+          "url": "https://wallstreetcn.com/articles/3784914",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "财报炸裂，但闪迪隔夜为何暴跌？"
+      ]
+    },
+    {
+      "cluster_id": 90,
+      "representative_title": "从坦桑尼亚到北京：西昊把“体面工作”坐到实处",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "从坦桑尼亚到北京：西昊把“体面工作”坐到实处",
+          "url": "https://cbndata.com/information/295949",
+          "rank": 1,
+          "heat": "西昊公众号"
+        }
+      ],
+      "all_titles": [
+        "从坦桑尼亚到北京：西昊把“体面工作”坐到实处"
+      ]
+    },
+    {
+      "cluster_id": 100,
+      "representative_title": "日央行意外提速抛售ETF，释放什么信号？",
+      "cover_count": 1,
+      "platforms": [
+        "格隆汇"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "格隆汇",
+          "title": "日央行意外提速抛售ETF，释放什么信号？",
+          "url": "https://www.gelonghui.com/p/7228539",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "日央行意外提速抛售ETF，释放什么信号？"
+      ]
+    },
+    {
+      "cluster_id": 110,
+      "representative_title": "周末三瓜 一个比一个劲爆",
+      "cover_count": 1,
+      "platforms": [
+        "股吧"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "周末三瓜 一个比一个劲爆",
+          "url": "http://caifuhao.eastmoney.com/news/20260920090227696775730",
+          "rank": 1,
+          "heat": "3.0万"
+        }
+      ],
+      "all_titles": [
+        "周末三瓜 一个比一个劲爆"
+      ]
+    },
+    {
+      "cluster_id": 160,
+      "representative_title": "传浦东某营业部一周三人爆仓，堪比15年",
+      "cover_count": 1,
+      "platforms": [
+        "集思录"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "集思录",
+          "title": "传浦东某营业部一周三人爆仓，堪比15年",
+          "url": "https://www.jisilu.cn/question/526409",
+          "rank": 1,
+          "heat": "4244"
+        }
+      ],
+      "all_titles": [
+        "传浦东某营业部一周三人爆仓，堪比15年"
+      ]
+    }
+  ]
+}
