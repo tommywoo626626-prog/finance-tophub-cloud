@@ -1,0 +1,484 @@
+{
+  "date": "2026-11-07",
+  "period": "下午",
+  "platforms": [
+    "新浪财经",
+    "21财经",
+    "雪球",
+    "股吧",
+    "华尔街见闻",
+    "格隆汇",
+    "集思录",
+    "第一财经"
+  ],
+  "total_topics": 187,
+  "clusters": [
+    {
+      "cluster_id": 151,
+      "representative_title": "强劲非农提振加息预期，美元大涨，美股分化道指收跌，芯片股技术性反弹，AMD涨11%",
+      "cover_count": 5,
+      "platforms": [
+        "21财经",
+        "华尔街见闻",
+        "股吧",
+        "集思录",
+        "雪球"
+      ],
+      "score": 484.8,
+      "total_mentions": 8,
+      "avg_rank": 15.2,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "世行原副行长伊恩·戈尔丁：未来五到十年AI或加大国家发展差距",
+          "url": "https://m.21jingji.com/article/20261107/herald/f13e791c8bbe23bf6fc57e5df19fcbd7.html",
+          "rank": 13,
+          "heat": "全球"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "强劲非农提振加息预期，美元大涨，美股分化道指收跌，芯片股技术性反弹，AMD涨11%",
+          "url": "https://wallstreetcn.com/articles/3785315",
+          "rank": 1,
+          "heat": "25.3万"
+        },
+        {
+          "platform": "股吧",
+          "title": "黑色星期五后美加息预期升温，会加息吗？",
+          "url": "http://caifuhao.eastmoney.com/news/20261107072459768216750",
+          "rank": 42,
+          "heat": "43"
+        },
+        {
+          "platform": "集思录",
+          "title": "庄周梦蝶，资本与我，AI和未来",
+          "url": "https://www.jisilu.cn/question/526617",
+          "rank": 7,
+          "heat": "362"
+        },
+        {
+          "platform": "雪球",
+          "title": "为什么华尔街开始重估AI大模型的资本回报",
+          "url": "http://www.xueqiu.com/1025819408/415629277",
+          "rank": 13,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "为什么华尔街开始重估AI大模型的资本回报",
+        "强劲非农提振加息预期，美元大涨，美股分化道指收跌，芯片股技术性反弹，AMD涨11%",
+        "美国10月非农就业激增16.5万，远超预期！失业率意外降至4.1%，12月加息预期升温",
+        "10月非农重燃12月加息预期！华尔街押注概率超八成，“新美联储通讯社”：AI抛售或成政策变量",
+        "世行原副行长伊恩·戈尔丁：未来五到十年AI或加大国家发展差距",
+        "AI资本开支“见顶”，美国经济也随之“见顶”？",
+        "黑色星期五后美加息预期升温，会加息吗？",
+        "庄周梦蝶，资本与我，AI和未来"
+      ]
+    },
+    {
+      "cluster_id": 71,
+      "representative_title": "美股科技股大反攻，AI算力巨头狂飙20%，SpaceX大涨超8%，英特尔涨超7%，热门中概股普涨，小鹏涨超6%",
+      "cover_count": 3,
+      "platforms": [
+        "21财经",
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 296.6666666666667,
+      "total_mentions": 3,
+      "avg_rank": 3.3,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "美股科技股暴跌后迅速反弹，抄底时机到了吗？",
+          "url": "https://m.21jingji.com/article/20261107/herald/88d75d04e5e8d85b29f61fba1ee82c2d.html",
+          "rank": 6,
+          "heat": "全球"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "美股科技股经历“过山车”，但斌：AI时代落幕概率极小，回笼资金继续加仓",
+          "url": "https://wallstreetcn.com/articles/3785437",
+          "rank": 2,
+          "heat": "澎湃新闻"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "美股科技股大反攻，AI算力巨头狂飙20%，SpaceX大涨超8%，英特尔涨超7%，热门中概股普涨，小鹏涨超6%",
+          "url": "https://finance.sina.com.cn/wm/2026-11-07/doc-inixwhse8258959.shtml",
+          "rank": 2,
+          "heat": "2,697"
+        }
+      ],
+      "all_titles": [
+        "美股科技股大反攻，AI算力巨头狂飙20%，SpaceX大涨超8%，英特尔涨超7%，热门中概股普涨，小鹏涨超6%",
+        "美股科技股暴跌后迅速反弹，抄底时机到了吗？",
+        "美股科技股经历“过山车”，但斌：AI时代落幕概率极小，回笼资金继续加仓"
+      ]
+    },
+    {
+      "cluster_id": 125,
+      "representative_title": "全球资产遭遇洗盘，国内市场迎来两场重磅会议",
+      "cover_count": 3,
+      "platforms": [
+        "第一财经",
+        "股吧",
+        "雪球"
+      ],
+      "score": 287.0,
+      "total_mentions": 3,
+      "avg_rank": 13.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "全球资产遭遇洗盘，国内市场迎来两场重磅会议",
+          "url": "https://www.yicai.com/news/103420264.html",
+          "rank": 3,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "中国资产全球最香的时代来了，抱紧紧!",
+          "url": "http://caifuhao.eastmoney.com/news/20261107080119800279800",
+          "rank": 16,
+          "heat": "728"
+        },
+        {
+          "platform": "雪球",
+          "title": "流动性只是表象，全球真正的战场是科技资产定价权",
+          "url": "http://www.xueqiu.com/7271353740/415443420",
+          "rank": 20,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "全球资产遭遇洗盘，国内市场迎来两场重磅会议",
+        "流动性只是表象，全球真正的战场是科技资产定价权",
+        "中国资产全球最香的时代来了，抱紧紧!"
+      ]
+    },
+    {
+      "cluster_id": 103,
+      "representative_title": "A股收评：创业板指跌3.96%！算力硬件集体回调，农业股逆势走高",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 194.5,
+      "total_mentions": 2,
+      "avg_rank": 5.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "创业板跌4%，AI硬件集体调整、“易中天”再度大跌，电力、农业逆势活跃，恒指、恒科指均跌超1%",
+          "url": "https://wallstreetcn.com/articles/3785325",
+          "rank": 7,
+          "heat": "6.3万"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "A股收评：创业板指跌3.96%！算力硬件集体回调，农业股逆势走高",
+          "url": "https://www.gelonghui.com/p/7326929",
+          "rank": 4,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "创业板跌4%，AI硬件集体调整、“易中天”再度大跌，电力、农业逆势活跃，恒指、恒科指均跌超1%",
+        "A股收评：创业板指跌3.96%！算力硬件集体回调，农业股逆势走高"
+      ]
+    },
+    {
+      "cluster_id": 102,
+      "representative_title": "美国中期选举之后，韩国人彻底慌乱！",
+      "cover_count": 2,
+      "platforms": [
+        "格隆汇",
+        "第一财经"
+      ],
+      "score": 194.0,
+      "total_mentions": 2,
+      "avg_rank": 6.0,
+      "sources": [
+        {
+          "platform": "格隆汇",
+          "title": "美国中期选举之后，韩国人彻底慌乱！",
+          "url": "https://www.gelonghui.com/p/7331687",
+          "rank": 3,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "美国中期选举结果出炉，恒生科技指数连涨四天｜市场观察",
+          "url": "https://www.yicai.com/news/103425292.html",
+          "rank": 9,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "美国中期选举结果出炉，恒生科技指数连涨四天｜市场观察",
+        "美国中期选举之后，韩国人彻底慌乱！"
+      ]
+    },
+    {
+      "cluster_id": 78,
+      "representative_title": "11月7日外盘头条：美国10月非农大超预期 特朗普任命米勒出任白宫幕僚长 特斯拉将逐步停产Cybertruck",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 193.5,
+      "total_mentions": 3,
+      "avg_rank": 6.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "特斯拉Cybertruck：从车窗开裂到停产，三年半画上句号",
+          "url": "https://wallstreetcn.com/articles/3785416",
+          "rank": 7,
+          "heat": ""
+        },
+        {
+          "platform": "新浪财经",
+          "title": "11月7日外盘头条：美国10月非农大超预期 特朗普任命米勒出任白宫幕僚长 特斯拉将逐步停产Cybertruck",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-07/doc-inixwakn8483750.shtml",
+          "rank": 6,
+          "heat": "1,167"
+        }
+      ],
+      "all_titles": [
+        "11月7日外盘头条：美国10月非农大超预期 特朗普任命米勒出任白宫幕僚长 特斯拉将逐步停产Cybertruck",
+        "特斯拉Cybertruck：从车窗开裂到停产，三年半画上句号",
+        "不改变政策路线！特朗普撤换白宫幕僚长，任命“强硬派”Stephen Miller"
+      ]
+    },
+    {
+      "cluster_id": 82,
+      "representative_title": "央行连续24个月增持黄金",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "华尔街见闻"
+      ],
+      "score": 193.0,
+      "total_mentions": 3,
+      "avg_rank": 7.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "央行连续24个月增持黄金",
+          "url": "https://m.21jingji.com/article/20261107/herald/9fd49491c736fe28ee9ba587cc90828b.html",
+          "rank": 1,
+          "heat": "视频"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "连续24个月增持！中国央行10月扩购83万盎司黄金，步伐明显加快",
+          "url": "https://wallstreetcn.com/articles/3785426",
+          "rank": 13,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "央行连续24个月增持黄金",
+        "央行连续24个月增持黄金，最新解读",
+        "连续24个月增持！中国央行10月扩购83万盎司黄金，步伐明显加快"
+      ]
+    },
+    {
+      "cluster_id": 105,
+      "representative_title": "这轮暴跌，被明显错杀的科技巨头",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 189.5,
+      "total_mentions": 2,
+      "avg_rank": 10.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "到不了，也回不去：美股科技巨头的AI投资正面临两难",
+          "url": "https://wallstreetcn.com/member/articles/3784977",
+          "rank": 15,
+          "heat": "万周"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "这轮暴跌，被明显错杀的科技巨头",
+          "url": "https://www.gelonghui.com/p/7331650",
+          "rank": 6,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "到不了，也回不去：美股科技巨头的AI投资正面临两难",
+        "这轮暴跌，被明显错杀的科技巨头"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "A股迎利好！金融监管部门将召开座谈会，业内期待稳市措施修复情绪",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "A股迎利好！金融监管部门将召开座谈会，业内期待稳市措施修复情绪",
+          "url": "https://www.yicai.com/news/103420197.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "A股迎利好！金融监管部门将召开座谈会，业内期待稳市措施修复情绪"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "representative_title": "聊聊这两天市场在交易什么",
+      "cover_count": 1,
+      "platforms": [
+        "雪球"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "雪球",
+          "title": "聊聊这两天市场在交易什么",
+          "url": "http://www.xueqiu.com/9928479458/415729906",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "聊聊这两天市场在交易什么"
+      ]
+    },
+    {
+      "cluster_id": 40,
+      "representative_title": "牛弹琴：一觉醒来，卸磨杀驴了",
+      "cover_count": 1,
+      "platforms": [
+        "新浪财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "牛弹琴：一觉醒来，卸磨杀驴了",
+          "url": "https://finance.sina.com.cn/stock/marketresearch/2026-11-07/doc-inixwhsh4930959.shtml",
+          "rank": 1,
+          "heat": "10,426"
+        }
+      ],
+      "all_titles": [
+        "牛弹琴：一觉醒来，卸磨杀驴了"
+      ]
+    },
+    {
+      "cluster_id": 70,
+      "representative_title": "预示反弹？高盛美股恐慌指数已达“极端水平”",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "预示反弹？高盛美股恐慌指数已达“极端水平”",
+          "url": "https://wallstreetcn.com/articles/3785438",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "预示反弹？高盛美股恐慌指数已达“极端水平”"
+      ]
+    },
+    {
+      "cluster_id": 90,
+      "representative_title": "内娱迎来“厉娜纪年”，绝味鸭舌、奈雪巴斯克直接卖断货",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "内娱迎来“厉娜纪年”，绝味鸭舌、奈雪巴斯克直接卖断货",
+          "url": "https://cbndata.com/information/295983",
+          "rank": 1,
+          "heat": "Vista氢商业"
+        }
+      ],
+      "all_titles": [
+        "内娱迎来“厉娜纪年”，绝味鸭舌、奈雪巴斯克直接卖断货"
+      ]
+    },
+    {
+      "cluster_id": 100,
+      "representative_title": "港股收评：三大指数齐跌！半导体、黄金股承压，电力股逆势走强",
+      "cover_count": 1,
+      "platforms": [
+        "格隆汇"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "格隆汇",
+          "title": "港股收评：三大指数齐跌！半导体、黄金股承压，电力股逆势走强",
+          "url": "https://www.gelonghui.com/p/7328946",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "港股收评：三大指数齐跌！半导体、黄金股承压，电力股逆势走强"
+      ]
+    },
+    {
+      "cluster_id": 110,
+      "representative_title": "利好来了  晚间四大消息 下周怎么走",
+      "cover_count": 1,
+      "platforms": [
+        "股吧"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "利好来了  晚间四大消息 下周怎么走",
+          "url": "http://caifuhao.eastmoney.com/news/20261107083709866280130",
+          "rank": 1,
+          "heat": "2.2万"
+        }
+      ],
+      "all_titles": [
+        "利好来了  晚间四大消息 下周怎么走"
+      ]
+    }
+  ]
+}
