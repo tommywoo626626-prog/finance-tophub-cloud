@@ -1,0 +1,541 @@
+{
+  "date": "2026-11-14",
+  "period": "下午",
+  "platforms": [
+    "新浪财经",
+    "股吧",
+    "华尔街见闻",
+    "集思录",
+    "雪球",
+    "格隆汇",
+    "21财经",
+    "第一财经"
+  ],
+  "total_topics": 198,
+  "clusters": [
+    {
+      "cluster_id": 82,
+      "representative_title": "马斯克带头签署请愿书！硅谷力挺黄仁勋，万人联名呼吁“让创始人回归”",
+      "cover_count": 3,
+      "platforms": [
+        "21财经",
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 297.3333333333333,
+      "total_mentions": 7,
+      "avg_rank": 2.7,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "黄仁勋一走，英伟达的中枢瘫了",
+          "url": "https://m.21jingji.com/article/20261114/herald/6bdbfea857e284169f67e590be0d520c.html",
+          "rank": 3,
+          "heat": "公司"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "马斯克带头签署请愿书！硅谷力挺黄仁勋，万人联名呼吁“让创始人回归”",
+          "url": "https://wallstreetcn.com/articles/3785930",
+          "rank": 1,
+          "heat": "14.3万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "马斯克带头签署请愿书！硅谷力挺黄仁勋，万人联名呼吁“让创始人回归”",
+          "url": "https://finance.sina.com.cn/stock/t/2026-11-14/doc-iniysepm3130798.shtml",
+          "rank": 4,
+          "heat": "2,109"
+        }
+      ],
+      "all_titles": [
+        "马斯克带头签署请愿书！硅谷力挺黄仁勋，万人联名呼吁“让创始人回归”",
+        "“这是世代级错误”“不会再买英伟达股票”！黄仁勋走了，硅谷吵翻了，Twitter前CEO预测他3年后王者归来",
+        "马斯克带头签署请愿书！硅谷力挺黄仁勋，万人联名呼吁“让创始人回归”",
+        "黄仁勋出事，Anthropic承压？",
+        "黄仁勋一走，英伟达的中枢瘫了",
+        "马斯克带头签署请愿书！硅谷力挺黄仁勋，万人联名呼吁“让创始人回归”",
+        "英伟达创18个月最差单周表现，黄仁勋离职引发市场重估"
+      ]
+    },
+    {
+      "cluster_id": 129,
+      "representative_title": "美国10月PPI同比 6.5%创四年新高、但低于预期，激进加息预期小幅降温",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇",
+        "股吧"
+      ],
+      "score": 289.3333333333333,
+      "total_mentions": 3,
+      "avg_rank": 10.7,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "美国10月PPI同比 6.5%创四年新高、但低于预期，激进加息预期小幅降温",
+          "url": "https://wallstreetcn.com/articles/3785905",
+          "rank": 4,
+          "heat": "7.5万"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "美国10月PPI创四年新高！激进加息预期却在降温？",
+          "url": "https://www.gelonghui.com/p/7427301",
+          "rank": 8,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "美国加息的影响",
+          "url": "http://caifuhao.eastmoney.com/news/20260920121830060593490",
+          "rank": 20,
+          "heat": "62"
+        }
+      ],
+      "all_titles": [
+        "美国10月PPI同比 6.5%创四年新高、但低于预期，激进加息预期小幅降温",
+        "美国10月PPI创四年新高！激进加息预期却在降温？",
+        "美国加息的影响"
+      ]
+    },
+    {
+      "cluster_id": 177,
+      "representative_title": "华尔街见闻早餐FM-Radio | 2026年11月14日",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "集思录",
+        "雪球"
+      ],
+      "score": 286.3333333333333,
+      "total_mentions": 4,
+      "avg_rank": 13.7,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "华尔街见闻早餐FM-Radio | 2026年11月14日",
+          "url": "https://wallstreetcn.com/articles/3785925",
+          "rank": 10,
+          "heat": "4.6万"
+        },
+        {
+          "platform": "集思录",
+          "title": "2026年11月13日小记",
+          "url": "https://www.jisilu.cn/question/526773",
+          "rank": 18,
+          "heat": "377"
+        },
+        {
+          "platform": "雪球",
+          "title": "A股核心红利股数据观察记录-2026/11/11",
+          "url": "http://www.xueqiu.com/6828304753/416496726",
+          "rank": 13,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "A股核心红利股数据观察记录-2026/11/11",
+        "华尔街见闻早餐FM-Radio | 2026年11月14日",
+        "华尔街见闻早餐FM-Radio | 2026年11月14日",
+        "2026年11月13日小记"
+      ]
+    },
+    {
+      "cluster_id": 167,
+      "representative_title": "聚焦“双11”｜金店排长队：验金要等半小时，有人趁机攒够“三金”",
+      "cover_count": 3,
+      "platforms": [
+        "第一财经",
+        "股吧",
+        "集思录"
+      ],
+      "score": 286.0,
+      "total_mentions": 3,
+      "avg_rank": 14.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "聚焦“双11”｜金店排长队：验金要等半小时，有人趁机攒够“三金”",
+          "url": "https://www.yicai.com/news/103435747.html",
+          "rank": 7,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "所有人都知道会腰斩，为什么开盘还是有人抢着买？",
+          "url": "http://caifuhao.eastmoney.com/news/20260920104508249331500",
+          "rank": 27,
+          "heat": "32"
+        },
+        {
+          "platform": "集思录",
+          "title": "11月13日这几天的下跌行情怎么回事有人知道吗？？大资金做T？？",
+          "url": "https://www.jisilu.cn/question/526766",
+          "rank": 8,
+          "heat": "1568"
+        }
+      ],
+      "all_titles": [
+        "聚焦“双11”｜金店排长队：验金要等半小时，有人趁机攒够“三金”",
+        "所有人都知道会腰斩，为什么开盘还是有人抢着买？",
+        "11月13日这几天的下跌行情怎么回事有人知道吗？？大资金做T？？"
+      ]
+    },
+    {
+      "cluster_id": 70,
+      "representative_title": "招商轮船｜浙商证券2027年度资本市场峰会会议纪要",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "雪球"
+      ],
+      "score": 199.0,
+      "total_mentions": 2,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "高盛2027年全球股市展望：AI资本开支见顶，盈利增长“大减速”，云巨头成“防御性资产”",
+          "url": "https://wallstreetcn.com/articles/3785935",
+          "rank": 1,
+          "heat": ""
+        },
+        {
+          "platform": "雪球",
+          "title": "招商轮船｜浙商证券2027年度资本市场峰会会议纪要",
+          "url": "http://xueqiu.com/9548903041/416785741",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "招商轮船｜浙商证券2027年度资本市场峰会会议纪要",
+        "高盛2027年全球股市展望：AI资本开支见顶，盈利增长“大减速”，云巨头成“防御性资产”"
+      ]
+    },
+    {
+      "cluster_id": 100,
+      "representative_title": "中国10月末社融存量同比增7.2%，M2同比增7.1%",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇"
+      ],
+      "score": 196.5,
+      "total_mentions": 2,
+      "avg_rank": 3.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "中国10月新增社融1.15万亿元，人民币贷款减少1000亿元，M2同比增长7.1%",
+          "url": "https://wallstreetcn.com/articles/3785892",
+          "rank": 6,
+          "heat": "6.1万"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "中国10月末社融存量同比增7.2%，M2同比增7.1%",
+          "url": "https://www.gelonghui.com/p/7425672",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "中国10月新增社融1.15万亿元，人民币贷款减少1000亿元，M2同比增长7.1%",
+        "中国10月末社融存量同比增7.2%，M2同比增7.1%"
+      ]
+    },
+    {
+      "cluster_id": 80,
+      "representative_title": "OpenAI解散机器人团队！GPT-6 Astra证明：通用大模型已可直接用于“物理AI”，无需专用模型",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 195.0,
+      "total_mentions": 3,
+      "avg_rank": 5.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "OpenAI解散机器人团队！GPT-6 Astra证明：通用大模型已可直接用于“物理AI”，无需专用模型",
+          "url": "https://wallstreetcn.com/articles/3785914",
+          "rank": 5,
+          "heat": "6.6万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "OpenAI解散机器人团队！GPT-6 Astra证明：通用大模型已可直接用于“物理AI”，无需专用模型",
+          "url": "https://finance.sina.com.cn/roll/2026-11-14/doc-iniysepk7546353.shtml",
+          "rank": 5,
+          "heat": "1,992"
+        }
+      ],
+      "all_titles": [
+        "OpenAI解散机器人团队！GPT-6 Astra证明：通用大模型已可直接用于“物理AI”，无需专用模型",
+        "OpenAI解散机器人团队！GPT-6 Astra证明：通用大模型已可直接用于“物理AI”，无需专用模型",
+        "OpenAI解散机器人团队！GPT-6 Astra证明：通用大模型已可直接用于“物理AI”，无需专用模型"
+      ]
+    },
+    {
+      "cluster_id": 87,
+      "representative_title": "纳指跌0.9%、道指逆势收涨，英伟达跌2%，苹果盘中刷新历史高位，比特币跌破7万",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 194.5,
+      "total_mentions": 3,
+      "avg_rank": 5.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "纳指跌0.9%、道指逆势收涨，英伟达跌2%，苹果盘中刷新历史高位，比特币跌破7万",
+          "url": "https://wallstreetcn.com/articles/3785885",
+          "rank": 2,
+          "heat": "12.5万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "11月14日收盘：美股涨跌不一 英伟达跌破四万亿美元大关",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-14/doc-iniyryff0514928.shtml",
+          "rank": 9,
+          "heat": "1,173"
+        }
+      ],
+      "all_titles": [
+        "纳指跌0.9%、道指逆势收涨，英伟达跌2%，苹果盘中刷新历史高位，比特币跌破7万",
+        "11月14日收盘：美股涨跌不一 英伟达跌破四万亿美元大关",
+        "纳指跌0.9%、道指逆势收涨，英伟达跌2%，苹果盘中刷新历史高位，比特币跌破7万"
+      ]
+    },
+    {
+      "cluster_id": 116,
+      "representative_title": "国产算力链，机会更确定了",
+      "cover_count": 2,
+      "platforms": [
+        "格隆汇",
+        "股吧"
+      ],
+      "score": 194.0,
+      "total_mentions": 2,
+      "avg_rank": 6.0,
+      "sources": [
+        {
+          "platform": "格隆汇",
+          "title": "国产算力链，机会更确定了",
+          "url": "https://www.gelonghui.com/p/7427140",
+          "rank": 5,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "彻底炸了！电子工业大米MLCC暴涨行情来袭，国产替代A股机会梳理！",
+          "url": "http://caifuhao.eastmoney.com/news/20260920092939186120000",
+          "rank": 7,
+          "heat": "3195"
+        }
+      ],
+      "all_titles": [
+        "国产算力链，机会更确定了",
+        "彻底炸了！电子工业大米MLCC暴涨行情来袭，国产替代A股机会梳理！"
+      ]
+    },
+    {
+      "cluster_id": 81,
+      "representative_title": "“911”以来第二次全美停飞！已有超1.3万架次航班延误或取消",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经"
+      ],
+      "score": 192.0,
+      "total_mentions": 3,
+      "avg_rank": 8.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "美国“全国停飞”！超过10000架次航班延误或取消，国土安全部长：不是又一次9·11",
+          "url": "https://wallstreetcn.com/articles/3785927",
+          "rank": 9,
+          "heat": "4.8万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "“911”以来第二次全美停飞！已有超1.3万架次航班延误或取消",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-14/doc-iniysepc0440232.shtml",
+          "rank": 7,
+          "heat": "1,432"
+        }
+      ],
+      "all_titles": [
+        "美国“全国停飞”！超过10000架次航班延误或取消，国土安全部长：不是又一次9·11",
+        "“911”以来第二次全美停飞！已有超1.3万架次航班延误或取消",
+        "美国“全国停飞”！超过10000架次航班延误或取消，国土安全部长：不是又一次9·11"
+      ]
+    },
+    {
+      "cluster_id": 111,
+      "representative_title": "根本没有学历通胀！通胀的是人的认知！90%年轻人都搞错了人生逻辑！",
+      "cover_count": 2,
+      "platforms": [
+        "股吧",
+        "雪球"
+      ],
+      "score": 190.5,
+      "total_mentions": 2,
+      "avg_rank": 9.5,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "根本没有学历通胀！通胀的是人的认知！90%年轻人都搞错了人生逻辑！",
+          "url": "http://caifuhao.eastmoney.com/news/20260920081443624825510",
+          "rank": 2,
+          "heat": "444"
+        },
+        {
+          "platform": "雪球",
+          "title": "题材炒作和价值投资的根本逻辑",
+          "url": "http://www.xueqiu.com/4957928282/416519336",
+          "rank": 17,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "题材炒作和价值投资的根本逻辑",
+        "根本没有学历通胀！通胀的是人的认知！90%年轻人都搞错了人生逻辑！"
+      ]
+    },
+    {
+      "cluster_id": 121,
+      "representative_title": "传统的圣诞行情，今年的美股还有吗？",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "股吧"
+      ],
+      "score": 190.0,
+      "total_mentions": 2,
+      "avg_rank": 10.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "传统的圣诞行情，今年的美股还有吗？",
+          "url": "https://wallstreetcn.com/articles/3785929",
+          "rank": 8,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "今年和杨宗昌一样“含金量”高的基金经理还有谁",
+          "url": "http://caifuhao.eastmoney.com/news/20260919164842595475000",
+          "rank": 12,
+          "heat": "487"
+        }
+      ],
+      "all_titles": [
+        "传统的圣诞行情，今年的美股还有吗？",
+        "今年和杨宗昌一样“含金量”高的基金经理还有谁"
+      ]
+    },
+    {
+      "cluster_id": 76,
+      "representative_title": "回收下半部失败，上半部仍要尝试！SpaceX首次星舰\"双回收\"测试折戟助推器",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "华尔街见闻"
+      ],
+      "score": 189.5,
+      "total_mentions": 2,
+      "avg_rank": 10.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "星舰第15飞：助推器返场失败，即将挑战“筷子”夹飞船",
+          "url": "https://m.21jingji.com/article/20261114/herald/ecb52c2442c5e4a4ae01a0e15eb3ef47.html",
+          "rank": 14,
+          "heat": "全球"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "回收下半部失败，上半部仍要尝试！SpaceX首次星舰\"双回收\"测试折戟助推器",
+          "url": "https://wallstreetcn.com/articles/3785933",
+          "rank": 7,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "星舰第15飞：助推器返场失败，即将挑战“筷子”夹飞船",
+        "回收下半部失败，上半部仍要尝试！SpaceX首次星舰\"双回收\"测试折戟助推器"
+      ]
+    },
+    {
+      "cluster_id": 163,
+      "representative_title": "在投资中如何应对工作助手类AI幻觉出错的情况？？",
+      "cover_count": 2,
+      "platforms": [
+        "集思录",
+        "雪球"
+      ],
+      "score": 188.5,
+      "total_mentions": 2,
+      "avg_rank": 11.5,
+      "sources": [
+        {
+          "platform": "集思录",
+          "title": "在投资中如何应对工作助手类AI幻觉出错的情况？？",
+          "url": "https://www.jisilu.cn/question/526774",
+          "rank": 4,
+          "heat": "1219"
+        },
+        {
+          "platform": "雪球",
+          "title": "警惕！纳指ETF溢价超20%，如何应对？（11.12）",
+          "url": "http://www.xueqiu.com/9391624441/416516984",
+          "rank": 19,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "警惕！纳指ETF溢价超20%，如何应对？（11.12）",
+        "在投资中如何应对工作助手类AI幻觉出错的情况？？"
+      ]
+    },
+    {
+      "cluster_id": 137,
+      "representative_title": "思锐智能科创板IPO，为国产半导体设备公司，尚未盈利",
+      "cover_count": 2,
+      "platforms": [
+        "格隆汇",
+        "股吧"
+      ],
+      "score": 184.0,
+      "total_mentions": 2,
+      "avg_rank": 16.0,
+      "sources": [
+        {
+          "platform": "格隆汇",
+          "title": "思锐智能科创板IPO，为国产半导体设备公司，尚未盈利",
+          "url": "https://www.gelonghui.com/p/7425411",
+          "rank": 4,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "半导体设备零部件：1个真空阀门，要等上2年？",
+          "url": "http://caifuhao.eastmoney.com/news/20260920065415345060390",
+          "rank": 28,
+          "heat": "168"
+        }
+      ],
+      "all_titles": [
+        "思锐智能科创板IPO，为国产半导体设备公司，尚未盈利",
+        "半导体设备零部件：1个真空阀门，要等上2年？"
+      ]
+    }
+  ]
+}
