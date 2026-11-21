@@ -1,0 +1,535 @@
+{
+  "date": "2026-11-21",
+  "period": "下午",
+  "platforms": [
+    "第一财经",
+    "新浪财经",
+    "格隆汇",
+    "华尔街见闻",
+    "集思录",
+    "21财经",
+    "股吧",
+    "雪球"
+  ],
+  "total_topics": 205,
+  "clusters": [
+    {
+      "cluster_id": 43,
+      "representative_title": "黄仁勋表态“愿意回归”，英伟达原地拉升",
+      "cover_count": 6,
+      "platforms": [
+        "21财经",
+        "华尔街见闻",
+        "新浪财经",
+        "格隆汇",
+        "第一财经",
+        "股吧"
+      ],
+      "score": 592.5,
+      "total_mentions": 11,
+      "avg_rank": 7.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "纳指狂泻，华尔街警告抛售尚未结束",
+          "url": "https://m.21jingji.com/article/20261121/herald/fb6d52b9a69450c469a201f7ab20cd15.html",
+          "rank": 2,
+          "heat": "全球"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "特朗普支持黄仁勋回归，英伟达董事会称暂不考虑复职事项",
+          "url": "https://wallstreetcn.com/articles/3786042",
+          "rank": 6,
+          "heat": "9.7万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "黄仁勋表态“愿意回归”，英伟达原地拉升",
+          "url": "https://finance.sina.com.cn/wm/2026-11-18/doc-inizapzt5194299.shtml",
+          "rank": 2,
+          "heat": "7,255"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "早报（11.21）| 史诗级抛售！纳指狂泻1200点，英伟达单日蒸发近5000亿美元；特朗普誓言阻止美企在海外建数据中心；一油轮在霍尔木兹海峡爆炸",
+          "url": "https://www.gelonghui.com/p/7513760",
+          "rank": 2,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "直击英伟达电话会：回应黄仁勋离任原因、给出强劲增长预期",
+          "url": "https://www.yicai.com/news/103444404.html",
+          "rank": 8,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "黄仁勋的四天，与英伟达的三十三年",
+          "url": "http://caifuhao.eastmoney.com/news/20261121064537294738490",
+          "rank": 25,
+          "heat": "208"
+        }
+      ],
+      "all_titles": [
+        "直击英伟达电话会：回应黄仁勋离任原因、给出强劲增长预期",
+        "特朗普支持黄仁勋回归，英伟达董事会称暂不考虑复职事项",
+        "黄仁勋要回归？很难！",
+        "段永平：黄仁勋回归并非零概率，英伟达“护城河”依然很强大，不想就这么放弃了",
+        "黄仁勋表态“愿意回归”，英伟达原地拉升",
+        "牛弹琴：黄仁勋事件，美国政府突然回过味来",
+        "黄仁勋：愿回归，董事会：无意让他复职，业绩超预期，英伟达盘后涨超4%",
+        "纳指狂泻，华尔街警告抛售尚未结束",
+        "早报（11.21）| 史诗级抛售！纳指狂泻1200点，英伟达单日蒸发近5000亿美元；特朗普誓言阻止美企在海外建数据中心；一油轮在霍尔木兹海峡爆炸",
+        "特朗普最新调仓曝光，买入英伟达等股票",
+        "黄仁勋的四天，与英伟达的三十三年"
+      ]
+    },
+    {
+      "cluster_id": 158,
+      "representative_title": "沃什：美联储正为三种AI影响制定预案，若泡沫破裂，或引发股市走弱并拖累经济与就业",
+      "cover_count": 5,
+      "platforms": [
+        "21财经",
+        "华尔街见闻",
+        "第一财经",
+        "股吧",
+        "雪球"
+      ],
+      "score": 489.2,
+      "total_mentions": 9,
+      "avg_rank": 10.8,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "英伟达单日暴跌14%，但斌回应“清盘线”：部分基金只能被动减仓",
+          "url": "https://m.21jingji.com/article/20261121/herald/cd4b208a5e3bf10eb8f2b459ae77c92f.html",
+          "rank": 10,
+          "heat": "公司"
+        },
+        {
+          "platform": "华尔街见闻",
+          "title": "沃什：美联储正为三种AI影响制定预案，若泡沫破裂，或引发股市走弱并拖累经济与就业",
+          "url": "https://wallstreetcn.com/articles/3786043",
+          "rank": 2,
+          "heat": "16.2万"
+        },
+        {
+          "platform": "第一财经",
+          "title": "直击业绩会丨阿里巴巴2026年9月份季度业绩电话会",
+          "url": "https://www.yicai.com/live/103445331.html",
+          "rank": 10,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "深夜5大重磅利空！英伟达跌14%，闪迪跌16%，美股科技集体崩盘",
+          "url": "http://caifuhao.eastmoney.com/news/20261121075800090067880",
+          "rank": 26,
+          "heat": "1542"
+        },
+        {
+          "platform": "雪球",
+          "title": "阿里巴巴天快亮了：资本开支降了四分之一，云反而跑得更快了",
+          "url": "http://www.xueqiu.com/7318086163/417688771",
+          "rank": 6,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "阿里巴巴天快亮了：资本开支降了四分之一，云反而跑得更快了",
+        "沃什：美联储正为三种AI影响制定预案，若泡沫破裂，或引发股市走弱并拖累经济与就业",
+        "SemiAnalysis大幅下修AI算力预测：2028年资本开支预测下调近三成，五年硅片出货面积下调17%，英伟达受冲击最严重",
+        "英伟达单日暴跌14%，但斌回应“清盘线”：部分基金只能被动减仓",
+        "AI“牛市继续”还是“泡沫破灭”？本周，Anthropic IPO成关键试金石",
+        "深夜5大重磅利空！英伟达跌14%，闪迪跌16%，美股科技集体崩盘",
+        "美股“瀑布”杀，英伟达-14%，AI泡沫要破？",
+        "大型IPO把黄金和美股都干趴了",
+        "直击业绩会丨阿里巴巴2026年9月份季度业绩电话会"
+      ]
+    },
+    {
+      "cluster_id": 191,
+      "representative_title": "Anthropic上市之后：AI还有两道必答题",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "第一财经",
+        "雪球"
+      ],
+      "score": 294.0,
+      "total_mentions": 3,
+      "avg_rank": 6.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "Anthropic上市之后：AI还有两道必答题",
+          "url": "https://wallstreetcn.com/member/articles/3786047",
+          "rank": 1,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "直播丨第20届中国投资年会：邵宇等谈新质生产力和未来产业的投资逻辑",
+          "url": "https://www.yicai.com/live/103441750.html",
+          "rank": 7,
+          "heat": ""
+        },
+        {
+          "platform": "雪球",
+          "title": "从Anthropic上市谈谈模型与产业的未来",
+          "url": "http://www.xueqiu.com/5332385101/417719420",
+          "rank": 10,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "从Anthropic上市谈谈模型与产业的未来",
+        "Anthropic上市之后：AI还有两道必答题",
+        "直播丨第20届中国投资年会：邵宇等谈新质生产力和未来产业的投资逻辑"
+      ]
+    },
+    {
+      "cluster_id": 195,
+      "representative_title": "中国新富家庭财富观报告",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "第一财经"
+      ],
+      "score": 195.5,
+      "total_mentions": 3,
+      "avg_rank": 4.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "求解行业发展大势，《2026中国金融高质量发展研究报告》发布",
+          "url": "https://m.21jingji.com/article/20261121/herald/ca4832ad6e7c36f2f524063fc0d921ca.html",
+          "rank": 8,
+          "heat": "金融"
+        },
+        {
+          "platform": "第一财经",
+          "title": "中国新富家庭财富观报告",
+          "url": "https://cbndata.com/report/3373/detail",
+          "rank": 1,
+          "heat": "消费趋势"
+        }
+      ],
+      "all_titles": [
+        "求解行业发展大势，《2026中国金融高质量发展研究报告》发布",
+        "直播丨城市高质量发展论坛暨2026年上海市住房和城乡建设管理委员会科学技术委员会会议",
+        "中国新富家庭财富观报告"
+      ]
+    },
+    {
+      "cluster_id": 34,
+      "representative_title": "“浪已经杀过来了”，腾讯发文：已到生死存亡时刻",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "第一财经"
+      ],
+      "score": 195.0,
+      "total_mentions": 2,
+      "avg_rank": 5.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "腾讯内部讲话曝光，马化腾：浪已经杀过来了，远处的浪潮已经在吞没一个个山丘，你不能还坐着欣赏",
+          "url": "https://wallstreetcn.com/articles/3786059",
+          "rank": 5,
+          "heat": "9.9万"
+        },
+        {
+          "platform": "第一财经",
+          "title": "“浪已经杀过来了”，腾讯发文：已到生死存亡时刻",
+          "url": "https://www.yicai.com/news/103442593.html",
+          "rank": 5,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "“浪已经杀过来了”，腾讯发文：已到生死存亡时刻",
+        "腾讯内部讲话曝光，马化腾：浪已经杀过来了，远处的浪潮已经在吞没一个个山丘，你不能还坐着欣赏"
+      ]
+    },
+    {
+      "cluster_id": 33,
+      "representative_title": "华尔街见闻早餐FM-Radio | 2026年11月17日",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "第一财经"
+      ],
+      "score": 193.5,
+      "total_mentions": 2,
+      "avg_rank": 6.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "华尔街见闻早餐FM-Radio | 2026年11月17日",
+          "url": "https://wallstreetcn.com/articles/3786055",
+          "rank": 4,
+          "heat": "10.1万"
+        },
+        {
+          "platform": "第一财经",
+          "title": "晚间公告丨11月17日这些公告有看头",
+          "url": "https://www.yicai.com/news/103443910.html",
+          "rank": 9,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "晚间公告丨11月17日这些公告有看头",
+        "华尔街见闻早餐FM-Radio | 2026年11月17日"
+      ]
+    },
+    {
+      "cluster_id": 47,
+      "representative_title": "操盘必读：影响股市利好或利空消息_2026年11月18日_财经新闻",
+      "cover_count": 2,
+      "platforms": [
+        "新浪财经",
+        "第一财经"
+      ],
+      "score": 192.5,
+      "total_mentions": 3,
+      "avg_rank": 7.5,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "操盘必读：影响股市利好或利空消息_2026年11月18日_财经新闻",
+          "url": "https://finance.sina.com.cn/stock/cpbd/2026-11-18/doc-inizcexi1184171.shtml",
+          "rank": 5,
+          "heat": "6,482"
+        },
+        {
+          "platform": "第一财经",
+          "title": "晚间公告丨11月18日这些公告有看头",
+          "url": "https://www.yicai.com/news/103445468.html",
+          "rank": 10,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "晚间公告丨11月18日这些公告有看头",
+        "操盘必读：影响股市利好或利空消息_2026年11月18日_财经新闻",
+        "财经早报丨科技板块估值跌至低位 私募大佬AI调仓分歧大丨2026年11月18日"
+      ]
+    },
+    {
+      "cluster_id": 189,
+      "representative_title": "直播丨2026上海全球资产管理论坛",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "第一财经"
+      ],
+      "score": 191.5,
+      "total_mentions": 2,
+      "avg_rank": 8.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "强美元撕裂全球流动性：风险资产何时迎来转机？",
+          "url": "https://wallstreetcn.com/member/articles/3786020",
+          "rank": 12,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "直播丨2026上海全球资产管理论坛",
+          "url": "https://www.yicai.com/live/103427339.html",
+          "rank": 5,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "强美元撕裂全球流动性：风险资产何时迎来转机？",
+        "直播丨2026上海全球资产管理论坛"
+      ]
+    },
+    {
+      "cluster_id": 180,
+      "representative_title": "金力永磁：去年十月份提前深度调整后价值凸显，具备避风港属性",
+      "cover_count": 2,
+      "platforms": [
+        "股吧",
+        "集思录"
+      ],
+      "score": 184.5,
+      "total_mentions": 2,
+      "avg_rank": 15.5,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "金力永磁：去年十月份提前深度调整后价值凸显，具备避风港属性",
+          "url": "http://caifuhao.eastmoney.com/news/20261121085550617074270",
+          "rank": 10,
+          "heat": "242"
+        },
+        {
+          "platform": "集思录",
+          "title": "低风险投资在此刻凸显价值#坚持坚持",
+          "url": "https://www.jisilu.cn/question/527053",
+          "rank": 21,
+          "heat": "645"
+        }
+      ],
+      "all_titles": [
+        "金力永磁：去年十月份提前深度调整后价值凸显，具备避风港属性",
+        "低风险投资在此刻凸显价值#坚持坚持"
+      ]
+    },
+    {
+      "cluster_id": 177,
+      "representative_title": "美股继续崩盘，全球性金融危机即将到来",
+      "cover_count": 2,
+      "platforms": [
+        "股吧",
+        "集思录"
+      ],
+      "score": 183.0,
+      "total_mentions": 2,
+      "avg_rank": 17.0,
+      "sources": [
+        {
+          "platform": "股吧",
+          "title": "美股继续崩盘，全球性金融危机即将到来",
+          "url": "http://caifuhao.eastmoney.com/news/20261121085251151034010",
+          "rank": 16,
+          "heat": "365"
+        },
+        {
+          "platform": "集思录",
+          "title": "市场当前过度悲观了吧？难道在price in下一场全球金融危机？",
+          "url": "https://www.jisilu.cn/question/527030",
+          "rank": 18,
+          "heat": "719"
+        }
+      ],
+      "all_titles": [
+        "美股继续崩盘，全球性金融危机即将到来",
+        "市场当前过度悲观了吧？难道在price in下一场全球金融危机？"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "车站禁烟屡上热搜：站台控烟，“他山之石”带来哪些启示？",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "车站禁烟屡上热搜：站台控烟，“他山之石”带来哪些启示？",
+          "url": "https://www.yicai.com/news/103440980.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "车站禁烟屡上热搜：站台控烟，“他山之石”带来哪些启示？"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "representative_title": "别总臆想银行股“该调整了”",
+      "cover_count": 1,
+      "platforms": [
+        "雪球"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "雪球",
+          "title": "别总臆想银行股“该调整了”",
+          "url": "http://www.xueqiu.com/2118951154/417948070",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "别总臆想银行股“该调整了”"
+      ]
+    },
+    {
+      "cluster_id": 30,
+      "representative_title": "避险情绪主导市场，芯片股领跌拖累标普、纳指三连跌，英伟达跌4%，美元创18个月新高",
+      "cover_count": 1,
+      "platforms": [
+        "华尔街见闻"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "避险情绪主导市场，芯片股领跌拖累标普、纳指三连跌，英伟达跌4%，美元创18个月新高",
+          "url": "https://wallstreetcn.com/articles/3785999",
+          "rank": 1,
+          "heat": "21.6万"
+        }
+      ],
+      "all_titles": [
+        "避险情绪主导市场，芯片股领跌拖累标普、纳指三连跌，英伟达跌4%，美元创18个月新高"
+      ]
+    },
+    {
+      "cluster_id": 40,
+      "representative_title": "俄罗斯总统普京抵达深圳 蔡奇前往机场迎接",
+      "cover_count": 1,
+      "platforms": [
+        "新浪财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "俄罗斯总统普京抵达深圳 蔡奇前往机场迎接",
+          "url": "https://finance.sina.com.cn/wm/2026-11-18/doc-inizayrr1788820.shtml",
+          "rank": 1,
+          "heat": "9,177"
+        }
+      ],
+      "all_titles": [
+        "俄罗斯总统普京抵达深圳 蔡奇前往机场迎接"
+      ]
+    },
+    {
+      "cluster_id": 50,
+      "representative_title": "人民日报：唱空中国经济者终会落空",
+      "cover_count": 1,
+      "platforms": [
+        "21财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "人民日报：唱空中国经济者终会落空",
+          "url": "https://m.21jingji.com/article/20261121/herald/8f60de0c1b9d937225161734d4ba00e3.html",
+          "rank": 1,
+          "heat": "宏观"
+        }
+      ],
+      "all_titles": [
+        "人民日报：唱空中国经济者终会落空"
+      ]
+    }
+  ]
+}
