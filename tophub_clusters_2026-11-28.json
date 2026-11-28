@@ -1,0 +1,515 @@
+{
+  "date": "2026-11-28",
+  "period": "下午",
+  "platforms": [
+    "格隆汇",
+    "新浪财经",
+    "第一财经",
+    "股吧",
+    "华尔街见闻",
+    "雪球",
+    "21财经",
+    "集思录"
+  ],
+  "total_topics": 195,
+  "clusters": [
+    {
+      "cluster_id": 104,
+      "representative_title": "国常会定调之后：为什么说银行更像本轮行情的压舱石",
+      "cover_count": 4,
+      "platforms": [
+        "21财经",
+        "格隆汇",
+        "第一财经",
+        "雪球"
+      ],
+      "score": 397.0,
+      "total_mentions": 5,
+      "avg_rank": 3.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "首提“国家队”，国常会释放稳市信号",
+          "url": "https://m.21jingji.com/article/20261128/herald/6b7f54173e2b1dab6a07b2be4bd54243.html",
+          "rank": 3,
+          "heat": "证券"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "史诗级稳市！国常会首次定调！如何解读？",
+          "url": "https://www.gelonghui.com/p/7584703",
+          "rank": 1,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "如何理解国常会对资本市场的最新定调？专家解读来了",
+          "url": "https://www.yicai.com/news/103457477.html",
+          "rank": 7,
+          "heat": ""
+        },
+        {
+          "platform": "雪球",
+          "title": "国常会定调之后：为什么说银行更像本轮行情的压舱石",
+          "url": "http://xueqiu.com/2118951154/419005482",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "如何理解国常会对资本市场的最新定调？专家解读来了",
+        "国常会定调之后：为什么说银行更像本轮行情的压舱石",
+        "首提“国家队”，国常会释放稳市信号",
+        "史诗级稳市！国常会首次定调！如何解读？",
+        "早报 (11.28）| 被告变原告，OpenAI反诉苹果；首提“国家队”！国常会重磅；霍尔木兹油轮爆炸起火"
+      ]
+    },
+    {
+      "cluster_id": 43,
+      "representative_title": "避险情绪主导市场，芯片股领跌拖累标普、纳指三连跌，英伟达跌4%，美元创18个月新高",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "新浪财经",
+        "第一财经"
+      ],
+      "score": 297.0,
+      "total_mentions": 8,
+      "avg_rank": 3.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "避险情绪主导市场，芯片股领跌拖累标普、纳指三连跌，英伟达跌4%，美元创18个月新高",
+          "url": "https://wallstreetcn.com/articles/3785999",
+          "rank": 1,
+          "heat": "21.6万"
+        },
+        {
+          "platform": "新浪财经",
+          "title": "黄仁勋表态“愿意回归”，英伟达原地拉升",
+          "url": "https://finance.sina.com.cn/wm/2026-11-18/doc-inizapzt5194299.shtml",
+          "rank": 2,
+          "heat": "7,255"
+        },
+        {
+          "platform": "第一财经",
+          "title": "从辞职到复职仅11天：分析师称黄仁勋回归是董事会和市场的唯一选择",
+          "url": "https://www.yicai.com/news/103451077.html",
+          "rank": 6,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "从辞职到复职仅11天：分析师称黄仁勋回归是董事会和市场的唯一选择",
+        "避险情绪主导市场，芯片股领跌拖累标普、纳指三连跌，英伟达跌4%，美元创18个月新高",
+        "特朗普支持黄仁勋回归，英伟达董事会称暂不考虑复职事项",
+        "黄仁勋要回归？很难！",
+        "段永平：黄仁勋回归并非零概率，英伟达“护城河”依然很强大，不想就这么放弃了",
+        "黄仁勋表态“愿意回归”，英伟达原地拉升",
+        "牛弹琴：黄仁勋事件，美国政府突然回过味来",
+        "黄仁勋：愿回归，董事会：无意让他复职，业绩超预期，英伟达盘后涨超4%"
+      ]
+    },
+    {
+      "cluster_id": 136,
+      "representative_title": "上证50、科创50、沪深300等多指数集中调样",
+      "cover_count": 3,
+      "platforms": [
+        "华尔街见闻",
+        "格隆汇",
+        "股吧"
+      ],
+      "score": 291.0,
+      "total_mentions": 4,
+      "avg_rank": 9.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "创业板跌超4%，科创50跌5%，“易中天”再大跌，银行逆势拉升，30年期国债跌0.8%，恒科指午后转跌",
+          "url": "https://wallstreetcn.com/articles/3785986",
+          "rank": 9,
+          "heat": "6.4万"
+        },
+        {
+          "platform": "格隆汇",
+          "title": "上证50、科创50、沪深300等多指数集中调样",
+          "url": "https://www.gelonghui.com/p/7585336",
+          "rank": 4,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "一日定乾坤，科创50惊艳反攻，A股3727反转进行时！",
+          "url": "http://caifuhao.eastmoney.com/news/20261128085833915830100",
+          "rank": 14,
+          "heat": "308"
+        }
+      ],
+      "all_titles": [
+        "创业板跌超4%，科创50跌5%，“易中天”再大跌，银行逆势拉升，30年期国债跌0.8%，恒科指午后转跌",
+        "上证50、科创50、沪深300等多指数集中调样",
+        "一日定乾坤，科创50惊艳反攻，A股3727反转进行时！",
+        "12月300强！"
+      ]
+    },
+    {
+      "cluster_id": 101,
+      "representative_title": "美团Q3营收跑赢预期，实现净利扭亏",
+      "cover_count": 2,
+      "platforms": [
+        "格隆汇",
+        "雪球"
+      ],
+      "score": 194.5,
+      "total_mentions": 2,
+      "avg_rank": 5.5,
+      "sources": [
+        {
+          "platform": "格隆汇",
+          "title": "美团Q3营收跑赢预期，实现净利扭亏",
+          "url": "https://www.gelonghui.com/p/7585683",
+          "rank": 2,
+          "heat": ""
+        },
+        {
+          "platform": "雪球",
+          "title": "美团Q3业绩前瞻",
+          "url": "http://www.xueqiu.com/7447448349/418908454",
+          "rank": 9,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "美团Q3业绩前瞻",
+        "美团Q3营收跑赢预期，实现净利扭亏"
+      ]
+    },
+    {
+      "cluster_id": 178,
+      "representative_title": "直播丨2026上海全球资产管理论坛",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "第一财经"
+      ],
+      "score": 192.0,
+      "total_mentions": 2,
+      "avg_rank": 8.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "强美元撕裂全球流动性：风险资产何时迎来转机？",
+          "url": "https://wallstreetcn.com/member/articles/3786020",
+          "rank": 12,
+          "heat": ""
+        },
+        {
+          "platform": "第一财经",
+          "title": "直播丨2026上海全球资产管理论坛",
+          "url": "https://www.yicai.com/live/103427339.html",
+          "rank": 4,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "强美元撕裂全球流动性：风险资产何时迎来转机？",
+        "直播丨2026上海全球资产管理论坛"
+      ]
+    },
+    {
+      "cluster_id": 177,
+      "representative_title": "直播丨天宫之约——直击神舟二十四号载人飞行任务",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "第一财经"
+      ],
+      "score": 191.5,
+      "total_mentions": 3,
+      "avg_rank": 8.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "神舟二十三号和神舟二十四号航天员完成在轨交接",
+          "url": "https://m.21jingji.com/article/20261128/herald/355ad6e5043aa01f0f2f6fa5e3bd039d.html",
+          "rank": 14,
+          "heat": "宏观"
+        },
+        {
+          "platform": "第一财经",
+          "title": "直播丨天宫之约——直击神舟二十四号载人飞行任务",
+          "url": "https://www.yicai.com/live/103452290.html",
+          "rank": 3,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "神舟二十三号和神舟二十四号航天员完成在轨交接",
+        "神舟二十三号和神舟二十四号航天员在轨交接仪式开始",
+        "直播丨天宫之约——直击神舟二十四号载人飞行任务"
+      ]
+    },
+    {
+      "cluster_id": 159,
+      "representative_title": "历史首次！190个社保重仓股涨停，393个高盛重仓涨停，双底形成",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "股吧"
+      ],
+      "score": 188.5,
+      "total_mentions": 3,
+      "avg_rank": 11.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "历史首次！德银：“芯片美元”正取代“石油美元”，全球金融体系陷入“危险闭环”",
+          "url": "https://wallstreetcn.com/articles/3786065",
+          "rank": 20,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "历史首次！190个社保重仓股涨停，393个高盛重仓涨停，双底形成",
+          "url": "http://caifuhao.eastmoney.com/news/20261127170854141916240",
+          "rank": 3,
+          "heat": "2.9万"
+        }
+      ],
+      "all_titles": [
+        "历史首次！德银：“芯片美元”正取代“石油美元”，全球金融体系陷入“危险闭环”",
+        "历史首次！190个社保重仓股涨停，393个高盛重仓涨停，双底形成",
+        "38个社保重仓股集体20%涨停了，历史首次"
+      ]
+    },
+    {
+      "cluster_id": 130,
+      "representative_title": "创业板午后回落转跌，半导体产业链活跃，AI短剧调整，30年期国债大涨0.8%，恒指、恒科指齐跌",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "股吧"
+      ],
+      "score": 187.5,
+      "total_mentions": 2,
+      "avg_rank": 12.5,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "创业板午后回落转跌，半导体产业链活跃，AI短剧调整，30年期国债大涨0.8%，恒指、恒科指齐跌",
+          "url": "https://wallstreetcn.com/articles/3786073",
+          "rank": 4,
+          "heat": ""
+        },
+        {
+          "platform": "股吧",
+          "title": "午盘直线起飞！创业板大涨12%，半导体、光通信直奔涨停！行情发令枪响起？",
+          "url": "http://caifuhao.eastmoney.com/news/20261127164949600486530",
+          "rank": 21,
+          "heat": "3.7万"
+        }
+      ],
+      "all_titles": [
+        "创业板午后回落转跌，半导体产业链活跃，AI短剧调整，30年期国债大涨0.8%，恒指、恒科指齐跌",
+        "午盘直线起飞！创业板大涨12%，半导体、光通信直奔涨停！行情发令枪响起？"
+      ]
+    },
+    {
+      "cluster_id": 183,
+      "representative_title": "首席策略荟 | 全球资产再定价年末“收益保卫战”：12月如何守回撤、布跨年?",
+      "cover_count": 2,
+      "platforms": [
+        "第一财经",
+        "雪球"
+      ],
+      "score": 186.5,
+      "total_mentions": 2,
+      "avg_rank": 13.5,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "首席策略荟 | 全球资产再定价年末“收益保卫战”：12月如何守回撤、布跨年?",
+          "url": "https://www.yicai.com/live/103445098.html",
+          "rank": 9,
+          "heat": ""
+        },
+        {
+          "platform": "雪球",
+          "title": "2026年，12类资产集体坐过山车，谁扛住了？（11.26）",
+          "url": "http://www.xueqiu.com/9391624441/418689966",
+          "rank": 18,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "2026年，12类资产集体坐过山车，谁扛住了？（11.26）",
+        "首席策略荟 | 全球资产再定价年末“收益保卫战”：12月如何守回撤、布跨年?"
+      ]
+    },
+    {
+      "cluster_id": 80,
+      "representative_title": "摩根大通：CUDA护城河正在瓦解，英伟达面临的真正挑战不止于CEO离职",
+      "cover_count": 2,
+      "platforms": [
+        "华尔街见闻",
+        "雪球"
+      ],
+      "score": 186.0,
+      "total_mentions": 2,
+      "avg_rank": 14.0,
+      "sources": [
+        {
+          "platform": "华尔街见闻",
+          "title": "摩根大通：CUDA护城河正在瓦解，英伟达面临的真正挑战不止于CEO离职",
+          "url": "https://wallstreetcn.com/articles/3786076",
+          "rank": 11,
+          "heat": ""
+        },
+        {
+          "platform": "雪球",
+          "title": "散户真正的护城河，是没人逼你交作业",
+          "url": "http://www.xueqiu.com/7271353740/418727083",
+          "rank": 17,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "散户真正的护城河，是没人逼你交作业",
+        "摩根大通：CUDA护城河正在瓦解，英伟达面临的真正挑战不止于CEO离职"
+      ]
+    },
+    {
+      "cluster_id": 154,
+      "representative_title": "直击2026广州车展",
+      "cover_count": 2,
+      "platforms": [
+        "21财经",
+        "股吧"
+      ],
+      "score": 176.5,
+      "total_mentions": 2,
+      "avg_rank": 23.5,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "直击2026广州车展",
+          "url": "https://m.21jingji.com/article/20261128/herald/84449f919b21569bfeeb9cb5fb111e81.html",
+          "rank": 2,
+          "heat": "粤港澳"
+        },
+        {
+          "platform": "股吧",
+          "title": "广汽集团亮相2026广州车展：以“市场+技术”双轮驱动穿越行业周期，品质验证累计投入超240亿",
+          "url": "http://caifuhao.eastmoney.com/news/20261128152850486995560",
+          "rank": 45,
+          "heat": "91"
+        }
+      ],
+      "all_titles": [
+        "直击2026广州车展",
+        "广汽集团亮相2026广州车展：以“市场+技术”双轮驱动穿越行业周期，品质验证累计投入超240亿"
+      ]
+    },
+    {
+      "cluster_id": 149,
+      "representative_title": "财经早报丨科技板块估值跌至低位 私募大佬AI调仓分歧大丨2026年11月18日",
+      "cover_count": 2,
+      "platforms": [
+        "新浪财经",
+        "股吧"
+      ],
+      "score": 176.0,
+      "total_mentions": 2,
+      "avg_rank": 24.0,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "财经早报丨科技板块估值跌至低位 私募大佬AI调仓分歧大丨2026年11月18日",
+          "url": "https://finance.sina.com.cn/stock/y/2026-11-18/doc-inizcexm4930565.shtml",
+          "rank": 8,
+          "heat": "4,689"
+        },
+        {
+          "platform": "股吧",
+          "title": "31个行业指数估值表（2026/11/28）",
+          "url": "http://caifuhao.eastmoney.com/news/20261128111712866137500",
+          "rank": 40,
+          "heat": "69"
+        }
+      ],
+      "all_titles": [
+        "财经早报丨科技板块估值跌至低位 私募大佬AI调仓分歧大丨2026年11月18日",
+        "31个行业指数估值表（2026/11/28）"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "representative_title": "陈吉宁涉嫌严重违纪违法正接受中央纪委国家监委审查调查",
+      "cover_count": 1,
+      "platforms": [
+        "第一财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "第一财经",
+          "title": "陈吉宁涉嫌严重违纪违法正接受中央纪委国家监委审查调查",
+          "url": "https://www.yicai.com/news/103452561.html",
+          "rank": 1,
+          "heat": ""
+        }
+      ],
+      "all_titles": [
+        "陈吉宁涉嫌严重违纪违法正接受中央纪委国家监委审查调查"
+      ]
+    },
+    {
+      "cluster_id": 40,
+      "representative_title": "俄罗斯总统普京抵达深圳 蔡奇前往机场迎接",
+      "cover_count": 1,
+      "platforms": [
+        "新浪财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "新浪财经",
+          "title": "俄罗斯总统普京抵达深圳 蔡奇前往机场迎接",
+          "url": "https://finance.sina.com.cn/wm/2026-11-18/doc-inizayrr1788820.shtml",
+          "rank": 1,
+          "heat": "9,177"
+        }
+      ],
+      "all_titles": [
+        "俄罗斯总统普京抵达深圳 蔡奇前往机场迎接"
+      ]
+    },
+    {
+      "cluster_id": 50,
+      "representative_title": "携程新设旅行体验事业部",
+      "cover_count": 1,
+      "platforms": [
+        "21财经"
+      ],
+      "score": 99.0,
+      "total_mentions": 1,
+      "avg_rank": 1.0,
+      "sources": [
+        {
+          "platform": "21财经",
+          "title": "携程新设旅行体验事业部",
+          "url": "https://m.21jingji.com/article/20261128/herald/74b7efb228b35e799c9e2c95934acb60.html",
+          "rank": 1,
+          "heat": "公司"
+        }
+      ],
+      "all_titles": [
+        "携程新设旅行体验事业部"
+      ]
+    }
+  ]
+}
